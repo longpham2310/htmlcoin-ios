@@ -43,11 +43,12 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
         [[UIApplication sharedApplication] registerForRemoteNotifications];
     }
     
+    /*
     NSString *path = [[NSBundle mainBundle] pathForResource:FireBaseInfoFileName ofType:@"plist"];
     NSDictionary *dictPri = [NSDictionary dictionaryWithContentsOfFile:path];
     if (dictPri) {
         [FIRApp configure];
-    }
+    }*/
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tokenRefreshNotification:) name:kFIRInstanceIDTokenRefreshNotification object:nil];
 }
 
