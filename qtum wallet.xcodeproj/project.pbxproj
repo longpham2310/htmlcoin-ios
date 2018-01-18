@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C779EBBB0780FE8BF137970 /* libPods-qtum wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903654DC429CD9C31C04908 /* libPods-qtum wallet.a */; };
 		513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */; };
-		6344181320104698000262AC /* stymie-lt-bt in Resources */ = {isa = PBXBuildFile; fileRef = 6344181220104698000262AC /* stymie-lt-bt */; };
+		6309EA4A201089BB0068AD3E /* StymieLtBTBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */; };
+		6309EA4C201089CC0068AD3E /* StymieLtBTLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */; };
 		6344181720105036000262AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344181620105036000262AC /* UIColor+Extension.swift */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
@@ -694,7 +695,8 @@
 		4B2FBBBBB5655C103D193E92 /* libPods-QTUM Watch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCA96264341BA8A5D0C98FD /* Pods-QTUM Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QTUM Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-QTUM Watch Extension/Pods-QTUM Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6344181220104698000262AC /* stymie-lt-bt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "stymie-lt-bt"; sourceTree = "<group>"; };
+		6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StymieLtBTBold.ttf; sourceTree = SOURCE_ROOT; };
+		6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StymieLtBTLight.ttf; sourceTree = SOURCE_ROOT; };
 		6344181520105036000262AC /* qtum wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qtum wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		6344181620105036000262AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
@@ -2035,22 +2037,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		634418102010458B000262AC /* Supporting Files */ = {
+		6309EA48201089420068AD3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				63441811201045D8000262AC /* Fonts */,
+				6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */,
+				6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */,
 				E7881B0E1F0BB7A800BD6AB2 /* FontsLight */,
 				B3210D271E00326B00365FB6 /* Fonts */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		63441811201045D8000262AC /* Fonts */ = {
+		634418102010458B000262AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6344181220104698000262AC /* stymie-lt-bt */,
 			);
-			path = Fonts;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		634418142010501C000262AC /* Helpers */ = {
@@ -2255,7 +2257,7 @@
 				B30960BA1F62EACC00BEF9D2 /* Avenir.ttc */,
 			);
 			name = Fonts;
-			path = "../_Supporting Files";
+			path = "_Supporting Files";
 			sourceTree = "<group>";
 		};
 		B321428E1E0154F700489BB1 /* Text Field */ = {
@@ -4334,7 +4336,7 @@
 				E7881B171F0BB7C700BD6AB2 /* proximanova-semibold.otf */,
 			);
 			name = FontsLight;
-			path = "_Supporting Files";
+			path = "Supporting Files/_Supporting Files";
 			sourceTree = "<group>";
 		};
 		E7881B781F0BDC3400BD6AB2 /* WalletOutput */ = {
@@ -4719,6 +4721,7 @@
 				E7FD363C1DC4D07E00748177 /* main.m */,
 				E7FD36611DC73D4600748177 /* PrefixHeader.pch */,
 				E7FD364C1DC4D07E00748177 /* Info.plist */,
+				6309EA48201089420068AD3E /* Supporting Files */,
 			);
 			path = "qtum wallet";
 			sourceTree = "<group>";
@@ -5163,6 +5166,8 @@
 				E7881B0D1F0BB63400BD6AB2 /* SplashLight.storyboard in Resources */,
 				E70CFCFC1F1F63D300230C81 /* QStore.storyboard in Resources */,
 				B386F5E61E163F41004D231B /* SF-UI-DISPLAY-THIN.OTF in Resources */,
+				6309EA4A201089BB0068AD3E /* StymieLtBTBold.ttf in Resources */,
+				6309EA4C201089CC0068AD3E /* StymieLtBTLight.ttf in Resources */,
 				B32EEC9B1EB356DA00512FED /* Localizable.strings in Resources */,
 				E70CFD0A1F1F63ED00230C81 /* ErrorPopUp.storyboard in Resources */,
 				E70CFD341F1F647300230C81 /* SourceCodePopUp.storyboard in Resources */,
@@ -5171,7 +5176,6 @@
 				B3DB3E531F2F7F0D00AA408F /* CheckButtonLight.xib in Resources */,
 				B386F5E81E163F41004D231B /* SF-UI-DISPLAY-BOLD.OTF in Resources */,
 				B34228881F73CF2700C4C381 /* SliderViewLight.xib in Resources */,
-				6344181320104698000262AC /* stymie-lt-bt in Resources */,
 				E760F4A11F0F8E8F0056D042 /* proximanova-regitalic.otf in Resources */,
 				E7881B471F0BB7C700BD6AB2 /* proximanova-semibold.otf in Resources */,
 				B32EEC661EB3545700512FED /* Send.storyboard in Resources */,
