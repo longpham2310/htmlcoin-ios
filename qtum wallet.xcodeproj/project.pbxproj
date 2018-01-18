@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C779EBBB0780FE8BF137970 /* libPods-qtum wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903654DC429CD9C31C04908 /* libPods-qtum wallet.a */; };
 		513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */; };
+		6344181320104698000262AC /* stymie-lt-bt in Resources */ = {isa = PBXBuildFile; fileRef = 6344181220104698000262AC /* stymie-lt-bt */; };
+		6344181720105036000262AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344181620105036000262AC /* UIColor+Extension.swift */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
 		B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D651F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m */; };
@@ -692,6 +694,9 @@
 		4B2FBBBBB5655C103D193E92 /* libPods-QTUM Watch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCA96264341BA8A5D0C98FD /* Pods-QTUM Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QTUM Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-QTUM Watch Extension/Pods-QTUM Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6344181220104698000262AC /* stymie-lt-bt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "stymie-lt-bt"; sourceTree = "<group>"; };
+		6344181520105036000262AC /* qtum wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qtum wallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		6344181620105036000262AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
 		B3014D5D1F29FD7C007EAE7A /* WatchContractOutputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutputDelegate.h; sourceTree = "<group>"; };
 		B3014D5E1F2A1B8D007EAE7A /* WatchContractViewControllerDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractViewControllerDark.h; sourceTree = "<group>"; };
@@ -2030,6 +2035,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		634418102010458B000262AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63441811201045D8000262AC /* Fonts */,
+				E7881B0E1F0BB7A800BD6AB2 /* FontsLight */,
+				B3210D271E00326B00365FB6 /* Fonts */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63441811201045D8000262AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6344181220104698000262AC /* stymie-lt-bt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		634418142010501C000262AC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6344181620105036000262AC /* UIColor+Extension.swift */,
+				6344181520105036000262AC /* qtum wallet-Bridging-Header.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		94DECCBC55E0AE7D7EF532E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2223,6 +2255,7 @@
 				B30960BA1F62EACC00BEF9D2 /* Avenir.ttc */,
 			);
 			name = Fonts;
+			path = "../_Supporting Files";
 			sourceTree = "<group>";
 		};
 		B321428E1E0154F700489BB1 /* Text Field */ = {
@@ -4301,6 +4334,7 @@
 				E7881B171F0BB7C700BD6AB2 /* proximanova-semibold.otf */,
 			);
 			name = FontsLight;
+			path = "_Supporting Files";
 			sourceTree = "<group>";
 		};
 		E7881B781F0BDC3400BD6AB2 /* WalletOutput */ = {
@@ -4675,7 +4709,7 @@
 				E7DD00EB1DC9BFA300FD5335 /* Transaction Controll Flow */,
 				E7FD365F1DC73B6300748177 /* Spendable Controll Flow */,
 				E7FD36521DC72B4400748177 /* Model */,
-				E7FD363B1DC4D07E00748177 /* Supporting Files */,
+				634418102010458B000262AC /* Supporting Files */,
 				E7FD365E1DC73B2400748177 /* Shared Views */,
 				B33EAF081E5C5E52006125F3 /* Protocols */,
 				B33EAF001E5B3920006125F3 /* Storyboards */,
@@ -4687,15 +4721,6 @@
 				E7FD364C1DC4D07E00748177 /* Info.plist */,
 			);
 			path = "qtum wallet";
-			sourceTree = "<group>";
-		};
-		E7FD363B1DC4D07E00748177 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E7881B0E1F0BB7A800BD6AB2 /* FontsLight */,
-				B3210D271E00326B00365FB6 /* Fonts */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E7FD36521DC72B4400748177 /* Model */ = {
@@ -4805,6 +4830,7 @@
 		E7FD36601DC73B7900748177 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				634418142010501C000262AC /* Helpers */,
 				B3F5797D1F0D292900A13571 /* TabBarOutput */,
 				E7FD363E1DC4D07E00748177 /* AppDelegate.h */,
 				E7FD363F1DC4D07E00748177 /* AppDelegate.m */,
@@ -5021,6 +5047,7 @@
 					E7FD36371DC4D07E00748177 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = DEH7XV88GA;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -5144,6 +5171,7 @@
 				B3DB3E531F2F7F0D00AA408F /* CheckButtonLight.xib in Resources */,
 				B386F5E81E163F41004D231B /* SF-UI-DISPLAY-BOLD.OTF in Resources */,
 				B34228881F73CF2700C4C381 /* SliderViewLight.xib in Resources */,
+				6344181320104698000262AC /* stymie-lt-bt in Resources */,
 				E760F4A11F0F8E8F0056D042 /* proximanova-regitalic.otf in Resources */,
 				E7881B471F0BB7C700BD6AB2 /* proximanova-semibold.otf in Resources */,
 				B32EEC661EB3545700512FED /* Send.storyboard in Resources */,
@@ -5816,6 +5844,7 @@
 				E739104F1DE2E165008145A8 /* HistoryElement.m in Sources */,
 				B31E5FFC1F4EE7F6003B4FA5 /* QStoreTemplateDetailViewController.m in Sources */,
 				B365059E1F14B63600521603 /* EnableFingerprintViewControllerDark.m in Sources */,
+				6344181720105036000262AC /* UIColor+Extension.swift in Sources */,
 				E798462D1F0D1E50002A516A /* HistoryTableViewCellLight.m in Sources */,
 				E79846361F0D23CB002A516A /* WalletHeaderCellDark.m in Sources */,
 				B365058C1F14B12E00521603 /* WalletNameViewControllerLight.m in Sources */,
@@ -6265,6 +6294,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D71F3943F2787CBE5AE12D46 /* Pods-qtum walletTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "qtum walletTests/Info.plist";
@@ -6280,6 +6310,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C288131FA2EA3C838AF7336 /* Pods-qtum walletTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "qtum walletTests/Info.plist";
@@ -6543,6 +6574,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6a0b7c94-59e0-4b30-a7f0-d31ccf1dad1e";
 				PROVISIONING_PROFILE_SPECIFIER = "QTUM-dev";
+				SWIFT_OBJC_BRIDGING_HEADER = "qtum wallet/Application/Helpers/qtum wallet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -6596,6 +6630,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6a0b7c94-59e0-4b30-a7f0-d31ccf1dad1e";
 				PROVISIONING_PROFILE_SPECIFIER = "QTUM-dev";
+				SWIFT_OBJC_BRIDGING_HEADER = "qtum wallet/Application/Helpers/qtum wallet-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
