@@ -25,6 +25,7 @@
     
     self.titleLabel.alpha = 0.0f;
     self.textLabel.alpha = 0.0f;
+    self.titleLabel.text = @"HTMLCOIN";
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
