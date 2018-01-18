@@ -12,6 +12,7 @@
 		6309EA4A201089BB0068AD3E /* StymieLtBTBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */; };
 		6309EA4C201089CC0068AD3E /* StymieLtBTLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */; };
 		6309EA4F20108DA00068AD3E /* UIColor+fromHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */; };
+		6309EA542010A7490068AD3E /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309EA532010A7480068AD3E /* UIView+RoundedCorner.m */; };
 		6344181720105036000262AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344181620105036000262AC /* UIColor+Extension.swift */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
@@ -700,6 +701,8 @@
 		6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StymieLtBTLight.ttf; sourceTree = SOURCE_ROOT; };
 		6309EA4D20108DA00068AD3E /* UIColor+fromHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+fromHex.h"; sourceTree = "<group>"; };
 		6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+fromHex.m"; sourceTree = "<group>"; };
+		6309EA522010A7480068AD3E /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
+		6309EA532010A7480068AD3E /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
 		6344181520105036000262AC /* qtum wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qtum wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		6344181620105036000262AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
@@ -2049,6 +2052,17 @@
 				B3210D271E00326B00365FB6 /* Fonts */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6309EA512010A6FF0068AD3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6309EA4D20108DA00068AD3E /* UIColor+fromHex.h */,
+				6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */,
+				6309EA522010A7480068AD3E /* UIView+RoundedCorner.h */,
+				6309EA532010A7480068AD3E /* UIView+RoundedCorner.m */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		634418102010458B000262AC /* Supporting Files */ = {
@@ -4844,8 +4858,7 @@
 				B3E3A1641E850572002A488F /* AppSettings.m */,
 				E74636841DCB300800A13318 /* Utils.h */,
 				E74636851DCB300800A13318 /* Utils.m */,
-				6309EA4D20108DA00068AD3E /* UIColor+fromHex.h */,
-				6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */,
+				6309EA512010A6FF0068AD3E /* Extensions */,
 				E71AF24F1E017D250068595B /* WordsArray.h */,
 				E71AF2501E017D250068595B /* WordsArray.m */,
 				B3210D211E002E2900365FB6 /* ApplicationCoordinator.h */,
@@ -5453,6 +5466,7 @@
 				E789035D1EDC674C004243F0 /* QTUMAddressTokenView.m in Sources */,
 				B3D555EB1EDE00F900CBDFCF /* SmartContractListItemCell.m in Sources */,
 				B335794A1F348F8F001A0275 /* SplashViewControllerLight.m in Sources */,
+				6309EA542010A7490068AD3E /* UIView+RoundedCorner.m in Sources */,
 				E7D241D91DE6D6B1003E507B /* QRCodeManager.m in Sources */,
 				E760F49A1F0F89610056D042 /* TokenListViewControllerDark.m in Sources */,
 				E7DD00EA1DC9BF9D00FD5335 /* TransactionManager.m in Sources */,

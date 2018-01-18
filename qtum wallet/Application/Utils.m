@@ -30,7 +30,8 @@ UIColor *customRedColor()
 
 UIColor *customBlackColor()
 {
-    return [UIColor colorWithRed:35/255.0f green:35/255.0f blue:40/255.0f alpha:1.0f];
+    //return [UIColor colorWithRed:35/255.0f green:35/255.0f blue:40/255.0f alpha:1.0f];
+    return [UIColor colorwithHexString:@"231f20" alpha:1.0f];
 }
 
 UIColor *historyGreenColor()

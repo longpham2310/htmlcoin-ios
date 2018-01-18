@@ -25,7 +25,7 @@
     
     self.titleLabel.alpha = 0.0f;
     self.textLabel.alpha = 0.0f;
-    self.titleLabel.text = @"HTMLCOIN";
+    self.titleLabel.text = NSLocalizedString(@"htmlcoin", @"");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
