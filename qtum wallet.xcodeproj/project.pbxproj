@@ -11,6 +11,7 @@
 		513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */; };
 		6309EA4A201089BB0068AD3E /* StymieLtBTBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */; };
 		6309EA4C201089CC0068AD3E /* StymieLtBTLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */; };
+		6309EA4F20108DA00068AD3E /* UIColor+fromHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */; };
 		6344181720105036000262AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344181620105036000262AC /* UIColor+Extension.swift */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
@@ -697,6 +698,8 @@
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StymieLtBTBold.ttf; sourceTree = SOURCE_ROOT; };
 		6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StymieLtBTLight.ttf; sourceTree = SOURCE_ROOT; };
+		6309EA4D20108DA00068AD3E /* UIColor+fromHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+fromHex.h"; sourceTree = "<group>"; };
+		6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+fromHex.m"; sourceTree = "<group>"; };
 		6344181520105036000262AC /* qtum wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qtum wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		6344181620105036000262AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
@@ -4841,6 +4844,8 @@
 				B3E3A1641E850572002A488F /* AppSettings.m */,
 				E74636841DCB300800A13318 /* Utils.h */,
 				E74636851DCB300800A13318 /* Utils.m */,
+				6309EA4D20108DA00068AD3E /* UIColor+fromHex.h */,
+				6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */,
 				E71AF24F1E017D250068595B /* WordsArray.h */,
 				E71AF2501E017D250068595B /* WordsArray.m */,
 				B3210D211E002E2900365FB6 /* ApplicationCoordinator.h */,
@@ -5555,6 +5560,7 @@
 				B3EA530E1F46DDF0002FD201 /* CustomSearchBarDark.m in Sources */,
 				B36EBC371F2F15DD00F4E2F2 /* PhotoLibraryPopUpViewControllerLight.m in Sources */,
 				B35572C71F90E886001AE34A /* NewsDataProvider.m in Sources */,
+				6309EA4F20108DA00068AD3E /* UIColor+fromHex.m in Sources */,
 				B3C08B251ED467DA00713B15 /* TokenPropertyCell.m in Sources */,
 				E7C101C41F15074A00848526 /* HistoryItemViewControllerLight.m in Sources */,
 				B3F06D031E699244006341F7 /* TokenCellSubscribe.m in Sources */,

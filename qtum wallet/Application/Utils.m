@@ -8,6 +8,7 @@
 
 #import "Utils.h"
 #import "NSUserDefaults+Settings.h"
+#import "UIColor+fromHex.h"
 
 NSString const *PUBLIC_ADDRESS_STRING_KEY = @"publicAddress";
 NSString const *EXPORT_CONTRACTS_TOKENS_KEY = @"export_contracts_tokens";
