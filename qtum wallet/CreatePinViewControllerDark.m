@@ -16,7 +16,8 @@
 
 -(void)configPasswordView {
     
-    [self.passwordView setStyle:DarkStyle lenght:LongType];
+//    [self.passwordView setTextFont:[UIFont fontWithName:@"StymieLtBTLight" size:20] fontColor:[UIColor whiteColor] underlineColor:[UIColor whiteColor] tintColor:[UIColor redColor] errorFieldColor:[UIColor redColor]];
+    [self.passwordView setStyle:LightStyle lenght:LongType];
     self.passwordView.delegate = self;
 }
 

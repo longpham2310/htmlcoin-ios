@@ -8,6 +8,7 @@
 
 #import "CreatePinViewController.h"
 #import "CustomTextField.h"
+#import "UIView+RoundedCorner.h"
 
 @interface CreatePinViewController () <CAAnimationDelegate>
 
@@ -22,6 +23,8 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    [self.cancelButton roundedWithCorner:4];
+    [self.confirmButton roundedWithCorner:4];
     [self configPasswordView];
     [self.passwordView becameFirstResponder];
 }

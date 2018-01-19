@@ -16,9 +16,6 @@
         <array key="StymieLtBTLight.ttf">
             <string>StymieBT-Light</string>
         </array>
-        <array key="euclidflexmedium.ttf">
-            <string>euclidflexmedium</string>
-        </array>
         <array key="simplonmono-regular.ttf">
             <string>simplonmono-regular</string>
         </array>
@@ -97,52 +94,44 @@
                         <viewControllerLayoutGuide type="top" id="qcl-2U-KjH"/>
                         <viewControllerLayoutGuide type="bottom" id="9t6-uu-ngo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4tZ-zC-v6P" customClass="GradientView">
+                    <view key="view" contentMode="scaleToFill" id="4tZ-zC-v6P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nac-6j-JOQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-dk-O3P">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nac-6j-JOQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hrV-ar-tSr" customClass="AnimatedLogoImageVIewLight">
-                                <rect key="frame" x="130" y="208" width="115" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hrV-ar-tSr">
+                                <rect key="frame" x="130" y="117" width="115" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.18039215689999999" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="5rk-e4-RMY"/>
-                                    <constraint firstAttribute="width" constant="115" id="5so-l4-y7a"/>
-                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QTUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgh-98-MY2">
-                                <rect key="frame" x="148" y="343" width="80.5" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="LJg-S7-q8C"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTMLCOIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgh-98-MY2">
+                                <rect key="frame" x="112" y="316.5" width="151.5" height="34"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QTUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-SA-4ip">
-                                <rect key="frame" x="148" y="343" width="80.5" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80.5" id="TsJ-84-JrC"/>
-                                    <constraint firstAttribute="height" constant="36" id="u3Y-v6-pVT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="28"/>
-                                <color key="textColor" red="0.18039215689999999" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN BLOCKCHAIN WE TRUST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-SA-4ip">
+                                <rect key="frame" x="81.5" y="354.5" width="213.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVB-QE-fgb">
-                                <rect key="frame" x="147.5" y="603" width="80.5" height="14"/>
+                                <rect key="frame" x="159" y="603" width="58" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="keE-4V-Grg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Light" family="Stymie Lt BT" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hil-Ff-02b">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hil-Ff-02b">
                                 <rect key="frame" x="147" y="603" width="80.5" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80.5" id="Fk3-8M-j4d"/>
@@ -155,19 +144,23 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8Bv-dk-O3P" firstAttribute="height" secondItem="4tZ-zC-v6P" secondAttribute="height" id="1rs-3r-Rmj"/>
+                            <constraint firstItem="XDd-SA-4ip" firstAttribute="top" secondItem="Jgh-98-MY2" secondAttribute="bottom" constant="4" id="21B-cw-YyY"/>
+                            <constraint firstItem="XDd-SA-4ip" firstAttribute="centerX" secondItem="Jgh-98-MY2" secondAttribute="centerX" id="Asa-iL-175"/>
                             <constraint firstAttribute="trailing" secondItem="nac-6j-JOQ" secondAttribute="trailing" id="CTV-AK-L8V"/>
-                            <constraint firstItem="Jgh-98-MY2" firstAttribute="top" secondItem="hrV-ar-tSr" secondAttribute="bottom" constant="35" id="F74-Kb-Chq"/>
-                            <constraint firstItem="XDd-SA-4ip" firstAttribute="top" secondItem="Jgh-98-MY2" secondAttribute="top" id="Fa3-yF-KNI"/>
                             <constraint firstItem="Hil-Ff-02b" firstAttribute="top" secondItem="CVB-QE-fgb" secondAttribute="top" id="IpE-ip-1lQ"/>
+                            <constraint firstItem="8Bv-dk-O3P" firstAttribute="centerY" secondItem="4tZ-zC-v6P" secondAttribute="centerY" id="Juz-cd-VrO"/>
                             <constraint firstItem="hrV-ar-tSr" firstAttribute="centerX" secondItem="4tZ-zC-v6P" secondAttribute="centerX" id="KTp-td-Cj6"/>
                             <constraint firstItem="nac-6j-JOQ" firstAttribute="leading" secondItem="4tZ-zC-v6P" secondAttribute="leading" id="KqW-b6-A11"/>
                             <constraint firstItem="nac-6j-JOQ" firstAttribute="top" secondItem="4tZ-zC-v6P" secondAttribute="top" id="LmM-Sa-Okj"/>
                             <constraint firstItem="Jgh-98-MY2" firstAttribute="centerX" secondItem="4tZ-zC-v6P" secondAttribute="centerX" id="SKF-PO-Ed3"/>
+                            <constraint firstItem="8Bv-dk-O3P" firstAttribute="width" secondItem="4tZ-zC-v6P" secondAttribute="width" id="XfX-LX-HLD"/>
                             <constraint firstItem="CVB-QE-fgb" firstAttribute="centerX" secondItem="4tZ-zC-v6P" secondAttribute="centerX" id="Zlg-GT-9UQ"/>
                             <constraint firstAttribute="bottom" secondItem="nac-6j-JOQ" secondAttribute="bottom" id="hOr-e3-IdY"/>
-                            <constraint firstItem="XDd-SA-4ip" firstAttribute="centerX" secondItem="Jgh-98-MY2" secondAttribute="centerX" id="piE-6X-dUS"/>
+                            <constraint firstItem="Jgh-98-MY2" firstAttribute="centerY" secondItem="4tZ-zC-v6P" secondAttribute="centerY" id="mId-Wl-nZV"/>
                             <constraint firstItem="9t6-uu-ngo" firstAttribute="top" secondItem="CVB-QE-fgb" secondAttribute="bottom" constant="50" id="q4H-4c-ZhK"/>
-                            <constraint firstItem="hrV-ar-tSr" firstAttribute="centerY" secondItem="4tZ-zC-v6P" secondAttribute="centerY" constant="-75" id="rkP-JR-fnz"/>
+                            <constraint firstItem="hrV-ar-tSr" firstAttribute="centerY" secondItem="4tZ-zC-v6P" secondAttribute="centerY" multiplier="1:2" id="rkP-JR-fnz"/>
+                            <constraint firstItem="8Bv-dk-O3P" firstAttribute="centerX" secondItem="4tZ-zC-v6P" secondAttribute="centerX" id="tuW-q2-s5b"/>
                             <constraint firstItem="Hil-Ff-02b" firstAttribute="centerX" secondItem="CVB-QE-fgb" secondAttribute="centerX" id="vqA-r1-5GH"/>
                         </constraints>
                     </view>
@@ -175,11 +168,9 @@
                     <connections>
                         <outlet property="animatedBacgroundView" destination="nac-6j-JOQ" id="nwW-BS-deh"/>
                         <outlet property="animatedBacgroungViewHeightConstraint" destination="LmM-Sa-Okj" id="xx3-Zz-5hN"/>
-                        <outlet property="animatedLogoView" destination="hrV-ar-tSr" id="WWn-ow-X3I"/>
-                        <outlet property="animatedQTUMLabel" destination="XDd-SA-4ip" id="dve-fD-Xn0"/>
-                        <outlet property="animatedQTUMLabelHeightConstraint" destination="u3Y-v6-pVT" id="eZ4-6s-bQA"/>
                         <outlet property="animatedWaitLabelHeightConstraint" destination="vBb-o1-e4E" id="Gw2-nc-B0V"/>
-                        <outlet property="animatedWaitingLabel" destination="Hil-Ff-02b" id="x52-71-426"/>
+                        <outlet property="subTitleLabel" destination="XDd-SA-4ip" id="bFT-So-dyT"/>
+                        <outlet property="titleLabel" destination="Jgh-98-MY2" id="h0A-s5-IPO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQn-uX-rLz" userLabel="First Responder" sceneMemberID="firstResponder"/>

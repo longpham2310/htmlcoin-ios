@@ -20,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *animatedBacgroungViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet AnimatedLogoImageVIewLight *animatedLogoView;
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
+
+
 @end
 
 @implementation SplashViewControllerLight
@@ -28,6 +32,9 @@
 -(void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.titleLabel.text = NSLocalizedString(@"htmlcoin", @"");
+    self.subTitleLabel.text = [NSLocalizedString(@"In blockchain we trust", @"") uppercaseString];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -39,7 +46,7 @@
     
     [super viewDidAppear:animated];
     
-    self.animatedLogoView.translatesAutoresizingMaskIntoConstraints = NO;
+    /*self.animatedLogoView.translatesAutoresizingMaskIntoConstraints = NO;
     self.animatedBacgroungViewHeightConstraint.constant = self.view.frame.size.height;
     
     CGFloat duration = 3;
@@ -65,7 +72,7 @@
     });
     
     weakSelf.animatedWaitLabelHeightConstraint.constant = 0;
-
+    */
 }
 
 @end

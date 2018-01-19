@@ -7,16 +7,26 @@
 //
 
 #import "RepeateViewControllerDark.h"
+#import "UIView+RoundedCorner.h"
 
 @interface RepeateViewControllerDark ()
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 
 @end
 
 @implementation RepeateViewControllerDark
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.cancelButton roundedWithCorner:4];
+    [self.confirmButton roundedWithCorner:4];
+}
+
 -(void)configPasswordView {
     
-    [self.passwordView setStyle:DarkStyle lenght:LongType];
+    [self.passwordView setStyle:LightStyle lenght:LongType];
     self.passwordView.delegate = self;
 }
 
