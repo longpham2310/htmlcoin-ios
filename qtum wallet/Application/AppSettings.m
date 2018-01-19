@@ -49,8 +49,8 @@
 -(void)setup {
     
     if (![NSUserDefaults isNotFirstTimeLaunch]) {
-        [NSUserDefaults saveIsDarkSchemeSetting:YES];
-        [NSUserDefaults saveIsNotFirstTimeLaunch:YES];
+        [NSUserDefaults saveIsDarkSchemeSetting:NO];
+        [NSUserDefaults saveIsNotFirstTimeLaunch:NO];
     }
     
     [NSUserDefaults saveCurrentVersion:[[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
