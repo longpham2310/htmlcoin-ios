@@ -35,6 +35,12 @@
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
     self.brandKeyTextView.text = NSLocalizedString(@"Your Passphrase", "");
+    self.brandKeyTextView.layer.borderWidth = 0.5f;
+    self.brandKeyTextView.layer.cornerRadius = 4;
+    self.brandKeyTextView.layer.borderColor = [[UIColor whiteColor] CGColor];
+    /*[self.brandKeyTextView setFont:[UIFont fontWithName:@"StymieLtBTLight" size:18]];
+    [self.brandKeyTextView setTextColor:[UIColor whiteColor]];
+     */
     [self.brandKeyTextView becomeFirstResponder];
     [self setupImportButton];
 }

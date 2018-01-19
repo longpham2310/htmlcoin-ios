@@ -1972,6 +1972,9 @@ using Touch ID</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="w95-eC-3HA">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-4H-Ldl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
@@ -1981,10 +1984,10 @@ using Touch ID</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMQ-Xs-d3m">
                                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-YX-siU">
-                                                        <rect key="frame" x="137.5" y="14" width="101" height="17"/>
-                                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-YX-siU">
+                                                        <rect key="frame" x="131.5" y="11" width="113" height="22"/>
+                                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -1996,7 +1999,7 @@ using Touch ID</string>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.21176470589999999" green="0.33333333329999998" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="JMQ-Xs-d3m" secondAttribute="bottom" id="1eA-YA-BTh"/>
                                             <constraint firstItem="JMQ-Xs-d3m" firstAttribute="leading" secondItem="5ta-5G-eyq" secondAttribute="leading" id="OEQ-0f-2rQ"/>
@@ -2005,14 +2008,14 @@ using Touch ID</string>
                                         </constraints>
                                     </view>
                                     <textView multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="xfL-rC-vTe" customClass="InputTextViewLight">
-                                        <rect key="frame" x="27" y="94" width="321" height="100"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="27" y="94" width="321" height="180"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.18823529410000001" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="29m-HZ-TlI"/>
+                                            <constraint firstAttribute="height" constant="180" id="29m-HZ-TlI"/>
                                         </constraints>
-                                        <color key="textColor" red="0.30588235294117649" green="0.36470588235294116" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Light" family="Stymie Lt BT" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2024,14 +2027,11 @@ using Touch ID</string>
                                         </connections>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-VJ-Sxi">
-                                        <rect key="frame" x="197.5" y="597" width="130" height="50"/>
-                                        <color key="backgroundColor" red="0.21176470588235294" green="0.72549019607843135" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="xnm-7x-2Pb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
-                                        <state key="normal" title="IMPORT">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="197.5" y="617" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
+                                        <state key="normal" title="Import">
+                                            <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2043,15 +2043,15 @@ using Touch ID</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPs-Dw-vyP">
-                                        <rect key="frame" x="47.5" y="597" width="130" height="50"/>
-                                        <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="47.5" y="617" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="7Nr-1a-8k0"/>
+                                            <constraint firstAttribute="height" constant="30" id="7Nr-1a-8k0"/>
                                             <constraint firstAttribute="width" constant="130" id="WaH-uh-b5i"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
-                                        <state key="normal" title="CANCEL">
-                                            <color key="titleColor" red="0.52549019607843139" green="0.56862745098039214" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2064,7 +2064,7 @@ using Touch ID</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="HPs-Dw-vyP" firstAttribute="centerX" secondItem="gDL-4H-Ldl" secondAttribute="centerX" constant="-75" id="5P2-PD-pg5"/>
@@ -2074,6 +2074,7 @@ using Touch ID</string>
                                     <constraint firstItem="NgY-VJ-Sxi" firstAttribute="leading" secondItem="HPs-Dw-vyP" secondAttribute="trailing" constant="20" id="PyZ-v8-g5Y"/>
                                     <constraint firstItem="NgY-VJ-Sxi" firstAttribute="centerY" secondItem="HPs-Dw-vyP" secondAttribute="centerY" id="XjB-GV-VE4"/>
                                     <constraint firstItem="5ta-5G-eyq" firstAttribute="leading" secondItem="gDL-4H-Ldl" secondAttribute="leading" id="anD-cO-w81"/>
+                                    <constraint firstItem="NgY-VJ-Sxi" firstAttribute="height" secondItem="HPs-Dw-vyP" secondAttribute="height" id="huv-yg-LGE"/>
                                     <constraint firstAttribute="trailing" secondItem="xfL-rC-vTe" secondAttribute="trailing" constant="27" id="jWd-fw-I34"/>
                                     <constraint firstItem="5ta-5G-eyq" firstAttribute="top" secondItem="gDL-4H-Ldl" secondAttribute="top" id="pL4-kd-hsJ"/>
                                     <constraint firstAttribute="trailing" secondItem="5ta-5G-eyq" secondAttribute="trailing" id="xJ6-Xl-HG9"/>
@@ -2087,13 +2088,18 @@ using Touch ID</string>
                             <constraint firstItem="eUr-LF-u2Z" firstAttribute="top" secondItem="gDL-4H-Ldl" secondAttribute="bottom" id="12u-mq-ONL"/>
                             <constraint firstItem="gDL-4H-Ldl" firstAttribute="leading" secondItem="0yv-IZ-G11" secondAttribute="leading" id="FO6-IE-oh9"/>
                             <constraint firstAttribute="trailing" secondItem="gDL-4H-Ldl" secondAttribute="trailing" id="ICx-VV-Hxl"/>
+                            <constraint firstItem="w95-eC-3HA" firstAttribute="centerY" secondItem="0yv-IZ-G11" secondAttribute="centerY" id="SYw-tS-ngG"/>
+                            <constraint firstItem="w95-eC-3HA" firstAttribute="centerX" secondItem="0yv-IZ-G11" secondAttribute="centerX" id="chR-y8-1b0"/>
                             <constraint firstItem="gDL-4H-Ldl" firstAttribute="top" secondItem="0yv-IZ-G11" secondAttribute="top" id="lcn-6c-Ckj"/>
+                            <constraint firstItem="w95-eC-3HA" firstAttribute="height" secondItem="0yv-IZ-G11" secondAttribute="height" id="ljX-1h-jSK"/>
+                            <constraint firstItem="w95-eC-3HA" firstAttribute="width" secondItem="0yv-IZ-G11" secondAttribute="width" id="xRK-S6-NBq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomForButtonsConstraint" destination="NiW-Ve-Fil" id="2Yc-Ur-nHM"/>
                         <outlet property="brandKeyTextView" destination="xfL-rC-vTe" id="804-K6-KBq"/>
-                        <outlet property="importButton" destination="NgY-VJ-Sxi" id="cml-wf-WfD"/>
+                        <outlet property="cancelButton" destination="HPs-Dw-vyP" id="u8X-vC-YHr"/>
+                        <outlet property="importButton" destination="NgY-VJ-Sxi" id="AOA-hX-cik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tu8-sF-TXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2113,6 +2119,9 @@ using Touch ID</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="fVV-EF-p2M">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-VV-RcB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
@@ -2120,8 +2129,8 @@ using Touch ID</string>
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy Passphrase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-lo-gnX">
-                                                <rect key="frame" x="122" y="14" width="131.5" height="17"/>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                                <rect key="frame" x="115.5" y="11" width="145" height="22"/>
+                                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2132,7 +2141,7 @@ using Touch ID</string>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
-                                                <state key="normal" image="share">
+                                                <state key="normal" image="upload">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -2152,7 +2161,7 @@ using Touch ID</string>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.21176470589999999" green="0.33333333329999998" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="tIT-Vq-0aj" secondAttribute="bottom" id="QGe-Ak-zih"/>
                                     <constraint firstItem="tIT-Vq-0aj" firstAttribute="leading" secondItem="dg0-VV-RcB" secondAttribute="leading" id="T5e-4w-3OZ"/>
@@ -2161,15 +2170,15 @@ using Touch ID</string>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-sJ-Q5B">
-                                <rect key="frame" x="47.5" y="589" width="130" height="50"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="47.5" y="609" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="V66-BW-ohh"/>
-                                    <constraint firstAttribute="height" constant="50" id="jqf-QZ-mup"/>
+                                    <constraint firstAttribute="height" constant="30" id="jqf-QZ-mup"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
-                                <state key="normal" title="SKIP">
-                                    <color key="titleColor" red="0.52549019610000003" green="0.56862745100000001" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2191,16 +2200,15 @@ using Touch ID</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qA-hW-o0z">
-                                <rect key="frame" x="197.5" y="589" width="130" height="50"/>
-                                <color key="backgroundColor" red="0.21176470589999999" green="0.72549019609999998" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="197.5" y="609" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Spt-Af-Df3"/>
                                     <constraint firstAttribute="width" constant="130" id="aDX-2b-yEQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="COPY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Copy">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -2222,13 +2230,18 @@ using Touch ID</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1qA-hW-o0z" firstAttribute="centerY" secondItem="OPh-sJ-Q5B" secondAttribute="centerY" id="3ej-ub-Bko"/>
+                            <constraint firstItem="fVV-EF-p2M" firstAttribute="centerX" secondItem="3RK-nt-fkB" secondAttribute="centerX" id="8E9-82-WDA"/>
                             <constraint firstItem="dg0-VV-RcB" firstAttribute="top" secondItem="3RK-nt-fkB" secondAttribute="top" id="F4B-Jc-llI"/>
+                            <constraint firstItem="1qA-hW-o0z" firstAttribute="height" secondItem="OPh-sJ-Q5B" secondAttribute="height" id="Loi-08-ft3"/>
                             <constraint firstItem="VCL-oc-su9" firstAttribute="centerX" secondItem="3RK-nt-fkB" secondAttribute="centerX" id="NEi-Jr-uCv"/>
+                            <constraint firstItem="fVV-EF-p2M" firstAttribute="width" secondItem="3RK-nt-fkB" secondAttribute="width" id="SUm-cg-uta"/>
                             <constraint firstItem="zpt-t6-IUw" firstAttribute="top" secondItem="OPh-sJ-Q5B" secondAttribute="bottom" constant="28" id="XBn-Ik-vSI"/>
                             <constraint firstItem="1qA-hW-o0z" firstAttribute="width" secondItem="OPh-sJ-Q5B" secondAttribute="width" id="cf1-bu-1pJ"/>
                             <constraint firstAttribute="trailing" secondItem="MCr-YL-owg" secondAttribute="trailing" constant="45" id="d3v-bB-Xhc"/>
                             <constraint firstItem="OPh-sJ-Q5B" firstAttribute="centerX" secondItem="3RK-nt-fkB" secondAttribute="centerX" constant="-75" id="e0c-Pz-JM4"/>
                             <constraint firstItem="1qA-hW-o0z" firstAttribute="leading" secondItem="OPh-sJ-Q5B" secondAttribute="trailing" constant="20" id="eCU-DL-SO9"/>
+                            <constraint firstItem="fVV-EF-p2M" firstAttribute="centerY" secondItem="3RK-nt-fkB" secondAttribute="centerY" id="fDg-Y0-20P"/>
+                            <constraint firstItem="fVV-EF-p2M" firstAttribute="height" secondItem="3RK-nt-fkB" secondAttribute="height" id="hj3-wj-auM"/>
                             <constraint firstItem="dg0-VV-RcB" firstAttribute="leading" secondItem="3RK-nt-fkB" secondAttribute="leading" id="kJo-Ks-zGb"/>
                             <constraint firstItem="MCr-YL-owg" firstAttribute="leading" secondItem="3RK-nt-fkB" secondAttribute="leading" constant="45" id="mn2-JZ-7Ac"/>
                             <constraint firstItem="VCL-oc-su9" firstAttribute="top" secondItem="MCr-YL-owg" secondAttribute="bottom" constant="110" id="moe-wO-Q3Y"/>
@@ -2238,6 +2251,8 @@ using Touch ID</string>
                     </view>
                     <connections>
                         <outlet property="brainKeyLabel" destination="MCr-YL-owg" id="6wF-fy-2YW"/>
+                        <outlet property="leftButton" destination="OPh-sJ-Q5B" id="jBF-XW-W0W"/>
+                        <outlet property="rightButton" destination="1qA-hW-o0z" id="MDc-c6-3pI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSz-9R-iSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2252,6 +2267,7 @@ using Touch ID</string>
         <image name="logo" width="115" height="100"/>
         <image name="share" width="20" height="21"/>
         <image name="splasscreen" width="375" height="667"/>
+        <image name="upload" width="37" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hKQ-pH-Gbi"/>

@@ -7,12 +7,26 @@
 //
 
 #import "RestoreWalletViewControllerLight.h"
+#import "UIView+RoundedCorner.h"
 
 @interface RestoreWalletViewControllerLight ()
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIButton *importButton;
 
 @end
 
 @implementation RestoreWalletViewControllerLight
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.cancelButton roundedWithCorner:self.cancelButton.bounds.size.height/2];
+    [self.importButton roundedWithCorner:self.importButton.bounds.size.height/2];
+    
+    [self.cancelButton setTitle:NSLocalizedString(@"Cancel", @"") forState:UIControlStateNormal];
+    [self.importButton setTitle:NSLocalizedString(@"Import", @"") forState:UIControlStateNormal];
+    
+}
 
 -(void)keyboardWillShow:(NSNotification *)sender {
     
