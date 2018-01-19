@@ -35,6 +35,9 @@
     
     self.titleLabel.text = NSLocalizedString(@"htmlcoin", @"");
     self.subTitleLabel.text = [NSLocalizedString(@"In blockchain we trust", @"") uppercaseString];
+    
+    self.titleLabel.alpha = 0.0f;
+    self.subTitleLabel.alpha = 0.0f;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -46,6 +49,12 @@
     
     [super viewDidAppear:animated];
     
+    [UIView animateWithDuration:1.0f animations:^{
+        self.titleLabel.alpha = 1.0f;
+        self.subTitleLabel.alpha = 1.0f;
+    } completion:^(BOOL finished) {
+        //[self.logoImageView startAnimating];
+    }];
     /*self.animatedLogoView.translatesAutoresizingMaskIntoConstraints = NO;
     self.animatedBacgroungViewHeightConstraint.constant = self.view.frame.size.height;
     

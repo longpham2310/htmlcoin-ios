@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0C779EBBB0780FE8BF137970 /* libPods-qtum wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903654DC429CD9C31C04908 /* libPods-qtum wallet.a */; };
 		513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */; };
+		63094EDE20125516006528CA /* STYMIEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDA20125515006528CA /* STYMIEB.ttf */; };
+		63094EDF20125516006528CA /* STYMIELI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDB20125515006528CA /* STYMIELI.ttf */; };
+		63094EE020125516006528CA /* STYMIEL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDC20125515006528CA /* STYMIEL.ttf */; };
+		63094EE120125516006528CA /* STYMIEBI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDD20125516006528CA /* STYMIEBI.ttf */; };
 		6309EA4A201089BB0068AD3E /* StymieLtBTBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */; };
 		6309EA4C201089CC0068AD3E /* StymieLtBTLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */; };
 		6309EA4F20108DA00068AD3E /* UIColor+fromHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */; };
@@ -697,6 +701,10 @@
 		4B2FBBBBB5655C103D193E92 /* libPods-QTUM Watch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCA96264341BA8A5D0C98FD /* Pods-QTUM Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QTUM Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-QTUM Watch Extension/Pods-QTUM Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63094EDA20125515006528CA /* STYMIEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = STYMIEB.ttf; sourceTree = SOURCE_ROOT; };
+		63094EDB20125515006528CA /* STYMIELI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = STYMIELI.ttf; sourceTree = SOURCE_ROOT; };
+		63094EDC20125515006528CA /* STYMIEL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = STYMIEL.ttf; sourceTree = SOURCE_ROOT; };
+		63094EDD20125516006528CA /* STYMIEBI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = STYMIEBI.ttf; sourceTree = SOURCE_ROOT; };
 		6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StymieLtBTBold.ttf; sourceTree = SOURCE_ROOT; };
 		6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StymieLtBTLight.ttf; sourceTree = SOURCE_ROOT; };
 		6309EA4D20108DA00068AD3E /* UIColor+fromHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+fromHex.h"; sourceTree = "<group>"; };
@@ -2046,6 +2054,10 @@
 		6309EA48201089420068AD3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63094EDA20125515006528CA /* STYMIEB.ttf */,
+				63094EDD20125516006528CA /* STYMIEBI.ttf */,
+				63094EDC20125515006528CA /* STYMIEL.ttf */,
+				63094EDB20125515006528CA /* STYMIELI.ttf */,
 				6309EA4B201089CB0068AD3E /* StymieLtBTLight.ttf */,
 				6309EA49201089BB0068AD3E /* StymieLtBTBold.ttf */,
 				E7881B0E1F0BB7A800BD6AB2 /* FontsLight */,
@@ -5173,6 +5185,7 @@
 				B321F2DC1EBB646100C813D0 /* euclidflexmedium.ttf in Resources */,
 				B3EA53131F471DBF002FD201 /* SelectSearchTypeViewLight.xib in Resources */,
 				B321F2DD1EBB646100C813D0 /* simplonmono-medium.ttf in Resources */,
+				63094EE120125516006528CA /* STYMIEBI.ttf in Resources */,
 				B34228861F73CEAE00C4C381 /* SliderFeeView.xib in Resources */,
 				B3487A2A1E92383500BC66F1 /* HistoryTableHeaderViewDark.xib in Resources */,
 				E72631241EEAA806005AED8F /* FieldsViews.xib in Resources */,
@@ -5186,6 +5199,7 @@
 				B386F5E61E163F41004D231B /* SF-UI-DISPLAY-THIN.OTF in Resources */,
 				6309EA4A201089BB0068AD3E /* StymieLtBTBold.ttf in Resources */,
 				6309EA4C201089CC0068AD3E /* StymieLtBTLight.ttf in Resources */,
+				63094EDE20125516006528CA /* STYMIEB.ttf in Resources */,
 				B32EEC9B1EB356DA00512FED /* Localizable.strings in Resources */,
 				E70CFD0A1F1F63ED00230C81 /* ErrorPopUp.storyboard in Resources */,
 				E70CFD341F1F647300230C81 /* SourceCodePopUp.storyboard in Resources */,
@@ -5200,10 +5214,12 @@
 				B32EEC7A1EB3549300512FED /* Pin.storyboard in Resources */,
 				E70CFD181F1F63FB00230C81 /* ConfirmPopUp.storyboard in Resources */,
 				E70CFD491F1F669D00230C81 /* QStoreSearchTableViewCell.xib in Resources */,
+				63094EDF20125516006528CA /* STYMIELI.ttf in Resources */,
 				E73D9C891ECB18A200A09CFE /* Splash.storyboard in Resources */,
 				E70CFD261F1F640E00230C81 /* SecurityPopup.storyboard in Resources */,
 				E73D9C851ECB0D0D00A09CFE /* NoInternetConnectionPopUp.storyboard in Resources */,
 				B3F76A941EDDB81600108DE9 /* Contracts in Resources */,
+				63094EE020125516006528CA /* STYMIEL.ttf in Resources */,
 				B3EA53221F473BDF002FD201 /* QStoreSearchTableViewCellLight.xib in Resources */,
 				E71271941EE9AC5B00A130A0 /* LoaderPopUp.storyboard in Resources */,
 				B3141E5D1F3099DA0095E3DF /* ContractNameTextFieldLight.xib in Resources */,
