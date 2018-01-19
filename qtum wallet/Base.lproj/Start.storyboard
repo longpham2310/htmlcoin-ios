@@ -1529,6 +1529,15 @@ using Touch ID</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="bO0-yP-Sv6">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cru-RY-bpz">
+                                <rect key="frame" x="143.5" y="156" width="88.5" height="22"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLw-eg-F56" customClass="DiagramView">
                                 <rect key="frame" x="0.0" y="453" width="375" height="214"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1551,14 +1560,14 @@ using Touch ID</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGd-gE-95m">
                                         <rect key="frame" x="67.5" y="597" width="240" height="50"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="D3e-7l-qsz"/>
                                             <constraint firstAttribute="height" constant="50" id="kxZ-DA-PvB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                         <state key="normal" title="CANCEL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1583,7 +1592,7 @@ using Touch ID</string>
                                             <action selector="confirmButtomPressed:" destination="WFf-U8-SMa" eventType="touchUpInside" id="9jl-KG-Nqc"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24M-fd-ZKo">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24M-fd-ZKo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hps-Pp-pYw">
@@ -1639,14 +1648,20 @@ using Touch ID</string>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lyq-b5-Yk8" firstAttribute="top" secondItem="HLw-eg-F56" secondAttribute="bottom" id="2mc-Bn-YLK"/>
+                            <constraint firstItem="cru-RY-bpz" firstAttribute="centerY" secondItem="gti-xe-oLv" secondAttribute="centerY" multiplier="1:2" id="2ns-En-Xjk"/>
+                            <constraint firstItem="bO0-yP-Sv6" firstAttribute="centerX" secondItem="gti-xe-oLv" secondAttribute="centerX" id="2wz-QF-cpk"/>
                             <constraint firstAttribute="trailing" secondItem="Gbm-lP-cby" secondAttribute="trailing" id="AWo-gf-Rnh"/>
                             <constraint firstItem="lyq-b5-Yk8" firstAttribute="top" secondItem="Gbm-lP-cby" secondAttribute="bottom" id="LIQ-24-haY"/>
                             <constraint firstItem="HLw-eg-F56" firstAttribute="leading" secondItem="gti-xe-oLv" secondAttribute="leading" id="LPc-kE-2hB"/>
+                            <constraint firstItem="bO0-yP-Sv6" firstAttribute="height" secondItem="gti-xe-oLv" secondAttribute="height" id="Lbb-oO-uef"/>
                             <constraint firstItem="Gbm-lP-cby" firstAttribute="top" secondItem="gti-xe-oLv" secondAttribute="top" id="QZp-EL-ypg"/>
+                            <constraint firstItem="bO0-yP-Sv6" firstAttribute="centerY" secondItem="gti-xe-oLv" secondAttribute="centerY" id="URi-J2-fSb"/>
+                            <constraint firstItem="cru-RY-bpz" firstAttribute="centerX" secondItem="gti-xe-oLv" secondAttribute="centerX" id="cXs-AC-ott"/>
                             <constraint firstItem="lyq-b5-Yk8" firstAttribute="top" secondItem="4Y0-s9-s0D" secondAttribute="bottom" id="e8A-9g-SgK"/>
                             <constraint firstItem="Gbm-lP-cby" firstAttribute="leading" secondItem="gti-xe-oLv" secondAttribute="leading" id="fVq-ml-p1H"/>
                             <constraint firstAttribute="trailing" secondItem="HLw-eg-F56" secondAttribute="trailing" id="lp8-N6-ZhT"/>
                             <constraint firstItem="4Y0-s9-s0D" firstAttribute="leading" secondItem="gti-xe-oLv" secondAttribute="leading" id="nHr-hk-6mJ"/>
+                            <constraint firstItem="bO0-yP-Sv6" firstAttribute="width" secondItem="gti-xe-oLv" secondAttribute="width" id="uGx-02-q43"/>
                             <constraint firstAttribute="trailing" secondItem="4Y0-s9-s0D" secondAttribute="trailing" id="wQD-QZ-7JR"/>
                         </constraints>
                     </view>
@@ -1668,7 +1683,7 @@ using Touch ID</string>
                         <viewControllerLayoutGuide type="top" id="W5G-si-12f"/>
                         <viewControllerLayoutGuide type="bottom" id="iuN-z8-UV1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="o5u-sH-bw5" customClass="GradientView">
+                    <view key="view" contentMode="scaleToFill" id="o5u-sH-bw5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1692,16 +1707,25 @@ using Touch ID</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKn-cg-mVj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-PA-Chl">
+                                        <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-rK-rg5">
+                                        <rect key="frame" x="142.5" y="156" width="90.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYF-ca-p4Y">
                                         <rect key="frame" x="67.5" y="597" width="240" height="50"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="137-Uz-Ojv"/>
                                             <constraint firstAttribute="width" constant="240" id="feU-s7-oWv"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                         <state key="normal" title="CANCEL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1731,7 +1755,7 @@ using Touch ID</string>
                                             <action selector="actionEnterPin:" destination="p3e-UP-9OR" eventType="touchUpInside" id="K2c-Yv-0bg"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BA-Ng-HJw">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BA-Ng-HJw">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNZ-pf-vut">
@@ -1771,13 +1795,19 @@ using Touch ID</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="9s3-sh-bXv"/>
+                                    <constraint firstItem="Faf-rK-rg5" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="9xT-do-xEM"/>
                                     <constraint firstAttribute="trailing" secondItem="0BA-Ng-HJw" secondAttribute="trailing" id="FU7-pf-3MN"/>
                                     <constraint firstItem="BYF-ca-p4Y" firstAttribute="top" secondItem="ag5-ot-VOL" secondAttribute="bottom" constant="11" id="Mw0-5H-Hw4"/>
+                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="height" secondItem="vKn-cg-mVj" secondAttribute="height" id="NUM-P8-aA6"/>
                                     <constraint firstItem="0BA-Ng-HJw" firstAttribute="leading" secondItem="vKn-cg-mVj" secondAttribute="leading" id="UeF-zi-ef9"/>
                                     <constraint firstItem="ag5-ot-VOL" firstAttribute="top" secondItem="WCd-XG-WCu" secondAttribute="bottom" constant="25" id="Ugp-lQ-UZu"/>
+                                    <constraint firstItem="Faf-rK-rg5" firstAttribute="centerY" secondItem="vKn-cg-mVj" secondAttribute="centerY" multiplier="1:2" id="XKn-Gy-baM"/>
                                     <constraint firstItem="WCd-XG-WCu" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="aug-GQ-Yz4"/>
                                     <constraint firstAttribute="trailing" secondItem="ag5-ot-VOL" secondAttribute="trailing" constant="40" id="j1V-2e-X6U"/>
                                     <constraint firstItem="ag5-ot-VOL" firstAttribute="leading" secondItem="vKn-cg-mVj" secondAttribute="leading" constant="40" id="jud-92-MDy"/>
+                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="centerY" secondItem="vKn-cg-mVj" secondAttribute="centerY" id="nCx-B8-p5H"/>
+                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="width" secondItem="vKn-cg-mVj" secondAttribute="width" id="o1E-pP-Y5j"/>
                                     <constraint firstItem="0BA-Ng-HJw" firstAttribute="top" secondItem="vKn-cg-mVj" secondAttribute="top" id="r3T-hR-3Ad"/>
                                     <constraint firstItem="BYF-ca-p4Y" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="tnL-M1-cek"/>
                                     <constraint firstAttribute="bottom" secondItem="BYF-ca-p4Y" secondAttribute="bottom" constant="20" id="yzc-E1-rVe"/>
