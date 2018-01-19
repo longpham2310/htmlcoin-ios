@@ -323,3 +323,6 @@
 
 /* No comment provided by engineer. */
 "Restored successfully" = "Restored successfully";
+
+/*HTMLCOIN*/
+"Create a first one or restore the previous wallet key" = "Create a first one or restore \n the previous wallet key.";

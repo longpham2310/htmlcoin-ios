@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -35,14 +36,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8SM-cA-OmP" customClass="AnimatedLogoImageVIew">
-                                <rect key="frame" x="130" y="128.5" width="115" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="kbt-Ih-QMx">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8SM-cA-OmP">
+                                <rect key="frame" x="130" y="117" width="115" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.18039215689999999" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="azK-au-FV0"/>
-                                    <constraint firstAttribute="height" constant="100" id="hnM-Pa-oNB"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTMLCOIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMt-bJ-Wpi">
                                 <rect key="frame" x="112.5" y="317" width="151.5" height="34"/>
@@ -68,16 +68,19 @@
                             <constraint firstItem="MOn-Nw-sfa" firstAttribute="centerX" secondItem="ntL-kj-BMj" secondAttribute="centerX" id="1mJ-dD-quG"/>
                             <constraint firstItem="7SS-Vs-Vdg" firstAttribute="top" secondItem="MOn-Nw-sfa" secondAttribute="bottom" constant="50" id="7xT-uC-Bu2"/>
                             <constraint firstItem="1h1-4I-eOb" firstAttribute="top" secondItem="YMt-bJ-Wpi" secondAttribute="bottom" constant="4" id="K2i-zr-Rer"/>
+                            <constraint firstItem="kbt-Ih-QMx" firstAttribute="centerY" secondItem="ntL-kj-BMj" secondAttribute="centerY" id="OJM-aV-EWd"/>
                             <constraint firstItem="YMt-bJ-Wpi" firstAttribute="centerY" secondItem="ntL-kj-BMj" secondAttribute="centerY" id="RHy-w0-qxE"/>
                             <constraint firstItem="YMt-bJ-Wpi" firstAttribute="centerX" secondItem="ntL-kj-BMj" secondAttribute="centerX" id="Uc0-8j-T02"/>
-                            <constraint firstItem="8SM-cA-OmP" firstAttribute="centerY" secondItem="ntL-kj-BMj" secondAttribute="centerY" constant="-155" id="Uja-eE-bMV"/>
+                            <constraint firstItem="8SM-cA-OmP" firstAttribute="centerY" secondItem="ntL-kj-BMj" secondAttribute="centerY" multiplier="1:2" id="Uja-eE-bMV"/>
+                            <constraint firstItem="kbt-Ih-QMx" firstAttribute="height" secondItem="ntL-kj-BMj" secondAttribute="height" id="Xf0-Q5-9nB"/>
+                            <constraint firstItem="kbt-Ih-QMx" firstAttribute="centerX" secondItem="ntL-kj-BMj" secondAttribute="centerX" id="YZt-a3-Pm5"/>
+                            <constraint firstItem="kbt-Ih-QMx" firstAttribute="width" secondItem="ntL-kj-BMj" secondAttribute="width" id="lk1-er-CIJ"/>
                             <constraint firstItem="8SM-cA-OmP" firstAttribute="centerX" secondItem="ntL-kj-BMj" secondAttribute="centerX" id="lyR-iF-3m7"/>
                             <constraint firstItem="1h1-4I-eOb" firstAttribute="centerX" secondItem="YMt-bJ-Wpi" secondAttribute="centerX" id="sjy-K2-hz9"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="logoImageView" destination="8SM-cA-OmP" id="h09-zD-yBw"/>
                         <outlet property="textLabel" destination="MOn-Nw-sfa" id="HKY-ch-BL7"/>
                         <outlet property="titleLabel" destination="YMt-bJ-Wpi" id="z00-1Z-0dr"/>
                     </connections>
@@ -186,5 +189,6 @@
     </scenes>
     <resources>
         <image name="logo" width="115" height="100"/>
+        <image name="splasscreen" width="375" height="667"/>
     </resources>
 </document>

@@ -8,11 +8,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="StymieLtBTBold.ttf">
             <string>StymieBT-Bold</string>
+        </array>
+        <array key="StymieLtBTLight.ttf">
+            <string>StymieBT-Light</string>
         </array>
         <array key="euclidflexmedium.ttf">
             <string>euclidflexmedium</string>
@@ -49,13 +53,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="hPM-ST-poo">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z45-n1-5DC">
-                                <rect key="frame" x="130" y="66" width="115" height="100"/>
+                                <rect key="frame" x="130" y="117" width="115" height="100"/>
                                 <color key="tintColor" red="0.1803921568627451" green="0.60392156862745094" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="496-xL-He9"/>
-                                    <constraint firstAttribute="width" constant="115" id="rd9-IJ-xxe"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY1-s1-NTB">
                                 <rect key="frame" x="112.5" y="547" width="150" height="50"/>
@@ -87,19 +90,16 @@
                                     <action selector="createNewButtonWasPressed:" destination="dBO-v0-fiZ" eventType="touchUpInside" id="kpZ-k2-KCT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a wallet or restore a previous wallet key." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-nQ-YF3">
-                                <rect key="frame" x="87.5" y="260.5" width="200" height="38.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="CCK-vf-XP6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a wallet or restore a previous wallet key." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-nQ-YF3">
+                                <rect key="frame" x="-56" y="369" width="488" height="29"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Light" family="Stymie Lt BT" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don’t have a wallet yet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbP-bR-TcN">
-                                <rect key="frame" x="20" y="216" width="335" height="19.5"/>
-                                <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="15"/>
-                                <color key="textColor" red="0.18039215689999999" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="36" y="299" width="303.5" height="29"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ1-JG-7ln">
@@ -118,28 +118,30 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.21176470588235294" green="0.61176470588235299" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z45-n1-5DC" firstAttribute="top" secondItem="7Yg-AK-IjQ" secondAttribute="top" constant="66" id="7xn-Cy-AyR"/>
-                            <constraint firstAttribute="trailing" secondItem="CbP-bR-TcN" secondAttribute="trailing" constant="20" id="EAB-4K-SQY"/>
+                            <constraint firstItem="hPM-ST-poo" firstAttribute="centerY" secondItem="7Yg-AK-IjQ" secondAttribute="centerY" id="DTj-7Z-WZ4"/>
                             <constraint firstItem="ApH-nQ-YF3" firstAttribute="centerX" secondItem="7Yg-AK-IjQ" secondAttribute="centerX" id="Hty-Xz-ONL"/>
                             <constraint firstItem="FKx-bF-rYK" firstAttribute="top" secondItem="bZ1-JG-7ln" secondAttribute="bottom" constant="11" id="LzB-Xh-ruH"/>
+                            <constraint firstItem="hPM-ST-poo" firstAttribute="height" secondItem="7Yg-AK-IjQ" secondAttribute="height" id="MRq-0d-r5p"/>
                             <constraint firstItem="CbP-bR-TcN" firstAttribute="centerX" secondItem="7Yg-AK-IjQ" secondAttribute="centerX" id="NPy-fo-qfV"/>
                             <constraint firstItem="Z45-n1-5DC" firstAttribute="centerX" secondItem="7Yg-AK-IjQ" secondAttribute="centerX" id="OZ4-oP-oOd"/>
+                            <constraint firstItem="Z45-n1-5DC" firstAttribute="centerY" secondItem="7Yg-AK-IjQ" secondAttribute="centerY" multiplier="1:2" id="QGi-OW-Jca"/>
                             <constraint firstItem="KY1-s1-NTB" firstAttribute="centerX" secondItem="7Yg-AK-IjQ" secondAttribute="centerX" id="Sjw-YK-sSR"/>
+                            <constraint firstItem="ApH-nQ-YF3" firstAttribute="centerY" secondItem="7Yg-AK-IjQ" secondAttribute="centerY" constant="50" id="ZIb-Z9-cSB"/>
                             <constraint firstItem="KY1-s1-NTB" firstAttribute="top" secondItem="FKx-bF-rYK" secondAttribute="bottom" constant="11" id="bUz-cN-UVa"/>
                             <constraint firstItem="FKx-bF-rYK" firstAttribute="centerX" secondItem="7Yg-AK-IjQ" secondAttribute="centerX" id="bZs-h5-l3G"/>
-                            <constraint firstItem="ApH-nQ-YF3" firstAttribute="top" secondItem="CbP-bR-TcN" secondAttribute="bottom" constant="25" id="ecV-co-xCY"/>
-                            <constraint firstItem="CbP-bR-TcN" firstAttribute="top" secondItem="Z45-n1-5DC" secondAttribute="bottom" constant="50" id="gYb-JX-N3P"/>
+                            <constraint firstItem="CbP-bR-TcN" firstAttribute="centerY" secondItem="7Yg-AK-IjQ" secondAttribute="centerY" constant="-20" id="cea-P6-ArA"/>
+                            <constraint firstItem="hPM-ST-poo" firstAttribute="width" secondItem="7Yg-AK-IjQ" secondAttribute="width" id="dx4-zN-cv5"/>
                             <constraint firstItem="8FR-gb-fnp" firstAttribute="top" secondItem="KY1-s1-NTB" secondAttribute="bottom" constant="70" id="iqd-Xv-QcW"/>
                             <constraint firstItem="bZ1-JG-7ln" firstAttribute="centerX" secondItem="7Yg-AK-IjQ" secondAttribute="centerX" id="j1O-3H-2Sm"/>
-                            <constraint firstItem="CbP-bR-TcN" firstAttribute="leading" secondItem="7Yg-AK-IjQ" secondAttribute="leading" constant="20" id="peL-YT-TtD"/>
+                            <constraint firstItem="hPM-ST-poo" firstAttribute="centerX" secondItem="7Yg-AK-IjQ" secondAttribute="centerX" id="jZE-7C-R85"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hoo-UK-eV9"/>
                     <connections>
                         <outlet property="bottomButtonsOffset" destination="iqd-Xv-QcW" id="DIa-l2-G81"/>
                         <outlet property="createButton" destination="FKx-bF-rYK" id="VLN-Gu-fpx"/>
+                        <outlet property="introductionLabel" destination="ApH-nQ-YF3" id="AZk-zT-Otw"/>
                         <outlet property="invitationTextLabel" destination="CbP-bR-TcN" id="n79-Iu-Fze"/>
                         <outlet property="loginButton" destination="bZ1-JG-7ln" id="KDS-sr-24E"/>
                         <outlet property="restoreButton" destination="KY1-s1-NTB" id="h8M-P6-WXv"/>
@@ -864,7 +866,7 @@
                                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Veq-XE-LK4">
-                                                        <rect key="frame" x="138" y="11" width="100" height="23"/>
+                                                        <rect key="frame" x="137.5" y="11" width="100" height="23"/>
                                                         <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -995,7 +997,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-aK-iup">
-                                <rect key="frame" x="120" y="257" width="136.5" height="38.5"/>
+                                <rect key="frame" x="119.5" y="257" width="136.5" height="38.5"/>
                                 <string key="text">Login to QTUM
 using Touch ID</string>
                                 <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="16"/>
@@ -2186,6 +2188,7 @@ using Touch ID</string>
         <image name="logo" width="115" height="100"/>
         <image name="logo_white" width="115" height="100"/>
         <image name="share" width="20" height="21"/>
+        <image name="splasscreen" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hKQ-pH-Gbi"/>
