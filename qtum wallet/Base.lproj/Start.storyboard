@@ -1533,8 +1533,8 @@ using Touch ID</string>
                                 <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cru-RY-bpz">
-                                <rect key="frame" x="143.5" y="156" width="88.5" height="22"/>
-                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
+                                <rect key="frame" x="129" y="152.5" width="118" height="29"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1687,6 +1687,9 @@ using Touch ID</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-PA-Chl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPH-BT-E8I" customClass="DiagramView">
                                 <rect key="frame" x="0.0" y="453" width="375" height="214"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1707,12 +1710,9 @@ using Touch ID</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKn-cg-mVj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-PA-Chl">
-                                        <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-rK-rg5">
-                                        <rect key="frame" x="142.5" y="156" width="90.5" height="22"/>
-                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
+                                        <rect key="frame" x="127.5" y="153" width="121" height="29"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1721,7 +1721,7 @@ using Touch ID</string>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="137-Uz-Ojv"/>
-                                            <constraint firstAttribute="width" constant="240" id="feU-s7-oWv"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="feU-s7-oWv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                         <state key="normal" title="CANCEL">
@@ -1786,7 +1786,7 @@ using Touch ID</string>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCd-XG-WCu" customClass="PasswordView">
                                         <rect key="frame" x="67" y="411" width="240" height="100"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="HI3-pJ-NbH"/>
                                             <constraint firstAttribute="width" constant="240" id="rEU-1N-zYk"/>
@@ -1795,35 +1795,35 @@ using Touch ID</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="9s3-sh-bXv"/>
                                     <constraint firstItem="Faf-rK-rg5" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="9xT-do-xEM"/>
                                     <constraint firstAttribute="trailing" secondItem="0BA-Ng-HJw" secondAttribute="trailing" id="FU7-pf-3MN"/>
                                     <constraint firstItem="BYF-ca-p4Y" firstAttribute="top" secondItem="ag5-ot-VOL" secondAttribute="bottom" constant="11" id="Mw0-5H-Hw4"/>
-                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="height" secondItem="vKn-cg-mVj" secondAttribute="height" id="NUM-P8-aA6"/>
                                     <constraint firstItem="0BA-Ng-HJw" firstAttribute="leading" secondItem="vKn-cg-mVj" secondAttribute="leading" id="UeF-zi-ef9"/>
                                     <constraint firstItem="ag5-ot-VOL" firstAttribute="top" secondItem="WCd-XG-WCu" secondAttribute="bottom" constant="25" id="Ugp-lQ-UZu"/>
                                     <constraint firstItem="Faf-rK-rg5" firstAttribute="centerY" secondItem="vKn-cg-mVj" secondAttribute="centerY" multiplier="1:2" id="XKn-Gy-baM"/>
                                     <constraint firstItem="WCd-XG-WCu" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="aug-GQ-Yz4"/>
                                     <constraint firstAttribute="trailing" secondItem="ag5-ot-VOL" secondAttribute="trailing" constant="40" id="j1V-2e-X6U"/>
                                     <constraint firstItem="ag5-ot-VOL" firstAttribute="leading" secondItem="vKn-cg-mVj" secondAttribute="leading" constant="40" id="jud-92-MDy"/>
-                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="centerY" secondItem="vKn-cg-mVj" secondAttribute="centerY" id="nCx-B8-p5H"/>
-                                    <constraint firstItem="Pvp-PA-Chl" firstAttribute="width" secondItem="vKn-cg-mVj" secondAttribute="width" id="o1E-pP-Y5j"/>
                                     <constraint firstItem="0BA-Ng-HJw" firstAttribute="top" secondItem="vKn-cg-mVj" secondAttribute="top" id="r3T-hR-3Ad"/>
                                     <constraint firstItem="BYF-ca-p4Y" firstAttribute="centerX" secondItem="vKn-cg-mVj" secondAttribute="centerX" id="tnL-M1-cek"/>
                                     <constraint firstAttribute="bottom" secondItem="BYF-ca-p4Y" secondAttribute="bottom" constant="20" id="yzc-E1-rVe"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UPH-BT-E8I" secondAttribute="trailing" id="5R6-yI-oBS"/>
                             <constraint firstItem="iuN-z8-UV1" firstAttribute="top" secondItem="UPH-BT-E8I" secondAttribute="bottom" id="89o-Mx-e5v"/>
                             <constraint firstItem="iuN-z8-UV1" firstAttribute="top" secondItem="VjH-aa-Yle" secondAttribute="bottom" id="9JG-32-uAG"/>
+                            <constraint firstItem="Pvp-PA-Chl" firstAttribute="height" secondItem="o5u-sH-bw5" secondAttribute="height" id="BpM-xo-mvb"/>
                             <constraint firstItem="vKn-cg-mVj" firstAttribute="leading" secondItem="o5u-sH-bw5" secondAttribute="leading" id="JId-oA-5fb"/>
+                            <constraint firstItem="Pvp-PA-Chl" firstAttribute="centerY" secondItem="o5u-sH-bw5" secondAttribute="centerY" id="M5t-tg-eMz"/>
                             <constraint firstItem="vKn-cg-mVj" firstAttribute="top" secondItem="o5u-sH-bw5" secondAttribute="top" id="PxZ-Wf-4UT"/>
+                            <constraint firstItem="Pvp-PA-Chl" firstAttribute="width" secondItem="o5u-sH-bw5" secondAttribute="width" id="Rds-Vq-le7"/>
                             <constraint firstAttribute="trailing" secondItem="vKn-cg-mVj" secondAttribute="trailing" id="aqN-uS-wo4"/>
                             <constraint firstItem="iuN-z8-UV1" firstAttribute="top" secondItem="vKn-cg-mVj" secondAttribute="bottom" id="bpc-pO-jIu"/>
                             <constraint firstItem="UPH-BT-E8I" firstAttribute="leading" secondItem="o5u-sH-bw5" secondAttribute="leading" id="hxR-DX-HiK"/>
+                            <constraint firstItem="Pvp-PA-Chl" firstAttribute="centerX" secondItem="o5u-sH-bw5" secondAttribute="centerX" id="mLE-gV-idY"/>
                             <constraint firstAttribute="trailing" secondItem="VjH-aa-Yle" secondAttribute="trailing" id="mNg-8F-pG9"/>
                             <constraint firstItem="VjH-aa-Yle" firstAttribute="leading" secondItem="o5u-sH-bw5" secondAttribute="leading" id="n5H-VP-j0Y"/>
                         </constraints>
@@ -1975,17 +1975,23 @@ using Touch ID</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splasscreen" translatesAutoresizingMaskIntoConstraints="NO" id="w95-eC-3HA">
                                 <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsc-m9-MAI">
+                                <rect key="frame" x="112" y="96.5" width="151" height="29"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-4H-Ldl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="145.5" width="375" height="521.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ta-5G-eyq">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ta-5G-eyq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMQ-Xs-d3m">
                                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-YX-siU">
-                                                        <rect key="frame" x="134.5" y="11.5" width="107" height="21"/>
+                                                        <rect key="frame" x="131.5" y="11" width="113" height="22"/>
                                                         <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -2008,7 +2014,7 @@ using Touch ID</string>
                                         </constraints>
                                     </view>
                                     <textView multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="xfL-rC-vTe" customClass="InputTextViewLight">
-                                        <rect key="frame" x="27" y="94" width="321" height="180"/>
+                                        <rect key="frame" x="27" y="20" width="321" height="180"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.18823529410000001" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -2027,7 +2033,7 @@ using Touch ID</string>
                                         </connections>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-VJ-Sxi">
-                                        <rect key="frame" x="197.5" y="617" width="130" height="30"/>
+                                        <rect key="frame" x="197.5" y="471.5" width="130" height="30"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
                                         <state key="normal" title="Import">
@@ -2043,7 +2049,7 @@ using Touch ID</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPs-Dw-vyP">
-                                        <rect key="frame" x="47.5" y="617" width="130" height="30"/>
+                                        <rect key="frame" x="47.5" y="471.5" width="130" height="30"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7Nr-1a-8k0"/>
@@ -2069,7 +2075,7 @@ using Touch ID</string>
                                 <constraints>
                                     <constraint firstItem="HPs-Dw-vyP" firstAttribute="centerX" secondItem="gDL-4H-Ldl" secondAttribute="centerX" constant="-75" id="5P2-PD-pg5"/>
                                     <constraint firstItem="xfL-rC-vTe" firstAttribute="centerX" secondItem="gDL-4H-Ldl" secondAttribute="centerX" id="Bm1-6U-PmA"/>
-                                    <constraint firstItem="xfL-rC-vTe" firstAttribute="top" secondItem="JMQ-Xs-d3m" secondAttribute="bottom" constant="30" id="NFr-K3-OBJ"/>
+                                    <constraint firstItem="xfL-rC-vTe" firstAttribute="top" secondItem="gDL-4H-Ldl" secondAttribute="top" constant="20" id="ECK-sm-emp"/>
                                     <constraint firstAttribute="bottom" secondItem="HPs-Dw-vyP" secondAttribute="bottom" constant="20" id="NiW-Ve-Fil"/>
                                     <constraint firstItem="NgY-VJ-Sxi" firstAttribute="leading" secondItem="HPs-Dw-vyP" secondAttribute="trailing" constant="20" id="PyZ-v8-g5Y"/>
                                     <constraint firstItem="NgY-VJ-Sxi" firstAttribute="centerY" secondItem="HPs-Dw-vyP" secondAttribute="centerY" id="XjB-GV-VE4"/>
@@ -2089,9 +2095,11 @@ using Touch ID</string>
                             <constraint firstItem="gDL-4H-Ldl" firstAttribute="leading" secondItem="0yv-IZ-G11" secondAttribute="leading" id="FO6-IE-oh9"/>
                             <constraint firstAttribute="trailing" secondItem="gDL-4H-Ldl" secondAttribute="trailing" id="ICx-VV-Hxl"/>
                             <constraint firstItem="w95-eC-3HA" firstAttribute="centerY" secondItem="0yv-IZ-G11" secondAttribute="centerY" id="SYw-tS-ngG"/>
+                            <constraint firstItem="Zsc-m9-MAI" firstAttribute="centerX" secondItem="0yv-IZ-G11" secondAttribute="centerX" id="VqN-Cs-C6e"/>
                             <constraint firstItem="w95-eC-3HA" firstAttribute="centerX" secondItem="0yv-IZ-G11" secondAttribute="centerX" id="chR-y8-1b0"/>
-                            <constraint firstItem="gDL-4H-Ldl" firstAttribute="top" secondItem="0yv-IZ-G11" secondAttribute="top" id="lcn-6c-Ckj"/>
+                            <constraint firstItem="Zsc-m9-MAI" firstAttribute="centerY" secondItem="0yv-IZ-G11" secondAttribute="centerY" multiplier="1:3" id="j8v-Mn-XxE"/>
                             <constraint firstItem="w95-eC-3HA" firstAttribute="height" secondItem="0yv-IZ-G11" secondAttribute="height" id="ljX-1h-jSK"/>
+                            <constraint firstItem="gDL-4H-Ldl" firstAttribute="top" secondItem="Zsc-m9-MAI" secondAttribute="bottom" constant="20" id="rbM-Fj-YEa"/>
                             <constraint firstItem="w95-eC-3HA" firstAttribute="width" secondItem="0yv-IZ-G11" secondAttribute="width" id="xRK-S6-NBq"/>
                         </constraints>
                     </view>
@@ -2129,7 +2137,7 @@ using Touch ID</string>
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy Passphrase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-lo-gnX">
-                                                <rect key="frame" x="116" y="11" width="145" height="22"/>
+                                                <rect key="frame" x="115" y="11" width="145" height="22"/>
                                                 <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
