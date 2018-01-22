@@ -18,6 +18,7 @@
 		6309EA4F20108DA00068AD3E /* UIColor+fromHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309EA4E20108DA00068AD3E /* UIColor+fromHex.m */; };
 		6309EA542010A7490068AD3E /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309EA532010A7480068AD3E /* UIView+RoundedCorner.m */; };
 		6344181720105036000262AC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344181620105036000262AC /* UIColor+Extension.swift */; };
+		63D032362015D8E200470705 /* ContentInsetLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D032352015D8E200470705 /* ContentInsetLabel.m */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
 		B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D651F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m */; };
@@ -713,6 +714,8 @@
 		6309EA532010A7480068AD3E /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
 		6344181520105036000262AC /* qtum wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qtum wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		6344181620105036000262AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		63D032342015D8E200470705 /* ContentInsetLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentInsetLabel.h; sourceTree = "<group>"; };
+		63D032352015D8E200470705 /* ContentInsetLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentInsetLabel.m; sourceTree = "<group>"; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
 		B3014D5D1F29FD7C007EAE7A /* WatchContractOutputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutputDelegate.h; sourceTree = "<group>"; };
 		B3014D5E1F2A1B8D007EAE7A /* WatchContractViewControllerDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractViewControllerDark.h; sourceTree = "<group>"; };
@@ -2091,6 +2094,15 @@
 				6344181520105036000262AC /* qtum wallet-Bridging-Header.h */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63D032332015D8BB00470705 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				63D032342015D8E200470705 /* ContentInsetLabel.h */,
+				63D032352015D8E200470705 /* ContentInsetLabel.m */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		94DECCBC55E0AE7D7EF532E6 /* Pods */ = {
@@ -4862,6 +4874,7 @@
 		E7FD36601DC73B7900748177 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				63D032332015D8BB00470705 /* Custom Views */,
 				634418142010501C000262AC /* Helpers */,
 				B3F5797D1F0D292900A13571 /* TabBarOutput */,
 				E7FD363E1DC4D07E00748177 /* AppDelegate.h */,
@@ -5890,6 +5903,7 @@
 				B365058C1F14B12E00521603 /* WalletNameViewControllerLight.m in Sources */,
 				B3DC9D181F31BF2B006B2E07 /* AddressControlCellDark.m in Sources */,
 				B36EBC3B1F2F1B5A00F4E2F2 /* ErrorPopUpViewControllerLight.m in Sources */,
+				63D032362015D8E200470705 /* ContentInsetLabel.m in Sources */,
 				B3DB3E511F2F7A5200AA408F /* CheckboxButtonLight.m in Sources */,
 				B39220641F99D9A800E8F7D9 /* NewsDetailViewControllerDark.m in Sources */,
 				E798463D1F0D28A3002A516A /* WalletTableSourceLight.m in Sources */,

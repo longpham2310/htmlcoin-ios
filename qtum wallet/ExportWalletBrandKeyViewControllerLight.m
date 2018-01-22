@@ -23,6 +23,9 @@
     
     [_leftButton roundedWithCorner:_leftButton.bounds.size.height/2];
     [_rightButton roundedWithCorner:_rightButton.bounds.size.height/2];
+    [self.leftButton setTitle:NSLocalizedString(@"Skip", @"") forState: UIControlStateNormal];
+    
+    [self.rightButton setTitle:NSLocalizedString(@"Copy", @"") forState: UIControlStateNormal];
 }
 
 @end
