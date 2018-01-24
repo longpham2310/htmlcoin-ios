@@ -25,8 +25,8 @@
 -(void)configTabBar {
     
     self.tabBar.translucent = NO;
-    self.tabBar.tintColor =  lightDarkGrayColor();
-    self.tabBar.barTintColor = lightBlueColor();
+    self.tabBar.tintColor =  [UIColor blackColor];//lightDarkGrayColor();
+    self.tabBar.barTintColor = [UIColor colorWithRed:245.0/255 green:245.0/255 blue:245.0/255 alpha:1];//lightBlueColor();
 }
 
 -(void)configTabsWithNews:(UIViewController*)newsController
