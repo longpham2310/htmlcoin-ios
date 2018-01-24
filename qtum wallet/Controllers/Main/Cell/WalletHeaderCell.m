@@ -22,7 +22,7 @@
 }
 
 - (void)setData:(Wallet *)wallet{
-    self.adressLabel.text = ([wallet isKindOfClass:[Contract class]]) ? NSLocalizedString(@"Contract Address", "") : NSLocalizedString(@"QTUM Address", "");
+    self.adressLabel.text = ([wallet isKindOfClass:[Contract class]]) ? NSLocalizedString(@"Contract Address", "") : NSLocalizedString(@"HTMLCOIN Address", "");
     self.adressValueLabel.text = wallet.mainAddress;
     self.valueLabel.text = [NSString stringWithFormat:@"%@",[wallet.balance roundedNumberWithScale:3]];
     self.unconfirmedValue.text = [NSString stringWithFormat:@"%@",[wallet.unconfirmedBalance roundedNumberWithScale:3]];

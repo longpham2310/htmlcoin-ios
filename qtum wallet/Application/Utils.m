@@ -73,7 +73,9 @@ UIColor *lightDarkBlueColor()
 
 UIColor *lightDarkBlueColorForGradient()
 {
-    return [UIColor colorWithRed:63/255.0f green:56/255.0f blue:196/255.0f alpha:1.0f];
+    return  [UIColor colorWithRed:55/255.0f green:154/255.0f blue:211/255.0f alpha:1.0f];
+
+//    return [UIColor colorWithRed:63/255.0f green:56/255.0f blue:196/255.0f alpha:1.0f];
 }
 
 UIColor *lightBlackColor()
