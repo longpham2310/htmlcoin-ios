@@ -1106,8 +1106,8 @@ using Touch ID</string>
                                 <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-6c-Y2p">
-                                <rect key="frame" x="119" y="96.5" width="136" height="29"/>
-                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
+                                <rect key="frame" x="131" y="99.5" width="113" height="24"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1548,8 +1548,8 @@ using Touch ID</string>
                                 <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cru-RY-bpz">
-                                <rect key="frame" x="129" y="152.5" width="118" height="29"/>
-                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
+                                <rect key="frame" x="139" y="155.5" width="98.5" height="24"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1726,8 +1726,8 @@ using Touch ID</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-rK-rg5">
-                                        <rect key="frame" x="127.5" y="153" width="121" height="29"/>
-                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
+                                        <rect key="frame" x="138" y="155" width="100.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1991,13 +1991,13 @@ using Touch ID</string>
                                 <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsc-m9-MAI">
-                                <rect key="frame" x="112" y="96.5" width="151" height="29"/>
-                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="24"/>
+                                <rect key="frame" x="125.5" y="99.5" width="125.5" height="24"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-4H-Ldl">
-                                <rect key="frame" x="0.0" y="145.5" width="375" height="521.5"/>
+                                <rect key="frame" x="0.0" y="143.5" width="375" height="523.5"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ta-5G-eyq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
@@ -2048,7 +2048,7 @@ using Touch ID</string>
                                         </connections>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-VJ-Sxi">
-                                        <rect key="frame" x="197.5" y="471.5" width="130" height="30"/>
+                                        <rect key="frame" x="197.5" y="473.5" width="130" height="30"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
                                         <state key="normal" title="Import">
@@ -2064,7 +2064,7 @@ using Touch ID</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPs-Dw-vyP">
-                                        <rect key="frame" x="47.5" y="471.5" width="130" height="30"/>
+                                        <rect key="frame" x="47.5" y="473.5" width="130" height="30"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7Nr-1a-8k0"/>
