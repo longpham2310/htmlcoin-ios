@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -1156,13 +1157,19 @@
                         <viewControllerLayoutGuide type="top" id="6sG-yg-her"/>
                         <viewControllerLayoutGuide type="bottom" id="b8f-PC-ahe"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZMS-PD-h3m">
+                    <view key="view" contentMode="scaleToFill" id="ZMS-PD-h3m" customClass="GradientView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M45-TA-3gb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Old PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-AN-tU6">
+                                        <rect key="frame" x="130.5" y="100" width="115.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNO-zy-654" customClass="PasswordView">
                                         <rect key="frame" x="67" y="170" width="240" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1171,22 +1178,16 @@
                                             <constraint firstAttribute="width" constant="240" id="kSk-cb-5UR"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jq6-eK-ofj">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jq6-eK-ofj">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.22352941179999999" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="Gvz-X5-dfm"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-rM-wSo">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-rM-wSo">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Old PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-AN-tU6">
-                                                <rect key="frame" x="137.5" y="13" width="101" height="17"/>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKz-8G-IGE">
                                                 <rect key="frame" x="3" y="0.0" width="30" height="44"/>
                                                 <constraints>
@@ -1204,19 +1205,18 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.24705882352941178" green="0.22352941176470587" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="cMu-AN-tU6" firstAttribute="centerX" secondItem="g4R-rM-wSo" secondAttribute="centerX" id="2FI-fG-ijP"/>
                                             <constraint firstItem="qKz-8G-IGE" firstAttribute="top" secondItem="g4R-rM-wSo" secondAttribute="top" id="MTd-Aj-L6c"/>
                                             <constraint firstAttribute="height" constant="44" id="YCN-ui-pYX"/>
-                                            <constraint firstItem="cMu-AN-tU6" firstAttribute="centerY" secondItem="g4R-rM-wSo" secondAttribute="centerY" id="dOz-nB-AGy"/>
                                             <constraint firstAttribute="bottom" secondItem="qKz-8G-IGE" secondAttribute="bottom" id="il8-x1-cjb"/>
                                             <constraint firstItem="qKz-8G-IGE" firstAttribute="leading" secondItem="g4R-rM-wSo" secondAttribute="leading" constant="3" id="ksg-8Y-HEb"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="hNO-zy-654" firstAttribute="centerX" secondItem="M45-TA-3gb" secondAttribute="centerX" id="5Dx-Yd-grd"/>
                                     <constraint firstAttribute="trailing" secondItem="Jq6-eK-ofj" secondAttribute="trailing" id="6Bc-Df-ljk"/>
+                                    <constraint firstItem="cMu-AN-tU6" firstAttribute="centerX" secondItem="M45-TA-3gb" secondAttribute="centerX" id="IIa-54-92W"/>
                                     <constraint firstItem="Jq6-eK-ofj" firstAttribute="top" secondItem="M45-TA-3gb" secondAttribute="top" id="MSM-8r-XMF"/>
                                     <constraint firstItem="g4R-rM-wSo" firstAttribute="leading" secondItem="M45-TA-3gb" secondAttribute="leading" id="bqd-CD-SUM"/>
                                     <constraint firstAttribute="trailing" secondItem="g4R-rM-wSo" secondAttribute="trailing" id="d1C-WH-DBg"/>
@@ -1228,14 +1228,14 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUc-hH-xZa">
                                 <rect key="frame" x="67.5" y="588" width="240" height="50"/>
-                                <color key="backgroundColor" red="0.21176470589999999" green="0.72549019609999998" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hOm-dp-tGh"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="omd-W2-43a"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="18"/>
                                 <state key="normal" title="CANCEL">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1252,6 +1252,7 @@
                             <constraint firstItem="M45-TA-3gb" firstAttribute="leading" secondItem="ZMS-PD-h3m" secondAttribute="leading" id="1mk-0B-m4g"/>
                             <constraint firstItem="aUc-hH-xZa" firstAttribute="centerX" secondItem="ZMS-PD-h3m" secondAttribute="centerX" id="RwS-xe-3lV"/>
                             <constraint firstAttribute="trailing" secondItem="M45-TA-3gb" secondAttribute="trailing" id="SX3-yo-uhM"/>
+                            <constraint firstItem="cMu-AN-tU6" firstAttribute="centerY" secondItem="ZMS-PD-h3m" secondAttribute="centerY" multiplier="1:3" id="Ybs-j7-T91"/>
                             <constraint firstItem="M45-TA-3gb" firstAttribute="top" secondItem="ZMS-PD-h3m" secondAttribute="top" id="hty-p1-p9h"/>
                             <constraint firstItem="b8f-PC-ahe" firstAttribute="top" secondItem="aUc-hH-xZa" secondAttribute="bottom" constant="29" id="ph5-DS-vI9"/>
                         </constraints>
