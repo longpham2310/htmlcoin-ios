@@ -131,7 +131,7 @@
 #pragma mark UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 48;
+    return 64;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -183,7 +183,7 @@
         case 0:
         case 1:
         case 2:
-            return 13;
+            return 0;
             break;
         default:
             return 0;

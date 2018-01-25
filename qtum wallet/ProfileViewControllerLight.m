@@ -10,10 +10,18 @@
 #import "ProfileTableViewCell.h"
 
 @interface ProfileViewControllerLight ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation ProfileViewControllerLight
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    _tableView.tableFooterView = [UIView new];
+    _tableView.tableHeaderView = [UIView new];
+}
 
 #pragma mark - Setters/Getters
 

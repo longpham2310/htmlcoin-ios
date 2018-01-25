@@ -75,7 +75,7 @@
 #pragma mark - Private Methods
 
 - (void)createAmountString{
-    self.amountString  = [NSString stringWithFormat:@"%0.3f %@", [self.amount floatValue], NSLocalizedString(@"QTUM", nil)];
+    self.amountString  = [NSString stringWithFormat:@"%0.3f %@", [self.amount floatValue], NSLocalizedString(@"htmlcoin", nil)];
 }
 
 - (void)createDateString {
