@@ -18,7 +18,7 @@
         <array key="STYMIEB.ttf">
             <string>StymieBT-Bold</string>
         </array>
-        <array key="StymieLtBTLight.ttf">
+        <array key="STYMIEL.ttf">
             <string>StymieBT-Light</string>
         </array>
         <array key="euclidflexmedium.ttf">
@@ -708,8 +708,8 @@
                                                     <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow_light" translatesAutoresizingMaskIntoConstraints="NO" id="MfQ-wf-sBt">
-                                                    <rect key="frame" x="354" y="17" width="6" height="11"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow_light" translatesAutoresizingMaskIntoConstraints="NO" id="MfQ-wf-sBt">
+                                                    <rect key="frame" x="338" y="11.5" width="22" height="22"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -755,7 +755,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow_light" translatesAutoresizingMaskIntoConstraints="NO" id="1JM-PT-GZn">
-                                                    <rect key="frame" x="354" y="17" width="6" height="11"/>
+                                                    <rect key="frame" x="338" y="11.5" width="22" height="22"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -1642,7 +1642,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgd-JG-wMS">
-                                <rect key="frame" x="30" y="427" width="315" height="38.5"/>
+                                <rect key="frame" x="30" y="419.5" width="315" height="38.5"/>
                                 <string key="text">© 2017 HTMLCOIN
 Version</string>
                                 <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="16"/>
@@ -1650,7 +1650,7 @@ Version</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-Su-6fF">
-                                <rect key="frame" x="129.5" y="276" width="115" height="115"/>
+                                <rect key="frame" x="129.5" y="283.5" width="115" height="100"/>
                                 <color key="tintColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
@@ -1776,7 +1776,7 @@ Skynet Testnet Version</string>
     <resources>
         <image name="back" width="11" height="17"/>
         <image name="deisclosure_dark" width="5" height="9"/>
-        <image name="ic-arrow_light" width="6" height="11"/>
+        <image name="ic-arrow_light" width="22" height="22"/>
         <image name="ic-check" width="18" height="12"/>
         <image name="imageView:87O-Cp-J1J:image" width="250" height="68">
             <mutableData key="keyedArchiveRepresentation">
@@ -3044,7 +3044,7 @@ AAElzwABJdwAASXhAAEl6QABJewAASXxAAEl+QABJfwAASYOAAEmEQABJhYAAAAAAAAEAQAAAAAAAABZ
 AAAAAAAAAAAAAAAAAAEmGA
 </mutableData>
         </image>
-        <image name="logo" width="115" height="115"/>
+        <image name="logo" width="115" height="100"/>
         <image name="share" width="20" height="21"/>
     </resources>
 </document>
