@@ -3789,10 +3789,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJ4-QN-zdd">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="44"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="kUx-dh-BGT"/>
+                                                    <constraint firstAttribute="width" constant="40" id="kUx-dh-BGT"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="back"/>
@@ -3823,11 +3823,11 @@
                                     <constraint firstItem="wRv-8w-eY0" firstAttribute="leading" secondItem="hMQ-oK-QIQ" secondAttribute="leading" id="hVK-bf-vpz"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQH-Ag-Xh1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQH-Ag-Xh1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.93725490199999995" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="ljU-lh-9HY">
                                     <rect key="frame" x="0.0" y="83" width="375" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3842,18 +3842,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp6-MJ-VQb" customClass="CopyLabel">
-                                                    <rect key="frame" x="15" y="29.5" width="46" height="14"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
-                                                    <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="15" y="26" width="60" height="22"/>
+                                                    <fontDescription key="fontDescription" name="StymieBT-Light" family="Stymie" pointSize="18"/>
+                                                    <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QTUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0l-UM-47a">
-                                                    <rect key="frame" x="326.5" y="14.5" width="33.5" height="12"/>
+                                                    <rect key="frame" x="323.5" y="13.5" width="36.5" height="14.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="GDe-5v-l0H"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="GDe-5v-l0H"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="12"/>
-                                                    <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="12"/>
+                                                    <color key="textColor" red="0.12941176470588234" green="0.38431372549019605" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-transfer-light" translatesAutoresizingMaskIntoConstraints="NO" id="seF-AN-mdL">
@@ -3864,15 +3864,15 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5V-eM-rdK">
-                                                    <rect key="frame" x="41" y="11.5" width="43" height="12"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
-                                                    <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="41" y="10.5" width="46" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="12"/>
+                                                    <color key="textColor" red="0.12941176469999999" green="0.38431372549999998" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOZ-uD-kuf">
-                                                    <rect key="frame" x="310" y="8.5" width="11.5" height="18"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
-                                                    <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="311.5" y="13.5" width="7" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="12"/>
+                                                    <color key="textColor" red="0.12941176469999999" green="0.38431372549999998" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
