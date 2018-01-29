@@ -28,6 +28,9 @@
 
 @implementation SplashViewControllerLight
 
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 -(void)viewDidLoad {
     
