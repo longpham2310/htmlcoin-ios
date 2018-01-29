@@ -149,7 +149,7 @@
             [self showErrorPopUp:NSLocalizedString(@"You have insufficient funds for this transaction", nil)];
             break;
         case TransactionManagerErrorTypeInvalidAddress:
-            [self showErrorPopUp:NSLocalizedString(@"Invalid QTUM Address", nil)];
+            [self showErrorPopUp:NSLocalizedString(@"Invalid Coin Address", nil)];
             break;
         default:
             [self showErrorPopUp:nil];

@@ -68,7 +68,8 @@ UIColor *lightGreenColor()
 
 UIColor *lightDarkBlueColor()
 {
-    return [UIColor colorWithRed:54/255.0f green:85/255.0f blue:200/255.0f alpha:1.0f];
+    return [UIColor colorwithHexString:@"2162af" alpha:1];
+    //return [UIColor colorWithRed:54/255.0f green:85/255.0f blue:200/255.0f alpha:1.0f];
 }
 
 UIColor *lightDarkBlueColorForGradient()
@@ -104,7 +105,7 @@ UIColor *lightDarkGrayColor()
 }
 
 UIColor *lightTextFieldLineDeselected()
-{
+{    
     return [UIColor colorWithRed:220/255.0f green:223/255.0f blue:226/255.0f alpha:1.0f];
 }
 
