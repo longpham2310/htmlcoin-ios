@@ -129,6 +129,6 @@ UIColor *getQRCodeBackroundColor() {
 
 UIColor *getQRCodeMainColor() {
     
-    UIColor* color = [NSUserDefaults isDarkSchemeSetting] ? customBlackColor() : [UIColor colorWithRed:60/255.0f green:135/255.0f blue:185/255.0f alpha:1.0f];
+    UIColor* color = [NSUserDefaults isDarkSchemeSetting] ? customBlackColor() : customBlackColor()/*[UIColor colorWithRed:60/255.0f green:135/255.0f blue:185/255.0f alpha:1.0f]*/;
     return color;
 }
