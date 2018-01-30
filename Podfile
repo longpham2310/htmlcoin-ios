@@ -3,24 +3,35 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-target 'qtum wallet' do
-    
-	pod 'CoreBitcoin', :podspec => 'https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec'
-	pod 'AFNetworking', '~> 2.0'
-	pod 'AFJSONRPCClient'
-	pod 'SVProgressHUD'
-	pod 'MTBBarcodeScanner', '~> 2.0.3'
-	pod 'Fabric'
-	pod 'Crashlytics'
-	pod 'Firebase/Core'
-	pod 'Firebase/Messaging'
+def shared_pods
+    pod 'CoreBitcoin', :podspec => 'https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec'
+    pod 'AFNetworking', '~> 2.0'
+    pod 'AFJSONRPCClient'
+    pod 'SVProgressHUD'
+    pod 'MTBBarcodeScanner', '~> 2.0.3'
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'Firebase/Core'
+    pod 'Firebase/Messaging'
     pod 'MWFeedParser'
-
-    target 'qtum walletTests' do
-        inherit! :search_paths
-        pod 'CoreBitcoin', :podspec => 'https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec'
-    end
     
+#    target 'qtum walletTests' do
+#        inherit! :search_paths
+#        pod 'CoreBitcoin', :podspec => 'https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec'
+#    end
+end
+
+
+target 'htmlcoin wallet prod' do
+    shared_pods
+end
+
+target 'htmlcoin wallet dev' do
+    shared_pods
+end
+
+target 'htmlcoin wallet staging' do
+    shared_pods
 end
 
 target 'QTUM Watch Extension' do
