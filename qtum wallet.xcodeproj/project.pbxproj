@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C779EBBB0780FE8BF137970 /* libPods-qtum wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903654DC429CD9C31C04908 /* libPods-qtum wallet.a */; };
 		12213378F7D9F231C86C3D80 /* libPods-htmlcoin wallet prod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3F1ECC5B3C35D4E55B9045 /* libPods-htmlcoin wallet prod.a */; };
 		513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */; };
 		63094EDE20125516006528CA /* STYMIEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDA20125515006528CA /* STYMIEB.ttf */; };
@@ -3201,7 +3200,6 @@
 			files = (
 				B35733341F97B3A700C64AAE /* libxml2.tbd in Frameworks */,
 				E7FD365C1DC7360400748177 /* Security.framework in Frameworks */,
-				0C779EBBB0780FE8BF137970 /* libPods-qtum wallet.a in Frameworks */,
 				12213378F7D9F231C86C3D80 /* libPods-htmlcoin wallet prod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
