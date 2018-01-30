@@ -154,11 +154,14 @@
     NSString* pathString;
     __weak __typeof(self)weakSelf = self;
     if (addresses) {
-        pathString = [NSString stringWithFormat:@"%@/%@/%@",@"history",param[@"limit"],param[@"offset"]];
+        //"/api/addrs/{addresses}/txs"
+        NSString* addressString = [[addresses valueForKey:@"description"] componentsJoinedByString:@","];
+        pathString = [NSString stringWithFormat:@"%@/%@/%@",@"api/addrs", addressString, @"txs"];
         adressesForParam = @{}.mutableCopy;
-        adressesForParam[@"addresses[]"] = addresses;
+//        adressesForParam[@"addresses[]"] = addresses;
     }else {
-        pathString = [NSString stringWithFormat:@"%@/%@/%@/%@",@"history",param[@"address"],param[@"limit"],param[@"offset"]];
+        //api/addrs/{address}/txs"
+        pathString = [NSString stringWithFormat:@"%@/%@/%@", @"api/addrs", param[@"address"], @"txs"];
     }
 
     [self.networkService requestWithType:GET path:pathString andParams:adressesForParam withSuccessHandler:^(id  _Nonnull responseObject) {
@@ -423,7 +426,7 @@
 - (void)getFeePerKbWithSuccessHandler:(void(^)(QTUMBigNumber* feePerKb))success
                     andFailureHandler:(void(^)(NSError * error, NSString* message))failure {
     
-    NSString *path = @"/estimate-fee-per-kb?nBlocks=2";
+    NSString *path = @"/api/utils/minestimatefee?nBlocks=2";
     
     __weak __typeof(self)weakSelf = self;
     
@@ -449,7 +452,7 @@
 }
 
 - (void)getDGPinfo:(void(^)(id responseObject))success andFailureHandler:(void(^)(NSError * error, NSString* message))failure {
-    NSString *path = @"blockchain/dgpinfo";
+    NSString *path = @"api/dgpinfo";
     
     [self.networkService requestWithType:GET path:path andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
         success(responseObject);
