@@ -1838,12 +1838,14 @@
 		6309EA532010A7480068AD3E /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
 		6344181520105036000262AC /* qtum wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qtum wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		6344181620105036000262AC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		63B78BF2201ED02E005E7848 /* qtum wallet testnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "qtum wallet testnet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B78BF2201ED02E005E7848 /* htmlcoin wallet dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "htmlcoin wallet dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B78BF3201ED02E005E7848 /* qtum wallet testnet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "qtum wallet testnet-Info.plist"; path = "/Users/longpham/Projects/R3/htmlcoin-ios/qtum wallet testnet-Info.plist"; sourceTree = "<absolute>"; };
-		63B78E37201ED5B3005E7848 /* qtum wallet regtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "qtum wallet regtest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B78E37201ED5B3005E7848 /* htmlcoin wallet staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "htmlcoin wallet staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B78E38201ED5B3005E7848 /* qtum wallet regtest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "qtum wallet regtest-Info.plist"; path = "/Users/longpham/Projects/R3/htmlcoin-ios/qtum wallet regtest-Info.plist"; sourceTree = "<absolute>"; };
 		63D032342015D8E200470705 /* ContentInsetLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentInsetLabel.h; sourceTree = "<group>"; };
 		63D032352015D8E200470705 /* ContentInsetLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentInsetLabel.m; sourceTree = "<group>"; };
+		63D8E4952020284B000BA4BD /* htmlcoin wallet prod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "htmlcoin wallet prod.entitlements"; sourceTree = "<group>"; };
+		63D8E49620202893000BA4BD /* htmlcoin wallet staging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "htmlcoin wallet staging.entitlements"; sourceTree = "<group>"; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
 		B3014D5D1F29FD7C007EAE7A /* WatchContractOutputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutputDelegate.h; sourceTree = "<group>"; };
 		B3014D5E1F2A1B8D007EAE7A /* WatchContractViewControllerDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractViewControllerDark.h; sourceTree = "<group>"; };
@@ -3122,7 +3124,7 @@
 		E7FA0CB81ECD914200702C4E /* PopUpsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpsManager.m; sourceTree = "<group>"; };
 		E7FA0CBC1ECD9F2F00702C4E /* PhotoLibraryPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryPopUpViewController.h; sourceTree = "<group>"; };
 		E7FA0CBD1ECD9F2F00702C4E /* PhotoLibraryPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryPopUpViewController.m; sourceTree = "<group>"; };
-		E7FD36381DC4D07E00748177 /* qtum wallet mainnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "qtum wallet mainnet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FD36381DC4D07E00748177 /* qtum wallet mainnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "qtum wallet mainnet.app"; path = "htmlcoin wallet prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FD363C1DC4D07E00748177 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Application/main.m; sourceTree = "<group>"; };
 		E7FD363E1DC4D07E00748177 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7FD363F1DC4D07E00748177 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -5849,6 +5851,8 @@
 		E7FD362F1DC4D07E00748177 = {
 			isa = PBXGroup;
 			children = (
+				63D8E49620202893000BA4BD /* htmlcoin wallet staging.entitlements */,
+				63D8E4952020284B000BA4BD /* htmlcoin wallet prod.entitlements */,
 				B357332F1F97AF6600C64AAE /* libxml2.dylib */,
 				B33EAF8B1E5EC262006125F3 /* iMessageExtension */,
 				E730AB551EE6A5D100132711 /* QTUM Watch */,
@@ -5871,8 +5875,8 @@
 				E730AB541EE6A5D100132711 /* QTUM Watch.app */,
 				E730AB601EE6A5D100132711 /* QTUM Watch Extension.appex */,
 				B3A4EA591F502E65008115D1 /* qtum walletTests.xctest */,
-				63B78BF2201ED02E005E7848 /* qtum wallet testnet.app */,
-				63B78E37201ED5B3005E7848 /* qtum wallet regtest.app */,
+				63B78BF2201ED02E005E7848 /* htmlcoin wallet dev.app */,
+				63B78E37201ED5B3005E7848 /* htmlcoin wallet staging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -6087,9 +6091,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63B789AF201ED02D005E7848 /* qtum wallet testnet */ = {
+		63B789AF201ED02D005E7848 /* htmlcoin wallet dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63B78BEF201ED02D005E7848 /* Build configuration list for PBXNativeTarget "qtum wallet testnet" */;
+			buildConfigurationList = 63B78BEF201ED02D005E7848 /* Build configuration list for PBXNativeTarget "htmlcoin wallet dev" */;
 			buildPhases = (
 				63B789B0201ED02D005E7848 /* [CP] Check Pods Manifest.lock */,
 				63B789B1201ED02D005E7848 /* Sources */,
@@ -6105,14 +6109,14 @@
 			);
 			dependencies = (
 			);
-			name = "qtum wallet testnet";
+			name = "htmlcoin wallet dev";
 			productName = "qtum wallet";
-			productReference = 63B78BF2201ED02E005E7848 /* qtum wallet testnet.app */;
+			productReference = 63B78BF2201ED02E005E7848 /* htmlcoin wallet dev.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63B78BF4201ED5B3005E7848 /* qtum wallet regtest */ = {
+		63B78BF4201ED5B3005E7848 /* htmlcoin wallet staging */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63B78E34201ED5B3005E7848 /* Build configuration list for PBXNativeTarget "qtum wallet regtest" */;
+			buildConfigurationList = 63B78E34201ED5B3005E7848 /* Build configuration list for PBXNativeTarget "htmlcoin wallet staging" */;
 			buildPhases = (
 				63B78BF5201ED5B3005E7848 /* [CP] Check Pods Manifest.lock */,
 				63B78BF6201ED5B3005E7848 /* Sources */,
@@ -6128,9 +6132,9 @@
 			);
 			dependencies = (
 			);
-			name = "qtum wallet regtest";
+			name = "htmlcoin wallet staging";
 			productName = "qtum wallet";
-			productReference = 63B78E37201ED5B3005E7848 /* qtum wallet regtest.app */;
+			productReference = 63B78E37201ED5B3005E7848 /* htmlcoin wallet staging.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B33EAF871E5EC262006125F3 /* iMessageExtension */ = {
@@ -6209,9 +6213,9 @@
 			productReference = E730AB601EE6A5D100132711 /* QTUM Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		E7FD36371DC4D07E00748177 /* qtum wallet mainnet */ = {
+		E7FD36371DC4D07E00748177 /* htmlcoin wallet prod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7FD364F1DC4D07E00748177 /* Build configuration list for PBXNativeTarget "qtum wallet mainnet" */;
+			buildConfigurationList = E7FD364F1DC4D07E00748177 /* Build configuration list for PBXNativeTarget "htmlcoin wallet prod" */;
 			buildPhases = (
 				F79955B856A388C1F1C8305A /* [CP] Check Pods Manifest.lock */,
 				E7FD36341DC4D07E00748177 /* Sources */,
@@ -6227,7 +6231,7 @@
 			);
 			dependencies = (
 			);
-			name = "qtum wallet mainnet";
+			name = "htmlcoin wallet prod";
 			productName = "qtum wallet";
 			productReference = E7FD36381DC4D07E00748177 /* qtum wallet mainnet.app */;
 			productType = "com.apple.product-type.application";
@@ -6248,6 +6252,11 @@
 					63B78BF4201ED5B3005E7848 = {
 						DevelopmentTeam = PJC8N7MDSQ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					B33EAF871E5EC262006125F3 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -6303,13 +6312,13 @@
 								enabled = 0;
 							};
 							com.apple.DataProtection = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.iCloud = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -6329,9 +6338,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7FD36371DC4D07E00748177 /* qtum wallet mainnet */,
-				63B789AF201ED02D005E7848 /* qtum wallet testnet */,
-				63B78BF4201ED5B3005E7848 /* qtum wallet regtest */,
+				E7FD36371DC4D07E00748177 /* htmlcoin wallet prod */,
+				63B789AF201ED02D005E7848 /* htmlcoin wallet dev */,
+				63B78BF4201ED5B3005E7848 /* htmlcoin wallet staging */,
 				B33EAF871E5EC262006125F3 /* iMessageExtension */,
 				E730AB531EE6A5D100132711 /* QTUM Watch */,
 				E730AB5F1EE6A5D100132711 /* QTUM Watch Extension */,
@@ -8508,7 +8517,7 @@
 /* Begin PBXTargetDependency section */
 		B3A4EA5F1F502E66008115D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E7FD36371DC4D07E00748177 /* qtum wallet mainnet */;
+			target = E7FD36371DC4D07E00748177 /* htmlcoin wallet prod */;
 			targetProxy = B3A4EA5E1F502E66008115D1 /* PBXContainerItemProxy */;
 		};
 		E730AB631EE6A5D100132711 /* PBXTargetDependency */ = {
@@ -8851,7 +8860,7 @@
 					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "qtum wallet copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/qtum wallet testnet-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.htmlcoin.wallet.app.staging.testnet;
@@ -8907,7 +8916,7 @@
 					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "qtum wallet copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/qtum wallet testnet-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.htmlcoin.wallet.app.staging.testnet;
@@ -8962,7 +8971,7 @@
 					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "qtum wallet testnet copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/qtum wallet regtest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.htmlcoin.wallet.app.staging;
@@ -9018,7 +9027,7 @@
 					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "qtum wallet testnet copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/qtum wallet regtest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.htmlcoin.wallet.app.staging;
@@ -9312,6 +9321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "htmlcoin wallet prod.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJC8N7MDSQ;
@@ -9368,6 +9378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "htmlcoin wallet prod.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJC8N7MDSQ;
@@ -9419,7 +9430,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63B78BEF201ED02D005E7848 /* Build configuration list for PBXNativeTarget "qtum wallet testnet" */ = {
+		63B78BEF201ED02D005E7848 /* Build configuration list for PBXNativeTarget "htmlcoin wallet dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63B78BF0201ED02D005E7848 /* Debug */,
@@ -9428,7 +9439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63B78E34201ED5B3005E7848 /* Build configuration list for PBXNativeTarget "qtum wallet regtest" */ = {
+		63B78E34201ED5B3005E7848 /* Build configuration list for PBXNativeTarget "htmlcoin wallet staging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63B78E35201ED5B3005E7848 /* Debug */,
@@ -9482,7 +9493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7FD364F1DC4D07E00748177 /* Build configuration list for PBXNativeTarget "qtum wallet mainnet" */ = {
+		E7FD364F1DC4D07E00748177 /* Build configuration list for PBXNativeTarget "htmlcoin wallet prod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7FD36501DC4D07E00748177 /* Debug */,

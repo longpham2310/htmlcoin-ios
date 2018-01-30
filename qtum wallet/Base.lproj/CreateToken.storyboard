@@ -13,7 +13,7 @@
         <array key="STYMIEB.ttf">
             <string>StymieBT-Bold</string>
         </array>
-        <array key="StymieLtBTLight.ttf">
+        <array key="STYMIEL.ttf">
             <string>StymieBT-Light</string>
         </array>
         <array key="euclidflexmedium.ttf">
@@ -2212,7 +2212,7 @@ or Delete Contract</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="sNr-Qr-QlS">
-                                                    <rect key="frame" x="344" y="16.5" width="13" height="9"/>
+                                                    <rect key="frame" x="335" y="12.5" width="22" height="17"/>
                                                     <color key="tintColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                             </subviews>
@@ -2865,7 +2865,7 @@ or Delete Contract</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-Ji-vVs">
-                                                    <rect key="frame" x="344" y="16.5" width="13" height="9"/>
+                                                    <rect key="frame" x="335" y="12.5" width="22" height="17"/>
                                                     <color key="tintColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                             </subviews>
@@ -4276,7 +4276,7 @@ or Delete Contract</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow_light" translatesAutoresizingMaskIntoConstraints="NO" id="O4g-WY-7fI">
-                                                    <rect key="frame" x="339" y="16" width="6" height="11"/>
+                                                    <rect key="frame" x="323" y="10.5" width="22" height="22"/>
                                                     <color key="tintColor" red="0.21176470589999999" green="0.6705882353" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zk-KC-tP3">
@@ -4421,10 +4421,10 @@ or Delete Contract</string>
     <resources>
         <image name="add_plus" width="17" height="17"/>
         <image name="back" width="11" height="17"/>
-        <image name="disclosure" width="7" height="11"/>
+        <image name="disclosure" width="12" height="12"/>
         <image name="ic-arrow-small" width="5" height="8"/>
-        <image name="ic-arrow_light" width="6" height="11"/>
-        <image name="ic-checkbox" width="13" height="9"/>
+        <image name="ic-arrow_light" width="22" height="22"/>
+        <image name="ic-checkbox" width="22" height="17"/>
         <image name="ic-contractStore" width="19" height="23"/>
         <image name="ic-delete-contract-dark" width="15" height="17"/>
         <image name="ic-delete-contract-light" width="15" height="18"/>

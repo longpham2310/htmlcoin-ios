@@ -15,10 +15,10 @@
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
         </array>
-        <array key="STYMIEB.ttf">
+        <array key="StymieLtBTBold.ttf">
             <string>StymieBT-Bold</string>
         </array>
-        <array key="STYMIEL.ttf">
+        <array key="StymieLtBTLight.ttf">
             <string>StymieBT-Light</string>
         </array>
         <array key="euclidflexmedium.ttf">
@@ -958,8 +958,8 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCQ-Tv-Mqc">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-check" translatesAutoresizingMaskIntoConstraints="NO" id="pFK-0A-8Ue">
-                                                            <rect key="frame" x="341" y="16.5" width="18" height="12"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="pFK-0A-8Ue">
+                                                            <rect key="frame" x="337" y="14" width="22" height="17"/>
                                                             <color key="tintColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </imageView>
                                                     </subviews>
@@ -1642,7 +1642,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgd-JG-wMS">
-                                <rect key="frame" x="30" y="419.5" width="315" height="38.5"/>
+                                <rect key="frame" x="30" y="427" width="315" height="38.5"/>
                                 <string key="text">© 2017 HTMLCOIN
 Version</string>
                                 <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="16"/>
@@ -1650,7 +1650,7 @@ Version</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-Su-6fF">
-                                <rect key="frame" x="129.5" y="283.5" width="115" height="100"/>
+                                <rect key="frame" x="129.5" y="276" width="115" height="115"/>
                                 <color key="tintColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
@@ -1778,6 +1778,7 @@ Skynet Testnet Version</string>
         <image name="deisclosure_dark" width="5" height="9"/>
         <image name="ic-arrow_light" width="22" height="22"/>
         <image name="ic-check" width="18" height="12"/>
+        <image name="ic-checkbox" width="22" height="17"/>
         <image name="imageView:87O-Cp-J1J:image" width="250" height="68">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGVVZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
@@ -3044,7 +3045,7 @@ AAElzwABJdwAASXhAAEl6QABJewAASXxAAEl+QABJfwAASYOAAEmEQABJhYAAAAAAAAEAQAAAAAAAABZ
 AAAAAAAAAAAAAAAAAAEmGA
 </mutableData>
         </image>
-        <image name="logo" width="115" height="100"/>
+        <image name="logo" width="115" height="115"/>
         <image name="share" width="20" height="21"/>
     </resources>
 </document>
