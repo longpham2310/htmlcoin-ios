@@ -111,11 +111,13 @@
     __weak __typeof(self)weakSelf = self;
     
     if (addresses.count == 1) {
-        pathString = [NSString stringWithFormat:@"outputs/unspent/%@",addresses[0]];
+        ///api/addrs/{address}/unspent
+        pathString = [NSString stringWithFormat:@"api/addrs/%@/unspent",addresses[0]];
     } else {
-        pathString = @"outputs/unspent";
+        NSString* addressString = [[addresses valueForKey:@"description"] componentsJoinedByString:@","];
+        pathString = [NSString stringWithFormat:@"api/addrs/%@/unspent",addressString];
         param = @{}.mutableCopy;
-        param[@"addresses[]"] = addresses;
+//        param[@"addresses[]"] = addresses;
     }
     
     [self.networkService requestWithType:GET path:pathString andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {

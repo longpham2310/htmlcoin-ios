@@ -73,15 +73,15 @@
         BTCTransactionOutput* txout = [[BTCTransactionOutput alloc] init];
         
         txout.value = [self convertValueToAmount:item[@"amount"]];
-        txout.script = [[BTCScript alloc] initWithData:BTCDataFromHex(item[@"txout_scriptPubKey"])];
+        txout.script = [[BTCScript alloc] initWithData:BTCDataFromHex(item[@"scriptPubKey"])];
         txout.index = [item[@"vout"] intValue];
         txout.confirmations = [item[@"confirmations"] unsignedIntegerValue];
-        txout.transactionHash = (BTCDataFromHex([NSString invertHex:item[@"tx_hash"]]));
+        txout.transactionHash = (BTCDataFromHex([NSString invertHex:item[@"txid"]]));
         txout.blockHeight = [item[@"confirmations"] integerValue];
         txout.runTimeAddress = item[@"address"];
         
         //filter only valid outputs
-        if (([item[@"confirmations"] unsignedIntegerValue] > 500 && [item[@"is_stake"] unsignedIntegerValue] > 0) || [item[@"is_stake"] unsignedIntegerValue] == 0) {
+        if (([item[@"confirmations"] unsignedIntegerValue] > 500 && [item[@"isStake"] unsignedIntegerValue] > 0) || [item[@"isStake"] unsignedIntegerValue] == 0) {
             [outputs addObject:txout];
         }
     }
