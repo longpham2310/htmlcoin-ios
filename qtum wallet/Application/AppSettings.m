@@ -55,7 +55,7 @@
     
     [NSUserDefaults saveCurrentVersion:[[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
     [NSUserDefaults saveIsRPCOnSetting:NO];
-    [NSUserDefaults saveIsMainnetSetting:NO];
+    [NSUserDefaults saveIsMainnetSetting:YES];
 
     [PopUpsManager sharedInstance];
     [PaymentValuesManager sharedInstance];
@@ -118,7 +118,7 @@
 
 -(NSString*)baseURL {
     
-    NSString* baseUrl = @"http://35.198.235.246:3001";
+    NSString* baseUrl = @"http://api.htmlcoin.com";
     return baseUrl;
 }
 
