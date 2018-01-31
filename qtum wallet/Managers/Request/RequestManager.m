@@ -93,7 +93,7 @@
               withSuccessHandler:(void(^)(id responseObject))success
                andFailureHandler:(void(^)(NSString* message)) failure{
     
-    [self.networkService requestWithType:POST path:@"send-raw-transaction" andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {
+    [self.networkService requestWithType:POST path:@"api/tx/send" andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {
         success(responseObject);
     } andFailureHandler:^(NSError * _Nonnull error, NSString *message) {
         failure(message);
@@ -184,7 +184,7 @@
               successHandler:(void(^)(id responseObject))success
            andFailureHandler:(void(^)(NSError * error, NSString* message))failure {
     
-    NSString* pathString = [NSString stringWithFormat:@"%@/%@",@"transactions",txhash];
+    NSString* pathString = [NSString stringWithFormat:@"%@/%@",@"api/tx",txhash];
 
     [self.networkService requestWithType:GET path:pathString andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
         __block id response = responseObject;
@@ -199,11 +199,37 @@
     }];
 }
 
+#pragma mark - Address
+- (void)getBalanceWithParam:(NSDictionary *)param andAddresses:(NSArray *)addresses successHandler:(void (^)(id))success andFailureHandler:(void (^)(NSError *, NSString *))failure {
+    
+    NSMutableDictionary* adressesForParam;
+    NSString* pathString;
+    if (addresses) {
+        NSString* addressString = [[addresses valueForKey:@"description"] componentsJoinedByString:@","];
+        pathString = [NSString stringWithFormat:@"%@/%@/%@",@"api/addrs", addressString, @"balance"];
+        adressesForParam = @{}.mutableCopy;
+    }else {
+        //api/addrs/{address}/balance"
+        pathString = [NSString stringWithFormat:@"%@/%@/%@", @"api/addrs", param[@"address"], @"balance"];
+    }
+    
+    [self.networkService requestWithType:GET path:pathString andParams:adressesForParam withSuccessHandler:^(id  _Nonnull responseObject) {
+        __block id response = responseObject;
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            success(response);
+            DLog(@"Succes");
+        });
+        
+    } andFailureHandler:^(NSError * _Nonnull error, NSString* message) {
+        failure(error,message);
+        DLog(@"Failure");
+    }];
+}
 
 #pragma mark - Info
 
 - (void)getBlockchainInfo:(void(^)(id responseObject))success andFailureHandler:(void(^)(NSError * error, NSString* message))failure{
-    [self.networkService requestWithType:GET path:@"blockchain/info" andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
+    [self.networkService requestWithType:GET path:@"api/status" andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
         success(responseObject);
         DLog(@"Succes");
     } andFailureHandler:^(NSError * _Nonnull error, NSString* message) {
