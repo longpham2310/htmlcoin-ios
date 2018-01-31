@@ -160,7 +160,7 @@
         NSString* addressString = [[addresses valueForKey:@"description"] componentsJoinedByString:@","];
         pathString = [NSString stringWithFormat:@"%@/%@/%@",@"api/addrs", addressString, @"txs"];
         adressesForParam = @{}.mutableCopy;
-//        adressesForParam[@"addresses[]"] = addresses;
+        adressesForParam[@"from"] = param[@"offset"];
     }else {
         //api/addrs/{address}/txs"
         pathString = [NSString stringWithFormat:@"%@/%@/%@", @"api/addrs", param[@"address"], @"txs"];
