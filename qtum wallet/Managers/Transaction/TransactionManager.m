@@ -565,7 +565,7 @@ static NSInteger constantFee = 400000000;
     
     if (transaction) {
         
-        [[ApplicationCoordinator sharedInstance].requestManager sendTransactionWithParam:@{@"data":transaction.hexWithTime,@"allowHighFee":@1} withSuccessHandler:^(id responseObject) {
+        [[ApplicationCoordinator sharedInstance].requestManager sendTransactionWithParam:@{@"rawtx":transaction.hexWithTime,@"allowHighFee":@1} withSuccessHandler:^(id responseObject) {
             success(responseObject);
         } andFailureHandler:^(NSString *message) {
             failure(@"Can not send transaction");
