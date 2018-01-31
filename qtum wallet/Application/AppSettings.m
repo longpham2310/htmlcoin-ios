@@ -55,7 +55,12 @@
     
     [NSUserDefaults saveCurrentVersion:[[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
     [NSUserDefaults saveIsRPCOnSetting:NO];
+    
+#if PRODUCTION
     [NSUserDefaults saveIsMainnetSetting:YES];
+#else
+    [NSUserDefaults saveIsMainnetSetting:NO];
+#endif
 
     [PopUpsManager sharedInstance];
     [PaymentValuesManager sharedInstance];
@@ -118,8 +123,16 @@
 
 -(NSString*)baseURL {
     
-    NSString* baseUrl = @"http://api.htmlcoin.com";
-    return baseUrl;
+#ifdef PRODUCTION
+    return @"http://api.htmlcoin.com";
+#elif STAGING
+    return @"http://35.198.235.246:3001";
+#else
+    // TODO: We don't support DEV currently.
+    return @"http://35.198.235.246:3001";
+#endif
+//    NSString* baseUrl = @"http://api.htmlcoin.com";
+//    return baseUrl;
 }
 
 -(NSInteger)failedPinWaitingTime {
