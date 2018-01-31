@@ -12,6 +12,7 @@
 #import "BTCTransactionInput+Extension.h"
 #import "BTCTransactionOutput+Address.h"
 #import "NSNumber+Comparison.h"
+#import "AddressBalance.h"
 
 @implementation WalletManagerRequestAdapter
 
@@ -22,6 +23,20 @@
     __weak __typeof(self)weakSelf = self;
     [[ApplicationCoordinator sharedInstance].requestManager getUnspentOutputsForAdreses:keyAddreses isAdaptive:YES successHandler:^(id responseObject) {
         success([weakSelf calculateBalance:responseObject]);
+    } andFailureHandler:^(NSError *error, NSString *message) {
+        failure(error, message);
+    }];
+}
+
+- (void)getBalanceWalletForAddress:(NSArray *)keyAddreses
+           withSuccessHandler:(void(^)(AddressBalance* balance))success
+            andFailureHandler:(void(^)(NSError *error, NSString* message))failure {
+    __weak __typeof(self)weakSelf = self;
+    NSDictionary* params = @{};
+    [[ApplicationCoordinator sharedInstance].requestManager getBalanceWithParam:params andAddresses:keyAddreses successHandler:^(id responseObject) {
+        AddressBalance* addressBalance = [AddressBalance new];
+        [addressBalance setupWithObject:responseObject];
+        success(addressBalance);
     } andFailureHandler:^(NSError *error, NSString *message) {
         failure(error, message);
     }];

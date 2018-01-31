@@ -253,6 +253,15 @@
     });
 }
 
+-(void)reloadBalance {
+    __weak __typeof(self)weakSelf = self;
+    dispatch_async(_requestQueue, ^{        
+        [weakSelf.wallet updateBalanceWalletWithHandler:^(BOOL success) {
+        
+        }];
+    });
+}
+
 -(void)stopRefreshing{
     
     if (self.isBalanceLoaded && self.isHistoryLoaded) {
@@ -422,6 +431,7 @@
     [self updateControls];
     
     if (self.isNewDataLoaded) {
+        [self reloadBalance];
         self.isBalanceLoaded = YES;
         [self reloadHistory];
     }

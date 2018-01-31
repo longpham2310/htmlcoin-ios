@@ -1754,6 +1754,9 @@
 		E7FD365A1DC7308A00748177 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FD36591DC7308A00748177 /* FXKeychain.m */; };
 		E7FD365C1DC7360400748177 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FD365B1DC7360400748177 /* Security.framework */; };
 		E7FD36661DC76EBC00748177 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FD36651DC76EBC00748177 /* RequestManager.m */; };
+		EC2B604C2021A3E900F163C3 /* AddressBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2B604B2021A3E900F163C3 /* AddressBalance.m */; };
+		EC2B604D2021A3E900F163C3 /* AddressBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2B604B2021A3E900F163C3 /* AddressBalance.m */; };
+		EC2B604E2021A3E900F163C3 /* AddressBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2B604B2021A3E900F163C3 /* AddressBalance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3139,6 +3142,8 @@
 		E7FD36611DC73D4600748177 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = Application/PrefixHeader.pch; sourceTree = "<group>"; };
 		E7FD36641DC76EBC00748177 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
 		E7FD36651DC76EBC00748177 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		EC2B604A2021A3E900F163C3 /* AddressBalance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBalance.h; sourceTree = "<group>"; };
+		EC2B604B2021A3E900F163C3 /* AddressBalance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBalance.m; sourceTree = "<group>"; };
 		EF612F4F200C37400E745D72 /* Pods-htmlcoin wallet dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htmlcoin wallet dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-htmlcoin wallet dev/Pods-htmlcoin wallet dev.debug.xcconfig"; sourceTree = "<group>"; };
 		EFD6F69206DD5B607F1D756C /* libPods-htmlcoin wallet staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-htmlcoin wallet staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -5956,6 +5961,8 @@
 				E74003C11F1E2AC7002CC587 /* SendInfoItem.m */,
 				B3E090201FAB0C83003F3B54 /* ContractPretendent.h */,
 				B3E090211FAB0C83003F3B54 /* ContractPretendent.m */,
+				EC2B604A2021A3E900F163C3 /* AddressBalance.h */,
+				EC2B604B2021A3E900F163C3 /* AddressBalance.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -7399,6 +7406,7 @@
 				63B78B9E201ED02D005E7848 /* LanguageTableViewCellDark.m in Sources */,
 				63B78B9F201ED02D005E7848 /* QStoreTableViewCellDark.m in Sources */,
 				63B78BA0201ED02D005E7848 /* QStoreTableViewCell.m in Sources */,
+				EC2B604D2021A3E900F163C3 /* AddressBalance.m in Sources */,
 				63B78BA1201ED02D005E7848 /* TokenAddressControlViewControllerDark.m in Sources */,
 				63B78BA2201ED02D005E7848 /* BaseCoordinator.m in Sources */,
 				63B78BA3201ED02D005E7848 /* QTUMBigNumber.m in Sources */,
@@ -7907,6 +7915,7 @@
 				63B78DE3201ED5B3005E7848 /* LanguageTableViewCellDark.m in Sources */,
 				63B78DE4201ED5B3005E7848 /* QStoreTableViewCellDark.m in Sources */,
 				63B78DE5201ED5B3005E7848 /* QStoreTableViewCell.m in Sources */,
+				EC2B604E2021A3E900F163C3 /* AddressBalance.m in Sources */,
 				63B78DE6201ED5B3005E7848 /* TokenAddressControlViewControllerDark.m in Sources */,
 				63B78DE7201ED5B3005E7848 /* BaseCoordinator.m in Sources */,
 				63B78DE8201ED5B3005E7848 /* QTUMBigNumber.m in Sources */,
@@ -8460,6 +8469,7 @@
 				E74857991F13C01800DCF9A6 /* LanguageTableViewCellDark.m in Sources */,
 				B3EA53071F46D9CD002FD201 /* QStoreTableViewCellDark.m in Sources */,
 				E784F8C21F023C1800A513BF /* QStoreTableViewCell.m in Sources */,
+				EC2B604C2021A3E900F163C3 /* AddressBalance.m in Sources */,
 				B3DC9D3E1F332399006B2E07 /* TokenAddressControlViewControllerDark.m in Sources */,
 				B3DD27571E6805EC00BB0635 /* BaseCoordinator.m in Sources */,
 				B32805621FA78A8B00748E7E /* QTUMBigNumber.m in Sources */,

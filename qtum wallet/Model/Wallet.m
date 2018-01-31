@@ -269,6 +269,10 @@ NSInteger const USERS_KEYS_COUNT = 10;
     [self.manager updateHistoryOfSpendableObject:self withHandler:complete andPage:page];
 }
 
+-(void)updateBalanceWalletWithHandler:(void (^)(BOOL))complete{
+    [self.manager updateBalanceOfWallet:self withHandler:complete];
+}
+
 -(void)loadToMemory {
     
     _historyStorage = [HistoryDataStorage new];

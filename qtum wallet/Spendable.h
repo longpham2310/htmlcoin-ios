@@ -25,6 +25,7 @@
 @property (copy, nonatomic)NSString* symbol;
 @property (weak, nonatomic)id <Managerable> manager;
 
+-(void)updateBalanceWalletWithHandler:(void (^)(BOOL))complete;
 -(void)updateBalanceWithHandler:(void(^)(BOOL success)) complete;
 -(void)updateWithHandler:(void(^)(BOOL success)) complete;
 -(void)updateHistoryWithHandler:(void(^)(BOOL success)) complete andPage:(NSInteger) page;

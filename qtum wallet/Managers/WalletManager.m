@@ -19,6 +19,7 @@
 #import "NSNumber+Comparison.h"
 #import "WalletManagerRequestAdapter.h"
 #import "iOSSessionManager.h"
+#import "AddressBalance.h"
 
 NSString const *kWallets = @"qtum_wallet_wallets_keys";
 NSString const *kSingleWallet = @"qtum_wallet_wallet_keys";
@@ -302,6 +303,17 @@ NSString const *kIsLongPin = @"kIsLongPin";
         complete(YES);
     } andFailureHandler:^(NSError *error, NSString *message) {
         complete(NO);
+    }];
+}
+
+-(void)updateBalanceOfWallet:(Wallet <Spendable>*) object withHandler:(void(^)(BOOL success)) complete{
+    
+    // __weak __typeof(self)weakSelf = self;
+    [self.requestAdapter getBalanceWalletForAddress:[object allKeysAdreeses] withSuccessHandler:^(AddressBalance *balance) {
+        object.balance =[balance getBalance];
+        object.unconfirmedBalance = [balance getUnconfirmedBalance];
+    } andFailureHandler:^(NSError *error, NSString *message) {
+        
     }];
 }
 

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Spendable.h"
+@class AddressBalance;
 
 @protocol Spendable;
 
@@ -19,6 +20,7 @@
 -(void)updateSpendablesHistoriesWithObject:(id) updateObject;
 -(void)updateBalanceOfSpendableObject:(id <Spendable>) object withHandler:(void(^)(BOOL success)) complete;
 -(void)updateHistoryOfSpendableObject:(id <Spendable>) object withHandler:(void(^)(BOOL success)) complete andPage:(NSInteger) page;
+-(void)updateBalanceOfWallet:(id <Spendable>) object withHandler:(void(^)(BOOL success)) complete;
 -(void)loadSpendableObjects;
 -(void)saveSpendableObjects;
 -(void)startObservingForSpendable:(id <Spendable>) spendable;

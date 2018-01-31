@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class AddressBalance;
 
 @interface WalletManagerRequestAdapter : NSObject
-
+- (void)getBalanceWalletForAddress:(NSArray *)keyAddreses
+          withSuccessHandler:(void(^)(AddressBalance* balance))success
+           andFailureHandler:(void(^)(NSError *error, NSString* message))failure;
 - (void)getBalanceForAddreses:(NSArray *)keyAddreses withSuccessHandler:(void(^)(NSDecimalNumber* balance))success andFailureHandler:(void(^)(NSError *error, NSString* message))failure;
 - (void)getHistoryForAddresses:(NSArray *)keyAddreses andParam:(NSDictionary*) param withSuccessHandler:(void(^)(NSArray *responseObject))success andFailureHandler:(void(^)(NSError *error, NSString* message))failure;
 - (void)getunspentOutputs:(NSArray *)keyAddreses withSuccessHandler:(void(^)(NSArray *responseObject))success andFailureHandler:(void(^)(NSError *error, NSString* message))failure;
