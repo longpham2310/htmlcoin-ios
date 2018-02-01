@@ -321,12 +321,13 @@ NSString const *kIsLongPin = @"kIsLongPin";
     //__weak __typeof(self)weakSelf = self;
     static NSInteger batch = 25;
     NSInteger totals =  [[[object historyStorage] historyPrivate] count];
-
+    if (page == 0) totals = 0;
+    
     [self.requestAdapter getHistoryForAddresses:[object allKeysAdreeses] andParam:@{@"limit" : @(batch), @"offset" : @(totals)} withSuccessHandler:^(NSArray <HistoryElement*> *history) {
         
         if (page > object.historyStorage.pageIndex) {
             [object.historyStorage addHistoryElements:history];
-        } else {
+        } else if (history.count > 0) {
             [object.historyStorage setHistory:history];
         }
         object.historyStorage.pageIndex = page;
