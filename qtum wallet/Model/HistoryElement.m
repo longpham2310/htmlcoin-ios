@@ -31,7 +31,12 @@
     
     //if hashTable of adresses constain object, add this value to ouyValue
     for (NSDictionary* outObject in dictionary[@"vout"]) {
-        NSString* addressString = [(NSArray*) outObject[@"scriptPubKey"][@"addresses"] firstObject];
+        NSArray* voutAddress = (NSArray*) outObject[@"scriptPubKey"][@"addresses"];
+        NSString* addressString = @"";
+        if (voutAddress != nil) {
+            addressString = [voutAddress firstObject];
+        }
+        
         [self.toAddresses addObject:@{@"address":addressString,
                                        @"value":outObject[@"value"]}];
         
