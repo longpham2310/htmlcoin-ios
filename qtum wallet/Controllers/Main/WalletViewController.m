@@ -107,8 +107,8 @@
     self.unconfirmedTextLabel.hidden =
     self.uncorfirmedLabel.hidden = !haveUncorfirmed;
     
-    self.uncorfirmedLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.unconfirmedBalance roundedNumberWithScale:3], NSLocalizedString(@"htmlcoin", nil)];
-    self.availabelLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.balance roundedNumberWithScale:3], NSLocalizedString(@"htmlcoin", nil)];
+    self.uncorfirmedLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.unconfirmedBalance roundedNumberWithScale:3], NSLocalizedString(@"HTML", nil)];
+    self.availabelLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.balance roundedNumberWithScale:3], NSLocalizedString(@"HTML", nil)];
 }
 
 -(void)startLoading {

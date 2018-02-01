@@ -1870,7 +1870,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r1n-5J-5cz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2146,12 +2146,12 @@
                                     <constraint firstAttribute="bottom" secondItem="goZ-le-3Na" secondAttribute="bottom" id="SiP-pk-ki6"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCx-tj-N3n">
+                            <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCx-tj-N3n" customClass="GradientView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-6K-FLx">
-                                        <rect key="frame" x="282.5" y="23" width="82.5" height="24"/>
-                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="20"/>
+                                        <rect key="frame" x="299" y="28" width="66" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2168,8 +2168,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBW-S8-4OS">
-                                        <rect key="frame" x="10" y="28" width="101" height="14"/>
-                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="12"/>
+                                        <rect key="frame" x="10" y="28" width="134.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2190,11 +2190,11 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-fC-CMi">
-                                <rect key="frame" x="0.0" y="100" width="375" height="32"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1u-3e-WJq">
-                                        <rect key="frame" x="10" y="4.5" width="70" height="24"/>
-                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="20"/>
+                                        <rect key="frame" x="10" y="5.5" width="63" height="22"/>
+                                        <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                         <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2222,7 +2222,7 @@
                             <constraint firstItem="Zjs-7W-xQL" firstAttribute="height" secondItem="r1n-5J-5cz" secondAttribute="height" multiplier="0.7" id="NZ6-do-Cfg"/>
                             <constraint firstItem="gic-wL-CFQ" firstAttribute="top" secondItem="Zjs-7W-xQL" secondAttribute="bottom" id="O7G-7W-X31"/>
                             <constraint firstItem="Zjs-7W-xQL" firstAttribute="leading" secondItem="WeC-uH-wcW" secondAttribute="leading" id="P7e-x1-ZdL"/>
-                            <constraint firstItem="SRf-fC-CMi" firstAttribute="top" secondItem="wXh-oV-zUK" secondAttribute="bottom" id="XMY-Fh-ar2"/>
+                            <constraint firstItem="SRf-fC-CMi" firstAttribute="top" secondItem="KCx-tj-N3n" secondAttribute="bottom" id="XMY-Fh-ar2"/>
                             <constraint firstItem="KCx-tj-N3n" firstAttribute="top" secondItem="wXh-oV-zUK" secondAttribute="top" id="Zve-Qa-RdW"/>
                             <constraint firstAttribute="trailing" secondItem="Zjs-7W-xQL" secondAttribute="trailing" id="Zw5-qE-oIl"/>
                             <constraint firstItem="r1n-5J-5cz" firstAttribute="leading" secondItem="WeC-uH-wcW" secondAttribute="leading" id="kD2-5A-iU3"/>
