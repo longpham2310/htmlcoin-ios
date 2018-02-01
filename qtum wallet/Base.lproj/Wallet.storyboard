@@ -1910,7 +1910,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.007" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bb-Lt-KOF">
-                                                            <rect key="frame" x="136" y="99" width="44.5" height="22"/>
+                                                            <rect key="frame" x="136" y="89.5" width="44.5" height="22"/>
                                                             <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                                             <color key="textColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1922,7 +1922,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTMLCOIN Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRV-4F-swN">
-                                                            <rect key="frame" x="98.5" y="192.5" width="178.5" height="24"/>
+                                                            <rect key="frame" x="98.5" y="193.5" width="178.5" height="24"/>
                                                             <fontDescription key="fontDescription" name="StymieBT-Light" family="Stymie Lt BT" pointSize="20"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -1941,33 +1941,33 @@
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5a-z7-IhK">
-                                                            <rect key="frame" x="103.5" y="70" width="168" height="24"/>
-                                                            <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="20"/>
+                                                            <rect key="frame" x="121" y="70" width="134.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Htmlcoin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="071-iZ-8Ar">
-                                                            <rect key="frame" x="185.5" y="99" width="76" height="22"/>
+                                                            <rect key="frame" x="185.5" y="89.5" width="76" height="22"/>
                                                             <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
                                                             <color key="textColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QTUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wf-fK-kqT">
-                                                            <rect key="frame" x="147.5" y="163" width="44" height="15"/>
-                                                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <rect key="frame" x="222" y="144" width="54.5" height="22"/>
+                                                            <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
+                                                            <color key="textColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unconfirmed Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZY-1J-uzh">
-                                                            <rect key="frame" x="15" y="134" width="189" height="24"/>
-                                                            <fontDescription key="fontDescription" name="StymieBT-Light" family="Stymie Lt BT" pointSize="20"/>
+                                                            <rect key="frame" x="107.5" y="124.5" width="161" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 700.000 027" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4S-R5-bga">
-                                                            <rect key="frame" x="15" y="161" width="128.5" height="18"/>
-                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <rect key="frame" x="94.5" y="144" width="123.5" height="22"/>
+                                                            <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie Lt BT" pointSize="18"/>
+                                                            <color key="textColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -1975,28 +1975,26 @@
                                                     <constraints>
                                                         <constraint firstItem="071-iZ-8Ar" firstAttribute="centerY" secondItem="3bb-Lt-KOF" secondAttribute="centerY" id="14X-cN-fyi"/>
                                                         <constraint firstItem="F5a-z7-IhK" firstAttribute="top" secondItem="bP5-eu-ACV" secondAttribute="top" constant="70" id="6Ut-uq-4yo"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Wf-fK-kqT" secondAttribute="trailing" constant="10" id="8A0-76-qzn"/>
-                                                        <constraint firstItem="3bb-Lt-KOF" firstAttribute="top" secondItem="F5a-z7-IhK" secondAttribute="bottom" constant="5" id="9fg-ob-tUc"/>
+                                                        <constraint firstItem="3bb-Lt-KOF" firstAttribute="top" secondItem="F5a-z7-IhK" secondAttribute="bottom" id="9fg-ob-tUc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="SrN-Al-Jkq" secondAttribute="bottom" constant="8" id="BfQ-oa-chg"/>
                                                         <constraint firstItem="F5a-z7-IhK" firstAttribute="centerX" secondItem="bP5-eu-ACV" secondAttribute="centerX" id="Dwx-MZ-h6z"/>
                                                         <constraint firstItem="iRV-4F-swN" firstAttribute="centerX" secondItem="bP5-eu-ACV" secondAttribute="centerX" id="Gu1-Qi-Jh4"/>
+                                                        <constraint firstItem="f4S-R5-bga" firstAttribute="top" secondItem="6ZY-1J-uzh" secondAttribute="bottom" id="IJr-Ie-jli"/>
                                                         <constraint firstItem="TjC-HO-OBU" firstAttribute="leading" secondItem="bP5-eu-ACV" secondAttribute="leading" id="Iui-0N-oTK"/>
-                                                        <constraint firstItem="3Wf-fK-kqT" firstAttribute="bottom" secondItem="f4S-R5-bga" secondAttribute="bottom" constant="-1" id="THs-jH-Z45"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6ZY-1J-uzh" secondAttribute="trailing" constant="10" id="Tut-mQ-qe9"/>
+                                                        <constraint firstItem="3Wf-fK-kqT" firstAttribute="leading" secondItem="f4S-R5-bga" secondAttribute="trailing" constant="4" id="TQZ-5r-uFE"/>
                                                         <constraint firstAttribute="trailing" secondItem="SrN-Al-Jkq" secondAttribute="trailing" constant="8" id="YPZ-i2-E0F"/>
-                                                        <constraint firstItem="6ZY-1J-uzh" firstAttribute="leading" secondItem="bP5-eu-ACV" secondAttribute="leading" constant="15" id="eNJ-5N-jJJ"/>
-                                                        <constraint firstItem="f4S-R5-bga" firstAttribute="leading" secondItem="bP5-eu-ACV" secondAttribute="leading" constant="15" id="fNu-QT-WBh"/>
-                                                        <constraint firstItem="SrN-Al-Jkq" firstAttribute="top" secondItem="iRV-4F-swN" secondAttribute="bottom" constant="1" id="fWi-FA-m8d"/>
+                                                        <constraint firstItem="6ZY-1J-uzh" firstAttribute="centerX" secondItem="F5a-z7-IhK" secondAttribute="centerX" id="gYR-sy-EaC"/>
+                                                        <constraint firstItem="SrN-Al-Jkq" firstAttribute="top" secondItem="iRV-4F-swN" secondAttribute="bottom" id="h20-eZ-BLn"/>
                                                         <constraint firstItem="071-iZ-8Ar" firstAttribute="leading" secondItem="3bb-Lt-KOF" secondAttribute="trailing" constant="5" id="hKo-Te-cCY"/>
                                                         <constraint firstItem="3bb-Lt-KOF" firstAttribute="centerX" secondItem="bP5-eu-ACV" secondAttribute="centerX" constant="-30" id="jRC-7D-b0a"/>
                                                         <constraint firstItem="DKE-76-SbK" firstAttribute="leading" secondItem="bP5-eu-ACV" secondAttribute="leading" constant="8" id="jwb-BI-I9T"/>
-                                                        <constraint firstAttribute="bottom" secondItem="SrN-Al-Jkq" secondAttribute="bottom" constant="8" id="kFF-3P-JY5"/>
                                                         <constraint firstItem="SrN-Al-Jkq" firstAttribute="leading" secondItem="DKE-76-SbK" secondAttribute="trailing" id="kHe-ad-4Fb"/>
                                                         <constraint firstAttribute="bottom" secondItem="TjC-HO-OBU" secondAttribute="bottom" id="kb4-Lm-TMc"/>
-                                                        <constraint firstItem="f4S-R5-bga" firstAttribute="top" secondItem="6ZY-1J-uzh" secondAttribute="bottom" constant="3" id="lEu-2O-OJi"/>
                                                         <constraint firstItem="DKE-76-SbK" firstAttribute="centerY" secondItem="SrN-Al-Jkq" secondAttribute="centerY" id="m6c-3R-urj"/>
+                                                        <constraint firstItem="3Wf-fK-kqT" firstAttribute="centerY" secondItem="f4S-R5-bga" secondAttribute="centerY" id="m82-7q-U38"/>
                                                         <constraint firstItem="TjC-HO-OBU" firstAttribute="top" secondItem="bP5-eu-ACV" secondAttribute="top" id="ngb-jF-FeH"/>
+                                                        <constraint firstItem="f4S-R5-bga" firstAttribute="centerX" secondItem="bP5-eu-ACV" secondAttribute="centerX" multiplier="1:1.2" id="tOq-ih-P2U"/>
                                                         <constraint firstAttribute="trailing" secondItem="TjC-HO-OBU" secondAttribute="trailing" id="tXi-yK-CpR"/>
-                                                        <constraint firstItem="3Wf-fK-kqT" firstAttribute="leading" secondItem="f4S-R5-bga" secondAttribute="trailing" constant="4" id="tYi-jy-Mq4"/>
                                                         <constraint firstItem="6ZY-1J-uzh" firstAttribute="top" secondItem="3bb-Lt-KOF" secondAttribute="bottom" constant="13" id="yfX-Ei-xni"/>
                                                     </constraints>
                                                 </view>
