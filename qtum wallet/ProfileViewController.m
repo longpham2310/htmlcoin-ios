@@ -98,10 +98,16 @@
         if (indexPath.row == 0) {
             image = [UIImage imageNamed:@"ic-smartContract"];
             text = NSLocalizedString(@"Smart Contracts", "");
+            
+            cell.userInteractionEnabled = NO;
+            cell.contentView.alpha = 0.3f;
         } else if (indexPath.row == 1) {
             
             image = [UIImage imageNamed:@"ic-token-subscribe"];
             text = NSLocalizedString(@"Token Subscriptions", "");
+            
+            cell.userInteractionEnabled = NO;
+            cell.contentView.alpha = 0.3f;
         }
     } else{
         if (indexPath.row == 0) {
