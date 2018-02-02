@@ -8,7 +8,7 @@
 
 #import "SendInfoItem.h"
 
-NSString *const QtumAddressKey = @"qtum";
+NSString *const QtumAddressKey = @"htmlcoin";
 NSString *const AmountKey = @"amount";
 NSString *const LabelKey = @"label";
 NSString *const MessageKey = @"message";
@@ -85,7 +85,7 @@ NSString *const TokenAddressKey = @"tokenAddress";
 }
 
 - (void)emptySetup {
-    _label = NSLocalizedString(@"QTUM Mobile Wallet", nil);
+    _label = NSLocalizedString(@"HTMLCOIN Mobile Wallet", nil);
     _message = NSLocalizedString(@"Payment Request", nil);
 }
 
