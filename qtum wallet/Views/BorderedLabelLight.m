@@ -22,7 +22,7 @@
 }
 
 - (UIColor *)getBackroundColor {
-    return lightBorderLabelBackroundColor();
+    return [UIColor whiteColor];//lightBorderLabelBackroundColor();
 }
 
 - (UIView *)getBorderView {
