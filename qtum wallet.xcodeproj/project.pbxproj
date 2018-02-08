@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		12213378F7D9F231C86C3D80 /* libPods-htmlcoin wallet prod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3F1ECC5B3C35D4E55B9045 /* libPods-htmlcoin wallet prod.a */; };
 		513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */; };
+		63074233202C570A00A98F95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63074232202C570A00A98F95 /* GoogleService-Info.plist */; };
+		63074236202C571B00A98F95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63074234202C571900A98F95 /* GoogleService-Info.plist */; };
 		63094EDE20125516006528CA /* STYMIEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDA20125515006528CA /* STYMIEB.ttf */; };
 		63094EDF20125516006528CA /* STYMIELI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDB20125515006528CA /* STYMIELI.ttf */; };
 		63094EE020125516006528CA /* STYMIEL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63094EDC20125515006528CA /* STYMIEL.ttf */; };
@@ -1830,6 +1832,8 @@
 		4DCA96264341BA8A5D0C98FD /* Pods-QTUM Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QTUM Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-QTUM Watch Extension/Pods-QTUM Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		519546849A39853435BC09D5 /* Pods-htmlcoin wallet dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htmlcoin wallet dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-htmlcoin wallet dev/Pods-htmlcoin wallet dev.release.xcconfig"; sourceTree = "<group>"; };
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63074232202C570A00A98F95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "googleservice_production/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63074234202C571900A98F95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "googleservice_staging/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63094EDA20125515006528CA /* STYMIEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = STYMIEB.ttf; sourceTree = SOURCE_ROOT; };
 		63094EDB20125515006528CA /* STYMIELI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = STYMIELI.ttf; sourceTree = SOURCE_ROOT; };
 		63094EDC20125515006528CA /* STYMIEL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = STYMIEL.ttf; sourceTree = SOURCE_ROOT; };
@@ -5874,6 +5878,8 @@
 				E7FD363A1DC4D07E00748177 /* qtum wallet */,
 				63B78BF3201ED02E005E7848 /* qtum wallet testnet-Info.plist */,
 				63B78E38201ED5B3005E7848 /* qtum wallet regtest-Info.plist */,
+				63074234202C571900A98F95 /* GoogleService-Info.plist */,
+				63074232202C570A00A98F95 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -6455,6 +6461,7 @@
 				63B78E02201ED5B3005E7848 /* SplashLight.storyboard in Resources */,
 				63B78E03201ED5B3005E7848 /* QStore.storyboard in Resources */,
 				63B78E04201ED5B3005E7848 /* SF-UI-DISPLAY-THIN.OTF in Resources */,
+				63074236202C571B00A98F95 /* GoogleService-Info.plist in Resources */,
 				63B78E05201ED5B3005E7848 /* StymieLtBTBold.ttf in Resources */,
 				63B78E06201ED5B3005E7848 /* StymieLtBTLight.ttf in Resources */,
 				63B78E07201ED5B3005E7848 /* STYMIEB.ttf in Resources */,
@@ -6574,6 +6581,7 @@
 				E7881B0D1F0BB63400BD6AB2 /* SplashLight.storyboard in Resources */,
 				E70CFCFC1F1F63D300230C81 /* QStore.storyboard in Resources */,
 				B386F5E61E163F41004D231B /* SF-UI-DISPLAY-THIN.OTF in Resources */,
+				63074233202C570A00A98F95 /* GoogleService-Info.plist in Resources */,
 				6309EA4A201089BB0068AD3E /* StymieLtBTBold.ttf in Resources */,
 				6309EA4C201089CC0068AD3E /* StymieLtBTLight.ttf in Resources */,
 				63094EDE20125516006528CA /* STYMIEB.ttf in Resources */,
