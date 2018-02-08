@@ -14,7 +14,7 @@
         <array key="STYMIEB.ttf">
             <string>StymieBT-Bold</string>
         </array>
-        <array key="STYMIEL.ttf">
+        <array key="StymieLtBTLight.ttf">
             <string>StymieBT-Light</string>
         </array>
         <array key="euclidflexmedium.ttf">
@@ -839,7 +839,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqX-5v-WoU">
                                 <rect key="frame" x="0.0" y="150" width="375" height="650"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Receiver’s Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-xy-yXs" customClass="TextFieldWithLineLightSend">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Receiver’s Address" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-xy-yXs" customClass="TextFieldWithLineLightSend">
                                         <rect key="frame" x="20" y="40" width="335" height="22"/>
                                         <color key="tintColor" red="0.12941176469999999" green="0.38431372549999998" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

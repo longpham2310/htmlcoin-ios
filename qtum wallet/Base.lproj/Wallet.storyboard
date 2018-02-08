@@ -18,7 +18,7 @@
         <array key="STYMIEB.ttf">
             <string>StymieBT-Bold</string>
         </array>
-        <array key="STYMIEL.ttf">
+        <array key="StymieLtBTLight.ttf">
             <string>StymieBT-Light</string>
         </array>
         <array key="euclidflexmedium.ttf">
@@ -2989,16 +2989,16 @@
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPJ-is-Wqy">
-                                        <rect key="frame" x="20" y="67" width="335" height="199.5"/>
+                                        <rect key="frame" x="20" y="67" width="335" height="213"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIo-nN-Won">
-                                                <rect key="frame" x="107.5" y="40" width="120" height="120"/>
+                                                <rect key="frame" x="84" y="13" width="167.5" height="167.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yIo-nN-Won" secondAttribute="height" multiplier="1:1" id="NfR-eL-wRx"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PND-FO-dAG">
-                                                <rect key="frame" x="15" y="154.5" width="319" height="50"/>
+                                                <rect key="frame" x="15" y="173.5" width="319" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="vSA-LK-fEP"/>
                                                 </constraints>
@@ -3007,7 +3007,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfasdf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="17X-bT-t0z">
-                                                <rect key="frame" x="8" y="168" width="319" height="22"/>
+                                                <rect key="frame" x="8" y="187" width="319" height="22"/>
                                                 <fontDescription key="fontDescription" name="StymieBT-Bold" family="Stymie" pointSize="18"/>
                                                 <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3016,19 +3016,19 @@
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="yIo-nN-Won" firstAttribute="centerX" secondItem="mPJ-is-Wqy" secondAttribute="centerX" id="29f-rn-8Q6"/>
-                                            <constraint firstItem="17X-bT-t0z" firstAttribute="top" secondItem="yIo-nN-Won" secondAttribute="bottom" constant="8" id="2nF-aw-1Dp"/>
                                             <constraint firstItem="17X-bT-t0z" firstAttribute="leading" secondItem="mPJ-is-Wqy" secondAttribute="leading" constant="8" id="96U-zd-mOF"/>
-                                            <constraint firstItem="yIo-nN-Won" firstAttribute="width" secondItem="mPJ-is-Wqy" secondAttribute="width" multiplier="1:2.8" id="N8d-Ju-qUK"/>
-                                            <constraint firstItem="yIo-nN-Won" firstAttribute="centerY" secondItem="mPJ-is-Wqy" secondAttribute="centerY" id="PRR-Hk-MRt"/>
+                                            <constraint firstAttribute="bottom" secondItem="17X-bT-t0z" secondAttribute="bottom" constant="4" id="Kos-Tb-f2o"/>
+                                            <constraint firstItem="yIo-nN-Won" firstAttribute="width" secondItem="mPJ-is-Wqy" secondAttribute="width" multiplier="1:2" id="N8d-Ju-qUK"/>
+                                            <constraint firstItem="yIo-nN-Won" firstAttribute="centerY" secondItem="mPJ-is-Wqy" secondAttribute="centerY" constant="-10" id="PRR-Hk-MRt"/>
                                             <constraint firstItem="17X-bT-t0z" firstAttribute="centerY" secondItem="PND-FO-dAG" secondAttribute="centerY" id="QpR-B9-y0x"/>
                                             <constraint firstAttribute="trailing" secondItem="17X-bT-t0z" secondAttribute="trailing" constant="8" id="boj-Od-dbU"/>
                                             <constraint firstItem="PND-FO-dAG" firstAttribute="leading" secondItem="mPJ-is-Wqy" secondAttribute="leading" constant="15" id="j4l-pZ-KEF"/>
                                             <constraint firstItem="PND-FO-dAG" firstAttribute="centerX" secondItem="mPJ-is-Wqy" secondAttribute="centerX" constant="7" id="oeR-ln-kMA"/>
-                                            <constraint firstAttribute="width" secondItem="mPJ-is-Wqy" secondAttribute="height" multiplier="16:9" constant="-20" id="ynQ-oW-fk1"/>
+                                            <constraint firstAttribute="width" secondItem="mPJ-is-Wqy" secondAttribute="height" multiplier="5:3" constant="-20" id="ynQ-oW-fk1"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2w6-tg-d4w">
-                                        <rect key="frame" x="20" y="286.5" width="335" height="50"/>
+                                        <rect key="frame" x="20" y="300" width="335" height="50"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.7843137255" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="8b9-Kz-SEH"/>
@@ -3047,7 +3047,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHB-Xn-ud0">
-                                        <rect key="frame" x="19.5" y="356.5" width="335" height="50"/>
+                                        <rect key="frame" x="19.5" y="370" width="335" height="50"/>
                                         <color key="backgroundColor" red="0.93333333333333335" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tpT-zS-1BR"/>
