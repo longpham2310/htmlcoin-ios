@@ -226,6 +226,17 @@
     }];
 }
 
+- (void)updateDeviceTokenWithParam:(NSDictionary *)param
+              withSuccessHandler:(void(^)(id responseObject))success
+               andFailureHandler:(void(^)(NSString* message)) failure{
+    
+    [self.networkService requestWithType:POST path:@"api/devicetoken/create" andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {
+        success(responseObject);
+    } andFailureHandler:^(NSError * _Nonnull error, NSString *message) {
+        failure(message);
+    }];
+}
+
 #pragma mark - Info
 
 - (void)getBlockchainInfo:(void(^)(id responseObject))success andFailureHandler:(void(^)(NSError * error, NSString* message))failure{
