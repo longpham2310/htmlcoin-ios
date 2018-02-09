@@ -18,15 +18,16 @@
         switch ([self headerCellType]) {
             case HeaderCellTypeWithoutNotCorfirmedBalance:
             case HeaderCellTypeWithoutAll:
-                return 164;
+                return 180;
+//                return 164;
             case HeaderCellTypeWithoutPageControl:
             case HeaderCellTypeAllVisible:
-                return 214;
+                return 234;
             default:
                 return 214;
         }
     } else {
-        return 55;
+        return 64;
     }
 }
 

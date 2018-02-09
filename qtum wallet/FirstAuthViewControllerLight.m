@@ -9,6 +9,8 @@
 #import "FirstAuthViewControllerLight.h"
 
 @interface FirstAuthViewControllerLight ()
+@property (weak, nonatomic) IBOutlet UILabel *introductionLabel;
+
 
 @end
 
@@ -16,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.introductionLabel.text = NSLocalizedString(@"Create a first one or restore the previous wallet key", @"");
     [self configurateButtons];
 }
 

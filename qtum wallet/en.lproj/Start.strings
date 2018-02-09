@@ -42,7 +42,7 @@
 "BYF-ca-p4Y.normalTitle" = "CANCEL";
 
 /* Class = "UILabel"; text = "Confirm PIN"; ObjectID = "BwS-El-Y7J"; */
-"BwS-El-Y7J.text" = "Confirm PIN";
+"BwS-El-Y7J.text" = "Confirm Pin";
 
 /* Class = "UILabel"; text = "You don’t have a wallet yet."; ObjectID = "CbP-bR-TcN"; */
 "CbP-bR-TcN.text" = "You don’t have a wallet yet.";
@@ -102,7 +102,7 @@
 "VCL-oc-su9.text" = "You can skip this step and export your passphrase at any time";
 
 /* Class = "UILabel"; text = "Confirm PIN"; ObjectID = "Veq-XE-LK4"; */
-"Veq-XE-LK4.text" = "Confirm PIN";
+"Veq-XE-LK4.text" = "Confirm Pin";
 
 /* Class = "UIButton"; normalTitle = "ENABLE TOUCH ID"; ObjectID = "W1C-4D-HED"; */
 "W1C-4D-HED.normalTitle" = "ENABLE TOUCH ID";
@@ -146,8 +146,8 @@
 /* Class = "UILabel"; text = "You can skip this step and export your passphrase at any time"; ObjectID = "bqM-zM-reg"; */
 "bqM-zM-reg.text" = "You can skip this step and export your passphrase at any time";
 
-/* Class = "UILabel"; text = "Login to QTUM\nusing Touch ID"; ObjectID = "c4I-3I-l4S"; */
-"c4I-3I-l4S.text" = "Login to QTUM\nusing Touch ID";
+/* Class = "UILabel"; text = "Login to HTMLCOIN\nusing Touch ID"; ObjectID = "c4I-3I-l4S"; */
+"c4I-3I-l4S.text" = "Login to HTMLCOIN\nusing Touch ID";
 
 /* Class = "UIButton"; normalTitle = "CONFIRM"; ObjectID = "faW-8y-vQi"; */
 "faW-8y-vQi.normalTitle" = "CONFIRM";

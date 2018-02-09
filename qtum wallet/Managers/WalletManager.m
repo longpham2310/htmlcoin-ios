@@ -19,6 +19,7 @@
 #import "NSNumber+Comparison.h"
 #import "WalletManagerRequestAdapter.h"
 #import "iOSSessionManager.h"
+#import "AddressBalance.h"
 
 NSString const *kWallets = @"qtum_wallet_wallets_keys";
 NSString const *kSingleWallet = @"qtum_wallet_wallet_keys";
@@ -305,14 +306,28 @@ NSString const *kIsLongPin = @"kIsLongPin";
     }];
 }
 
+-(void)updateBalanceOfWallet:(Wallet <Spendable>*) object withHandler:(void(^)(BOOL success)) complete{
+    
+    // __weak __typeof(self)weakSelf = self;
+    [self.requestAdapter getBalanceWalletForAddress:[object allKeysAdreeses] withSuccessHandler:^(AddressBalance *balance) {
+        object.balance =[balance getBalance];
+        object.unconfirmedBalance = [balance getUnconfirmedBalance];
+    } andFailureHandler:^(NSError *error, NSString *message) {
+        
+    }];
+}
+
 -(void)updateHistoryOfSpendableObject:(Wallet <Spendable>*) object withHandler:(void(^)(BOOL success)) complete andPage:(NSInteger) page{
     //__weak __typeof(self)weakSelf = self;
     static NSInteger batch = 25;
-    [self.requestAdapter getHistoryForAddresses:[object allKeysAdreeses] andParam:@{@"limit" : @(batch), @"offset" : @(page * batch)} withSuccessHandler:^(NSArray <HistoryElement*> *history) {
+    NSInteger totals =  [[[object historyStorage] historyPrivate] count];
+    if (page == 0) totals = 0;
+    
+    [self.requestAdapter getHistoryForAddresses:[object allKeysAdreeses] andParam:@{@"limit" : @(batch), @"offset" : @(totals)} withSuccessHandler:^(NSArray <HistoryElement*> *history) {
         
         if (page > object.historyStorage.pageIndex) {
             [object.historyStorage addHistoryElements:history];
-        } else {
+        } else if (history.count > 0) {
             [object.historyStorage setHistory:history];
         }
         object.historyStorage.pageIndex = page;

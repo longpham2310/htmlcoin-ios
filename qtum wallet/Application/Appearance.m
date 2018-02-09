@@ -100,15 +100,16 @@
     [[SVProgressHUD appearance] setMinimumDismissTimeInterval:1];
     [[SVProgressHUD appearance] setCornerRadius:5];
     
+    //StymieBT-Bold
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : lightGrayColor(),
-                                                         NSFontAttributeName:[UIFont fontWithName:@"ProximaNova-Regular" size:11.0f]}
+                                                         NSFontAttributeName:[UIFont fontWithName:@"StymieBT-Bold" size:10]}
                                              forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : lightDarkGrayColor(),
-                                                         NSFontAttributeName:[UIFont fontWithName:@"ProximaNova-Regular" size:11.0f]}
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor blackColor]/*lightDarkGrayColor()*/,
+                                                         NSFontAttributeName:[UIFont fontWithName:@"StymieBT-Bold" size:10]}
                                              forState:UIControlStateSelected];
     //color for text in searchfield
     [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setDefaultTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],
-                                                                                                 NSFontAttributeName:[UIFont fontWithName:@"ProximaNova-Regular" size:16.0f]}];
+                                                                                                 NSFontAttributeName:[UIFont fontWithName:@"StymieBT-Bold" size:16]}];
     
     //color for placeholder in searchfield
     [[UILabel appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor whiteColor]];
@@ -116,11 +117,11 @@
     [[UITextField appearance] setKeyboardAppearance:UIKeyboardAppearanceLight];
     
     [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor],
-                                                                                                    NSFontAttributeName:[UIFont fontWithName:@"ProximaNova-Light" size:14.0f]}
+                                                                                                    NSFontAttributeName:[UIFont fontWithName:@"StymieBT-Bold" size:14.0f]}
                                                                                         forState:UIControlStateNormal];
     
     [[UIBarButtonItem appearanceWhenContainedIn:[UIToolbar class], nil] setTitleTextAttributes:@{ NSForegroundColorAttributeName : lightGreenColor(),
-                                                                                                    NSFontAttributeName:[UIFont fontWithName:@"ProximaNova-Light" size:14.0f]}
+                                                                                                    NSFontAttributeName:[UIFont fontWithName:@"StymieBT-Bold" size:14.0f]}
                                                                                         forState:UIControlStateNormal];
 
     

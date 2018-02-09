@@ -20,14 +20,27 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *animatedBacgroungViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet AnimatedLogoImageVIewLight *animatedLogoView;
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
+
+
 @end
 
 @implementation SplashViewControllerLight
 
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 -(void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.titleLabel.text = NSLocalizedString(@"htmlcoin", @"");
+    self.subTitleLabel.text = [NSLocalizedString(@"In blockchain we trust", @"") uppercaseString];
+    
+    self.titleLabel.alpha = 0.0f;
+    self.subTitleLabel.alpha = 0.0f;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -39,7 +52,13 @@
     
     [super viewDidAppear:animated];
     
-    self.animatedLogoView.translatesAutoresizingMaskIntoConstraints = NO;
+    [UIView animateWithDuration:1.0f animations:^{
+        self.titleLabel.alpha = 1.0f;
+        self.subTitleLabel.alpha = 1.0f;
+    } completion:^(BOOL finished) {
+        //[self.logoImageView startAnimating];
+    }];
+    /*self.animatedLogoView.translatesAutoresizingMaskIntoConstraints = NO;
     self.animatedBacgroungViewHeightConstraint.constant = self.view.frame.size.height;
     
     CGFloat duration = 3;
@@ -65,7 +84,7 @@
     });
     
     weakSelf.animatedWaitLabelHeightConstraint.constant = 0;
-
+    */
 }
 
 @end

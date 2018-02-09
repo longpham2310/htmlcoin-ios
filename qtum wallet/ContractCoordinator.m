@@ -315,7 +315,7 @@ ContractCreationEndOutputDelegate>
                     [weakSelf.createFinishViewController showErrorPopUp:NSLocalizedString(@"You have insufficient funds for this transaction", nil)];
                     break;
                 case TransactionManagerErrorTypeInvalidAddress:
-                    [weakSelf.createFinishViewController showErrorPopUp:NSLocalizedString(@"Invalid QTUM Address", nil)];
+                    [weakSelf.createFinishViewController showErrorPopUp:NSLocalizedString(@"Invalid Coin Address", nil)];
                     break;
                 case TransactionManagerErrorTypeNotEnoughMoneyOnAddress:
                     [weakSelf.createFinishViewController showErrorPopUp:NSLocalizedString(@"You have insufficient funds for this transaction at this address", nil)];
@@ -429,7 +429,7 @@ ContractCreationEndOutputDelegate>
             [self.functionDetailController showErrorPopUp:NSLocalizedString(@"You have insufficient funds for this transaction", nil)];
             break;
         case TransactionManagerErrorTypeInvalidAddress:
-            [self.functionDetailController showErrorPopUp:NSLocalizedString(@"Invalid QTUM Address", nil)];
+            [self.functionDetailController showErrorPopUp:NSLocalizedString(@"Invalid Coin Address", nil)];
             break;
         case TransactionManagerErrorTypeNotEnoughMoneyOnAddress:
             [self.functionDetailController showErrorPopUp:NSLocalizedString(@"You have insufficient funds for this transaction at this address", nil)];

@@ -15,7 +15,7 @@
 }
 
 - (UIColor *)getUnderlineColorSelected {
-    return lightGreenColor();
+    return lightDarkBlueColor();
 }
 
 - (UIColor *)getPlaceholderColor {
@@ -23,7 +23,7 @@
 }
 
 - (UIFont *)getPlaceholderFont {
-    return [UIFont fontWithName:@"ProximaNova-Regular" size:self.font.pointSize];
+    return [UIFont fontWithName:@"StymieBT-Light" size:self.font.pointSize];
 }
 
 @end

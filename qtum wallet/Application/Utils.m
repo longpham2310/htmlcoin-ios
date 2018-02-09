@@ -8,6 +8,7 @@
 
 #import "Utils.h"
 #import "NSUserDefaults+Settings.h"
+#import "UIColor+fromHex.h"
 
 NSString const *PUBLIC_ADDRESS_STRING_KEY = @"publicAddress";
 NSString const *EXPORT_CONTRACTS_TOKENS_KEY = @"export_contracts_tokens";
@@ -29,12 +30,14 @@ UIColor *customRedColor()
 
 UIColor *customBlackColor()
 {
-    return [UIColor colorWithRed:35/255.0f green:35/255.0f blue:40/255.0f alpha:1.0f];
+    //return [UIColor colorWithRed:35/255.0f green:35/255.0f blue:40/255.0f alpha:1.0f];
+    return [UIColor colorwithHexString:@"231f20" alpha:1.0f];
 }
 
 UIColor *historyGreenColor()
 {
-    return [UIColor colorWithRed:83/255.0f green:205/255.0f blue:204/255.0f alpha:1.0f];
+//    return [UIColor colorWithRed:83/255.0f green:205/255.0f blue:204/255.0f alpha:1.0f];
+    return [UIColor colorwithHexString:@"53cda3" alpha:1];
 }
 
 UIColor *historyGrayColor()
@@ -66,12 +69,15 @@ UIColor *lightGreenColor()
 
 UIColor *lightDarkBlueColor()
 {
-    return [UIColor colorWithRed:54/255.0f green:85/255.0f blue:200/255.0f alpha:1.0f];
+    return [UIColor colorwithHexString:@"2162af" alpha:1];
+    //return [UIColor colorWithRed:54/255.0f green:85/255.0f blue:200/255.0f alpha:1.0f];
 }
 
 UIColor *lightDarkBlueColorForGradient()
 {
-    return [UIColor colorWithRed:63/255.0f green:56/255.0f blue:196/255.0f alpha:1.0f];
+    return  [UIColor colorWithRed:55/255.0f green:154/255.0f blue:211/255.0f alpha:1.0f];
+
+//    return [UIColor colorWithRed:63/255.0f green:56/255.0f blue:196/255.0f alpha:1.0f];
 }
 
 UIColor *lightBlackColor()
@@ -100,7 +106,7 @@ UIColor *lightDarkGrayColor()
 }
 
 UIColor *lightTextFieldLineDeselected()
-{
+{    
     return [UIColor colorWithRed:220/255.0f green:223/255.0f blue:226/255.0f alpha:1.0f];
 }
 
@@ -124,6 +130,6 @@ UIColor *getQRCodeBackroundColor() {
 
 UIColor *getQRCodeMainColor() {
     
-    UIColor* color = [NSUserDefaults isDarkSchemeSetting] ? customBlackColor() : [UIColor colorWithRed:60/255.0f green:135/255.0f blue:185/255.0f alpha:1.0f];
+    UIColor* color = [NSUserDefaults isDarkSchemeSetting] ? customBlackColor() : customBlackColor()/*[UIColor colorWithRed:60/255.0f green:135/255.0f blue:185/255.0f alpha:1.0f]*/;
     return color;
 }

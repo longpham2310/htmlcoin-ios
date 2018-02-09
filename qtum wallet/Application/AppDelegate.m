@@ -17,6 +17,7 @@
 #import "ServiceLocator.h"
 #import "NewsDataProvider.h"
 #import "BTCBigNumber.h"
+@import FirebaseMessaging;
 
 @interface AppDelegate ()
 
@@ -43,6 +44,7 @@
         }
     });
     
+    [FIRMessaging messaging].delegate = self;
     return YES;
 }
 
@@ -75,6 +77,11 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
     [[ApplicationCoordinator sharedInstance].notificationManager application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+}
+
+- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken {
+    NSLog(@"FCM registration token: %@", fcmToken);
+    [[ApplicationCoordinator sharedInstance] updateDeviceToken];
 }
 
 @end

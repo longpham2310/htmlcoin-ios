@@ -7,4 +7,7 @@ Podfile.lock
 main.fauxpas.json
 Carthage
 qtum\ wallet/GoogleService-Info.plist
+googleservice_production
+googleservice_staging
 fabricSetup.pl
+/Build

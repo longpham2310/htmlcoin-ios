@@ -23,8 +23,9 @@
     
     [super viewDidLoad];
     
-    self.titleLabel.alpha = 0.0f;
-    self.textLabel.alpha = 0.0f;
+//    self.titleLabel.alpha = 0.0f;
+//    self.textLabel.alpha = 0.0f;
+    self.titleLabel.text = NSLocalizedString(@"htmlcoin", @"");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -36,19 +37,19 @@
     
     [super viewDidAppear:animated];
     
-    [UIView animateWithDuration:1.0f animations:^{
-        self.titleLabel.alpha = 1.0f;
-        self.textLabel.alpha = 1.0f;
-    } completion:^(BOOL finished) {
-        [self.logoImageView startAnimating];
-    }];
+//    [UIView animateWithDuration:1.0f animations:^{
+//        self.titleLabel.alpha = 1.0f;
+//        self.textLabel.alpha = 1.0f;
+//    } completion:^(BOOL finished) {
+//        [self.logoImageView startAnimating];
+//    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
     
-    [self.logoImageView stopAnimating];
+//    [self.logoImageView stopAnimating];
 }
 
 @end

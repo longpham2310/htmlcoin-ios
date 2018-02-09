@@ -148,7 +148,7 @@ NSInteger const USERS_KEYS_COUNT = 10;
 
 -(NSString *)symbol{
 
-    return  NSLocalizedString(@"QTUM", @"QTUM sybmol");
+    return  NSLocalizedString(@"htmlcoin", @"cryptocurrency sybmol");
 }
 
 #pragma mark - Public Methods
@@ -267,6 +267,10 @@ NSInteger const USERS_KEYS_COUNT = 10;
 
 -(void)updateHistoryWithHandler:(void (^)(BOOL))complete andPage:(NSInteger) page{
     [self.manager updateHistoryOfSpendableObject:self withHandler:complete andPage:page];
+}
+
+-(void)updateBalanceWalletWithHandler:(void (^)(BOOL))complete{
+    [self.manager updateBalanceOfWallet:self withHandler:complete];
 }
 
 -(void)loadToMemory {

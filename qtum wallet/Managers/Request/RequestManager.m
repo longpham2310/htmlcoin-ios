@@ -93,7 +93,7 @@
               withSuccessHandler:(void(^)(id responseObject))success
                andFailureHandler:(void(^)(NSString* message)) failure{
     
-    [self.networkService requestWithType:POST path:@"send-raw-transaction" andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {
+    [self.networkService requestWithType:POST path:@"api/tx/send" andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {
         success(responseObject);
     } andFailureHandler:^(NSError * _Nonnull error, NSString *message) {
         failure(message);
@@ -111,11 +111,13 @@
     __weak __typeof(self)weakSelf = self;
     
     if (addresses.count == 1) {
-        pathString = [NSString stringWithFormat:@"outputs/unspent/%@",addresses[0]];
+        ///api/addrs/{address}/unspent
+        pathString = [NSString stringWithFormat:@"api/addrs/%@/unspent",addresses[0]];
     } else {
-        pathString = @"outputs/unspent";
+        NSString* addressString = [[addresses valueForKey:@"description"] componentsJoinedByString:@","];
+        pathString = [NSString stringWithFormat:@"api/addrs/%@/unspent",addressString];
         param = @{}.mutableCopy;
-        param[@"addresses[]"] = addresses;
+//        param[@"addresses[]"] = addresses;
     }
     
     [self.networkService requestWithType:GET path:pathString andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {
@@ -154,11 +156,14 @@
     NSString* pathString;
     __weak __typeof(self)weakSelf = self;
     if (addresses) {
-        pathString = [NSString stringWithFormat:@"%@/%@/%@",@"history",param[@"limit"],param[@"offset"]];
+        //"/api/addrs/{addresses}/txs"
+        NSString* addressString = [[addresses valueForKey:@"description"] componentsJoinedByString:@","];
+        pathString = [NSString stringWithFormat:@"%@/%@/%@",@"api/addrs", addressString, @"txs"];
         adressesForParam = @{}.mutableCopy;
-        adressesForParam[@"addresses[]"] = addresses;
+        adressesForParam[@"from"] = param[@"offset"];
     }else {
-        pathString = [NSString stringWithFormat:@"%@/%@/%@/%@",@"history",param[@"address"],param[@"limit"],param[@"offset"]];
+        //api/addrs/{address}/txs"
+        pathString = [NSString stringWithFormat:@"%@/%@/%@", @"api/addrs", param[@"address"], @"txs"];
     }
 
     [self.networkService requestWithType:GET path:pathString andParams:adressesForParam withSuccessHandler:^(id  _Nonnull responseObject) {
@@ -179,7 +184,7 @@
               successHandler:(void(^)(id responseObject))success
            andFailureHandler:(void(^)(NSError * error, NSString* message))failure {
     
-    NSString* pathString = [NSString stringWithFormat:@"%@/%@",@"transactions",txhash];
+    NSString* pathString = [NSString stringWithFormat:@"%@/%@",@"api/tx",txhash];
 
     [self.networkService requestWithType:GET path:pathString andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
         __block id response = responseObject;
@@ -194,11 +199,48 @@
     }];
 }
 
+#pragma mark - Address
+- (void)getBalanceWithParam:(NSDictionary *)param andAddresses:(NSArray *)addresses successHandler:(void (^)(id))success andFailureHandler:(void (^)(NSError *, NSString *))failure {
+    
+    NSMutableDictionary* adressesForParam;
+    NSString* pathString;
+    if (addresses) {
+        NSString* addressString = [[addresses valueForKey:@"description"] componentsJoinedByString:@","];
+        pathString = [NSString stringWithFormat:@"%@/%@/%@",@"api/addrs", addressString, @"balance"];
+        adressesForParam = @{}.mutableCopy;
+    }else {
+        //api/addrs/{address}/balance"
+        pathString = [NSString stringWithFormat:@"%@/%@/%@", @"api/addrs", param[@"address"], @"balance"];
+    }
+    
+    [self.networkService requestWithType:GET path:pathString andParams:adressesForParam withSuccessHandler:^(id  _Nonnull responseObject) {
+        __block id response = responseObject;
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            success(response);
+            DLog(@"Succes");
+        });
+        
+    } andFailureHandler:^(NSError * _Nonnull error, NSString* message) {
+        failure(error,message);
+        DLog(@"Failure");
+    }];
+}
+
+- (void)updateDeviceTokenWithParam:(NSDictionary *)param
+              withSuccessHandler:(void(^)(id responseObject))success
+               andFailureHandler:(void(^)(NSString* message)) failure{
+    
+    [self.networkService requestWithType:POST path:@"api/devicetoken/create" andParams:param withSuccessHandler:^(id  _Nonnull responseObject) {
+        success(responseObject);
+    } andFailureHandler:^(NSError * _Nonnull error, NSString *message) {
+        failure(message);
+    }];
+}
 
 #pragma mark - Info
 
 - (void)getBlockchainInfo:(void(^)(id responseObject))success andFailureHandler:(void(^)(NSError * error, NSString* message))failure{
-    [self.networkService requestWithType:GET path:@"blockchain/info" andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
+    [self.networkService requestWithType:GET path:@"api/status" andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
         success(responseObject);
         DLog(@"Succes");
     } andFailureHandler:^(NSError * _Nonnull error, NSString* message) {
@@ -423,7 +465,7 @@
 - (void)getFeePerKbWithSuccessHandler:(void(^)(QTUMBigNumber* feePerKb))success
                     andFailureHandler:(void(^)(NSError * error, NSString* message))failure {
     
-    NSString *path = @"/estimate-fee-per-kb?nBlocks=2";
+    NSString *path = @"/api/utils/minestimatefee?nBlocks=2";
     
     __weak __typeof(self)weakSelf = self;
     
@@ -449,7 +491,7 @@
 }
 
 - (void)getDGPinfo:(void(^)(id responseObject))success andFailureHandler:(void(^)(NSError * error, NSString* message))failure {
-    NSString *path = @"blockchain/dgpinfo";
+    NSString *path = @"api/dgpinfo";
     
     [self.networkService requestWithType:GET path:path andParams:nil withSuccessHandler:^(id  _Nonnull responseObject) {
         success(responseObject);

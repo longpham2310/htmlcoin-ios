@@ -14,6 +14,7 @@
 @import UserNotifications;
 @import FirebaseInstanceID;
 
+NSString * const PushNewTransaction = @"PushNewTransaction";
 NSString *const FireBaseInfoFileName = @"GoogleService-Info";
 
 @interface NotificationManager () <UNUserNotificationCenterDelegate,UIApplicationDelegate>
@@ -26,7 +27,7 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)registerForRemoutNotifications {
+- (void)registerForRemoteNotifications {
     
     if(SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(@"10.0")){
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
@@ -73,7 +74,10 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
 //Called when a notification is delivered to a foreground app.
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
     DLog(@"User Info : %@",notification.request.content.userInfo);
+    
     completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:PushNewTransaction object:nil];
 }
 
 //Called to let your app know which action was selected by the user for a given notification.
@@ -86,7 +90,8 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) deviceToken {
     
-    [[FIRInstanceID instanceID] setAPNSToken:deviceToken type:FIRInstanceIDAPNSTokenTypeSandbox];
+//    [[FIRInstanceID instanceID] setAPNSToken:deviceToken type:FIRInstanceIDAPNSTokenTypeSandbox];
+    [FIRMessaging messaging].APNSToken = deviceToken;
     [self storeDeviceToken];
 }
 
@@ -114,7 +119,8 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
 #pragma mark - Private Methods
 
 -(void)storeDeviceToken{
-    
+//    [FIRMessaging messaging].FCMToken
+    NSLog(@"fcm token: %@", [[FIRMessaging messaging] FCMToken]);
     NSString* token = [[FIRInstanceID instanceID] token];
     NSString* prevToken = [NSUserDefaults getDeviceToken];
     [NSUserDefaults saveDeviceToken:token];
@@ -127,7 +133,7 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     if(SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(@"10.0")) {
         
         UNMutableNotificationContent* content = [UNMutableNotificationContent new];
-        content.subtitle = NSLocalizedString(@"QTUM", nil);
+        content.subtitle = NSLocalizedString(@"HTMLCOIN", nil);
         content.body = text;
         
         UNTimeIntervalNotificationTrigger* triger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];

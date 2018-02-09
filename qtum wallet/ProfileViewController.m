@@ -98,10 +98,16 @@
         if (indexPath.row == 0) {
             image = [UIImage imageNamed:@"ic-smartContract"];
             text = NSLocalizedString(@"Smart Contracts", "");
+            
+            cell.userInteractionEnabled = NO;
+            cell.contentView.alpha = 0.3f;
         } else if (indexPath.row == 1) {
             
             image = [UIImage imageNamed:@"ic-token-subscribe"];
             text = NSLocalizedString(@"Token Subscriptions", "");
+            
+            cell.userInteractionEnabled = NO;
+            cell.contentView.alpha = 0.3f;
         }
     } else{
         if (indexPath.row == 0) {
@@ -111,6 +117,10 @@
             
             image = [UIImage imageNamed:@"ic-themes"];
             text = NSLocalizedString(@"Themes", "");
+            
+            // TODO: Disable switch to dark theme because we don't have any design for it.
+            cell.userInteractionEnabled = NO;
+            cell.contentView.alpha = 0.3f;
         }else if (indexPath.row == 2) {
             
             image = [UIImage imageNamed:@"ic-logout"];
@@ -127,7 +137,7 @@
 #pragma mark UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 48;
+    return 64;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -179,7 +189,7 @@
         case 0:
         case 1:
         case 2:
-            return 13;
+            return 0;
             break;
         default:
             return 0;

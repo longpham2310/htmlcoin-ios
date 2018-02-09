@@ -7,11 +7,12 @@
 //
 
 #import "ExportWalletBrandKeyViewController.h"
-#import "BorderedLabel.h"
+//#import "BorderedLabel.h"
+#import "ContentInsetLabel.h"
 
 @interface ExportWalletBrandKeyViewController () <PopUpViewControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet BorderedLabel *brainKeyLabel;
+@property (weak, nonatomic) IBOutlet ContentInsetLabel *brainKeyLabel;
 
 @end
 
@@ -44,8 +45,13 @@
 #pragma mark - Configuration
 
 -(void)configurationBrainKeyLabel {
-    
+    self.brainKeyLabel.layer.borderWidth = 1;
+    self.brainKeyLabel.layer.cornerRadius = 4;
+    self.brainKeyLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
     self.brainKeyLabel.text = self.brandKey;
+    
+    // Test
+    //self.brainKeyLabel.text = @"Now, imagine that those writers are our threads and that the pen is our shared resource (it can be anything: a file, a variable, the right to do something, etc).";
 }
 
 #pragma mark - Actions

@@ -9,6 +9,17 @@
 #import "BTCAddress+Extension.h"
 #import <objc/runtime.h>
 
+#if PRODUCTION
+enum
+{
+    CustomBTCPublicKeyAddressVersion         = 41,
+    CustomBTCPrivateKeyAddressVersion        = 169,
+    CustomBTCScriptHashAddressVersion        = 100,
+    CustomBTCPublicKeyAddressVersionTestnet  = 120,
+    CustomBTCPrivateKeyAddressVersionTestnet = 239,
+    CustomBTCScriptHashAddressVersionTestnet = 110,
+};
+#else // STAGING
 enum
 {
     CustomBTCPublicKeyAddressVersion         = 58,
@@ -18,6 +29,7 @@ enum
     CustomBTCPrivateKeyAddressVersionTestnet = 239,
     CustomBTCScriptHashAddressVersionTestnet = 110,
 };
+#endif
 
 @implementation BTCPublicKeyAddress (Extension)
 

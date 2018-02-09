@@ -30,6 +30,8 @@
 #import "SplashScreenOutput.h"
 #import "QStoreManager.h"
 #import "ServiceLocator.h"
+@import Firebase;
+@import FirebaseMessaging;
 
 @interface ApplicationCoordinator () <ApplicationCoordinatorDelegate, SecurityCoordinatorDelegate, LoginCoordinatorDelegate, ConfirmPinCoordinatorDelegate, AuthCoordinatorDelegate>
 
@@ -99,7 +101,7 @@
     __weak __typeof(self)weakSelf = self;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [weakSelf.notificationManager registerForRemoutNotifications];
+        [weakSelf.notificationManager registerForRemoteNotifications];
     });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -370,6 +372,21 @@
 -(void)contractCreationDidFailed {
     
     [[ApplicationCoordinator sharedInstance].notificationManager createLocalNotificationWithString:NSLocalizedString(@"Failed to create contract", @"") andIdentifire:@"contract_creation_failed"];
+}
+
+- (void)updateDeviceToken {
+    NSDictionary* addresses = [[ApplicationCoordinator sharedInstance].walletManager hashTableOfKeys];
+    NSString* token = [[FIRMessaging messaging] FCMToken];
+    
+    if(addresses == nil || [addresses allKeys].count == 0 || token == nil || token.length == 0) {
+        return;
+    }
+    
+    [[ApplicationCoordinator sharedInstance].requestManager updateDeviceTokenWithParam:@{@"addresses":[addresses allKeys],@"deviceToken":token} withSuccessHandler:^(id responseObject) {
+        
+    } andFailureHandler:^(NSString *message) {
+        
+    }];
 }
 
 @end

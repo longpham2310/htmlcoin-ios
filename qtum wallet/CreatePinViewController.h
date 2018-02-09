@@ -15,6 +15,8 @@
 @interface CreatePinViewController : PinController <CreatePinOutput, PasswordViewDelegate>
 
 @property (weak, nonatomic) IBOutlet PasswordView *passwordView;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *gradientViewBottomOffset;
 
 @end

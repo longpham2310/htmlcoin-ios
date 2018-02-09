@@ -2,8 +2,8 @@
 /* Class = "UILabel"; text = "QR Code"; ObjectID = "0fa-jA-lne"; */
 "0fa-jA-lne.text" = "QR Code";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "17F-p8-lI4"; */
-"17F-p8-lI4.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "17F-p8-lI4"; */
+"17F-p8-lI4.text" = "HTML";
 
 /* Class = "UITextField"; placeholder = "Choose Token"; ObjectID = "55o-z3-dxc"; */
 "55o-z3-dxc.placeholder" = "Choose Token";
@@ -11,11 +11,11 @@
 /* Class = "UIButton"; normalTitle = "SEND"; ObjectID = "6EO-ut-k6R"; */
 "6EO-ut-k6R.normalTitle" = "SEND";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "6Mv-li-MTE"; */
-"6Mv-li-MTE.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "6Mv-li-MTE"; */
+"6Mv-li-MTE.text" = "HTML";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "6XA-2a-C0o"; */
-"6XA-2a-C0o.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "6XA-2a-C0o"; */
+"6XA-2a-C0o.text" = "HTML";
 
 /* Class = "UITextField"; placeholder = "Amount"; ObjectID = "7Md-s8-YSL"; */
 "7Md-s8-YSL.placeholder" = "Amount";
@@ -23,8 +23,8 @@
 /* Class = "UILabel"; text = "23 700.000 027"; ObjectID = "7dj-XR-IBh"; */
 "7dj-XR-IBh.text" = "23 700.000 027";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "9fs-Va-rFx"; */
-"9fs-Va-rFx.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "9fs-Va-rFx"; */
+"9fs-Va-rFx.text" = "HTML";
 
 /* Class = "UILabel"; text = "Available Balance"; ObjectID = "9hv-qd-ZAA"; */
 "9hv-qd-ZAA.text" = "Available Balance";
@@ -51,7 +51,7 @@
 "HMB-3f-mRF.text" = "QR Code";
 
 /* Class = "UILabel"; text = "Available Balance"; ObjectID = "JdM-al-5wV"; */
-"JdM-al-5wV.text" = "Available Balance";
+"JdM-al-5wV.text" = "AVAILABLE BALANCE";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "LzQ-JE-te4"; */
 "LzQ-JE-te4.text" = "0";
@@ -68,14 +68,14 @@
 /* Class = "UILabel"; text = "Choose Token"; ObjectID = "ULH-2Q-hym"; */
 "ULH-2Q-hym.text" = "Choose Token";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "Wxv-wO-Yof"; */
-"Wxv-wO-Yof.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "Wxv-wO-Yof"; */
+"Wxv-wO-Yof.text" = "HTML";
 
 /* Class = "UILabel"; text = "Unconfirmed"; ObjectID = "Wyv-3a-7zA"; */
 "Wyv-3a-7zA.text" = "Unconfirmed";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "XUe-jq-99g"; */
-"XUe-jq-99g.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "XUe-jq-99g"; */
+"XUe-jq-99g.text" = "HTML";
 
 /* Class = "UITextField"; placeholder = "Currency"; ObjectID = "YN8-C9-qed"; */
 "YN8-C9-qed.placeholder" = "Currency";
@@ -98,11 +98,11 @@
 /* Class = "UILabel"; text = "Send"; ObjectID = "nyT-Pb-j4C"; */
 "nyT-Pb-j4C.text" = "Send";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "pgk-Rz-SVF"; */
-"pgk-Rz-SVF.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "pgk-Rz-SVF"; */
+"pgk-Rz-SVF.text" = "HTML";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "tYF-Hm-w6a"; */
 "tYF-Hm-w6a.text" = "0";
 
-/* Class = "UILabel"; text = "QTUM"; ObjectID = "wRb-a7-pw0"; */
-"wRb-a7-pw0.text" = "QTUM";
+/* Class = "UILabel"; text = "HTML"; ObjectID = "wRb-a7-pw0"; */
+"wRb-a7-pw0.text" = "HTML";

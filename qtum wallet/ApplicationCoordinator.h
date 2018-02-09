@@ -35,6 +35,7 @@
 - (void)startFromOpenURLWithAddress:(NSString*) address andAmount:(NSString*) amount;
 - (void)startChanginTheme;
 - (void)startSplashScreen;
+- (void)updateDeviceToken;
 
 - (void)logout;
 

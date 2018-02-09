@@ -67,9 +67,10 @@
 
 /* QTUM sybmol */
 "QTUM" = "QTUM";
+"htmlcoin" = "HTMLCOIN";
 
 /* No comment provided by engineer. */
-"QTUM Address" = "QTUM Address";
+"HTMLCOIN Address" = "HTMLCOIN Address";
 
 /* No comment provided by engineer. */
 "Received" = "Received";
@@ -124,6 +125,7 @@
 
 /* No comment provided by engineer. */
 "Copy" = "Copy";
+"Skip" = "Skip";
 
 /* No comment provided by engineer. */
 "Crowdsale" = "Crowdsale";
@@ -138,7 +140,7 @@
 "From" = "From";
 
 /* No comment provided by engineer. */
-"Invalid QTUM Address" = "Invalid QTUM Address";
+"Invalid Coin Address" = "Invalid HTMLCOIN Address";
 
 /* No comment provided by engineer. */
 "It's my tokens" = "It's my tokens";
@@ -150,7 +152,7 @@
 "Login" = "Login";
 
 /* No comment provided by engineer. */
-"Login to QTUM \nDon't have a wallet yet?" = "Login to QTUM \nDon't have a wallet yet?";
+"Login to QTUM \nDon't have a wallet yet?" = "Login to HTMLCOIN \nDon't have a wallet yet?";
 
 /* No comment provided by engineer. */
 "My address: %@ and amount: %.3f" = "My address: %@ and amount: %.3f";
@@ -322,3 +324,8 @@
 
 /* No comment provided by engineer. */
 "Restored successfully" = "Restored successfully";
+
+/*HTMLCOIN*/
+"Create a first one or restore the previous wallet key" = "Create a first one or restore \n the previous wallet key.";
+"In blockchain we trust" = "In blockchain we trust";
+

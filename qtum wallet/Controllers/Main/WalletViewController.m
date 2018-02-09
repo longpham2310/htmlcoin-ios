@@ -19,6 +19,7 @@
 #import "WalletCoordinator.h"
 #import "HistoryHeaderVIew.h"
 #import "NSNumber+Comparison.h"
+#import "NotificationManager.h"
 
 @interface WalletViewController ()
 
@@ -55,6 +56,8 @@
     
     [self.tableView reloadData];
     [self reloadHeader:self.wallet];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshFromRefreshControl) name:PushNewTransaction object:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -65,6 +68,12 @@
         [self.delegate didReloadTableViewData];
         self.isFirstTimeUpdate = NO;
     }
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:PushNewTransaction object:nil];
 }
 
 #pragma mark - Configuration
@@ -107,8 +116,8 @@
     self.unconfirmedTextLabel.hidden =
     self.uncorfirmedLabel.hidden = !haveUncorfirmed;
     
-    self.uncorfirmedLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.unconfirmedBalance roundedNumberWithScale:3], NSLocalizedString(@"QTUM", nil)];
-    self.availabelLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.balance roundedNumberWithScale:3], NSLocalizedString(@"QTUM", nil)];
+    self.uncorfirmedLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.unconfirmedBalance roundedNumberWithScale:3], NSLocalizedString(@"HTML", nil)];
+    self.availabelLabel.text = [NSString stringWithFormat:@"%@ %@", [wallet.balance roundedNumberWithScale:3], NSLocalizedString(@"HTML", nil)];
 }
 
 -(void)startLoading {

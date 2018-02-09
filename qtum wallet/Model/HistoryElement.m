@@ -20,9 +20,10 @@
     //if hashTable of adresses constain object, add this value to inValue
     for (NSDictionary* inObject in dictionary[@"vin"]) {
         
-        [self.fromAddreses addObject:@{@"address":inObject[@"address"],
+        [self.fromAddreses addObject:@{@"address":inObject[@"addr"],
                                        @"value":inObject[@"value"]}];
-        NSString* address = hashTableAdresses[inObject[@"address"]];
+//        NSString* address = hashTableAdresses[inObject[@"addr"]];
+        BOOL address = [hashTableAdresses.allKeys containsObject:inObject[@"addr"]];
         if (address) {
             inMoney += [inObject[@"value"] doubleValue];
         }
@@ -30,10 +31,16 @@
     
     //if hashTable of adresses constain object, add this value to ouyValue
     for (NSDictionary* outObject in dictionary[@"vout"]) {
-        [self.toAddresses addObject:@{@"address":outObject[@"address"],
+        NSArray* voutAddress = (NSArray*) outObject[@"scriptPubKey"][@"addresses"];
+        NSString* addressString = @"";
+        if (voutAddress != nil) {
+            addressString = [voutAddress firstObject];
+        }
+        
+        [self.toAddresses addObject:@{@"address":addressString,
                                        @"value":outObject[@"value"]}];
         
-        NSString* address = hashTableAdresses[outObject[@"address"]];
+        BOOL address = [hashTableAdresses.allKeys containsObject:addressString];
         if (address) {
             outMoney += [outObject[@"value"] doubleValue];
         }
@@ -75,7 +82,7 @@
 #pragma mark - Private Methods
 
 - (void)createAmountString{
-    self.amountString  = [NSString stringWithFormat:@"%0.3f %@", [self.amount floatValue], NSLocalizedString(@"QTUM", nil)];
+    self.amountString  = [NSString stringWithFormat:@"%0.3f %@", [self.amount floatValue], NSLocalizedString(@"htmlcoin", nil)];
 }
 
 - (void)createDateString {
@@ -133,10 +140,10 @@
     
     if ([object isKindOfClass:[NSDictionary class]]) {
             //u shoud not use setter at initionalize
-        self.dateNumber = ![object[@"block_time"] isKindOfClass:[NSNull class]] ? object[@"block_time"] : nil;
+        self.dateNumber = ![object[@"blocktime"] isKindOfClass:[NSNull class]] ? object[@"blocktime"] : nil;
         self.address = object[@"address"];
-        self.confirmed = [object[@"block_height"] floatValue] > 0;
-        self.txHash = object[@"tx_hash"];
+        self.confirmed = [object[@"blockheight"] floatValue] > 0;
+        self.txHash = object[@"txid"];
         self.isSmartContractCreater = [object[@"contract_has_been_created"] boolValue];
         [self calcAmountAndAdresses:object];
     }

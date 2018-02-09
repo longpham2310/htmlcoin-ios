@@ -49,13 +49,18 @@
 -(void)setup {
     
     if (![NSUserDefaults isNotFirstTimeLaunch]) {
-        [NSUserDefaults saveIsDarkSchemeSetting:YES];
-        [NSUserDefaults saveIsNotFirstTimeLaunch:YES];
+        [NSUserDefaults saveIsDarkSchemeSetting:NO];
+        [NSUserDefaults saveIsNotFirstTimeLaunch:NO];
     }
     
     [NSUserDefaults saveCurrentVersion:[[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
     [NSUserDefaults saveIsRPCOnSetting:NO];
+    
+#if PRODUCTION
+    [NSUserDefaults saveIsMainnetSetting:YES];
+#else
     [NSUserDefaults saveIsMainnetSetting:NO];
+#endif
 
     [PopUpsManager sharedInstance];
     [PaymentValuesManager sharedInstance];
@@ -118,8 +123,16 @@
 
 -(NSString*)baseURL {
     
-    NSString* baseUrl = @"http://145.239.197.39:5931/";
-    return baseUrl;
+#ifdef PRODUCTION
+    return @"https://api.htmlcoin.com";
+#elif STAGING
+    return @"http://35.198.235.246:3001";
+#else
+    // TODO: We don't support DEV currently.
+    return @"http://35.198.235.246:3001";
+#endif
+//    NSString* baseUrl = @"http://api.htmlcoin.com";
+//    return baseUrl;
 }
 
 -(NSInteger)failedPinWaitingTime {

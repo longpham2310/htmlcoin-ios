@@ -44,8 +44,8 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    switch (indexPath.row) {
+    return 64;
+    /*switch (indexPath.row) {
         case 1:
         case 2:
         case 4:
@@ -57,7 +57,7 @@
             return 52;
         default:
             return 40;
-    }
+    }*/
 }
 
 - (void)configurateCell:(ChoiseSmartContractCell *)cell atIndexPath:(NSIndexPath *)indexPath {

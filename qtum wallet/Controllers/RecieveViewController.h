@@ -12,4 +12,6 @@
 
 @interface RecieveViewController : BaseViewController <RecieveOutput, Presentable>
 
+@property (weak, nonatomic) IBOutlet UIView *dottedView;
+
 @end

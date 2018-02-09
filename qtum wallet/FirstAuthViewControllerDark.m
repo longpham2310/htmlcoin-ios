@@ -7,8 +7,10 @@
 //
 
 #import "FirstAuthViewControllerDark.h"
+#import "UIView+RoundedCorner.h"
 
 @interface FirstAuthViewControllerDark ()
+@property (weak, nonatomic) IBOutlet UILabel *introductionLabel;
 
 @end
 
@@ -16,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.introductionLabel.text = NSLocalizedString(@"Create a first one or restore the previous wallet key", @"");
     [self configurateButtons];
 }
 
@@ -24,12 +28,13 @@
 -(void)configurateButtons {
     
     if ([ApplicationCoordinator sharedInstance].walletManager.isSignedIn) {
-        self.createButton.backgroundColor = [UIColor clearColor];
+//        self.createButton.backgroundColor = [UIColor clearColor];
         [self.createButton setTitleColor:customBlueColor() forState:UIControlStateNormal];
         self.loginButton.hidden = NO;
         self.invitationTextLabel.text = NSLocalizedString(@"Login to QTUM \nDon't have a wallet yet?", @"");
     } else {
-        self.createButton.backgroundColor = customRedColor();
+//        self.createButton.backgroundColor = customRedColor();
+        [self.createButton roundedWithCorner:4];
         [self.createButton setTitleColor:customBlackColor() forState:UIControlStateNormal];
         self.loginButton.hidden = YES;
         self.invitationTextLabel.text = NSLocalizedString(@"You don’t have a wallet yet.", @"");

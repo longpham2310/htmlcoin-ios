@@ -21,6 +21,7 @@
 #import "RepeateOutputDelegate.h"
 #import "ExportWalletBrandKeyOutputDelegate.h"
 #import "Wallet.h"
+@import FirebaseMessaging;
 
 @interface AuthCoordinator () <FirstAuthOutputDelegate, WalletNameOutputDelegate, CreatePinOutputDelegate, RepeateOutputDelegate, ExportWalletBrandKeyOutputDelegate, RestoreWalletOutputDelegate, EnableFingerprintOutputDelegate>
 
@@ -306,6 +307,9 @@
     } else {
         [self goToFinishWalletCreation];
     }
+    
+    
+    [[ApplicationCoordinator sharedInstance] updateDeviceToken];
 }
 
 -(void)cancelCreateWallet {

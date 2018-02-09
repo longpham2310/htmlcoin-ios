@@ -12,6 +12,7 @@
 #import "BTCTransactionInput+Extension.h"
 #import "BTCTransactionOutput+Address.h"
 #import "NSNumber+Comparison.h"
+#import "AddressBalance.h"
 
 @implementation WalletManagerRequestAdapter
 
@@ -22,6 +23,20 @@
     __weak __typeof(self)weakSelf = self;
     [[ApplicationCoordinator sharedInstance].requestManager getUnspentOutputsForAdreses:keyAddreses isAdaptive:YES successHandler:^(id responseObject) {
         success([weakSelf calculateBalance:responseObject]);
+    } andFailureHandler:^(NSError *error, NSString *message) {
+        failure(error, message);
+    }];
+}
+
+- (void)getBalanceWalletForAddress:(NSArray *)keyAddreses
+           withSuccessHandler:(void(^)(AddressBalance* balance))success
+            andFailureHandler:(void(^)(NSError *error, NSString* message))failure {
+    __weak __typeof(self)weakSelf = self;
+    NSDictionary* params = @{};
+    [[ApplicationCoordinator sharedInstance].requestManager getBalanceWithParam:params andAddresses:keyAddreses successHandler:^(id responseObject) {
+        AddressBalance* addressBalance = [AddressBalance new];
+        [addressBalance setupWithObject:responseObject];
+        success(addressBalance);
     } andFailureHandler:^(NSError *error, NSString *message) {
         failure(error, message);
     }];
@@ -73,15 +88,15 @@
         BTCTransactionOutput* txout = [[BTCTransactionOutput alloc] init];
         
         txout.value = [self convertValueToAmount:item[@"amount"]];
-        txout.script = [[BTCScript alloc] initWithData:BTCDataFromHex(item[@"txout_scriptPubKey"])];
+        txout.script = [[BTCScript alloc] initWithData:BTCDataFromHex(item[@"scriptPubKey"])];
         txout.index = [item[@"vout"] intValue];
         txout.confirmations = [item[@"confirmations"] unsignedIntegerValue];
-        txout.transactionHash = (BTCDataFromHex([NSString invertHex:item[@"tx_hash"]]));
+        txout.transactionHash = (BTCDataFromHex([NSString invertHex:item[@"txid"]]));
         txout.blockHeight = [item[@"confirmations"] integerValue];
         txout.runTimeAddress = item[@"address"];
         
         //filter only valid outputs
-        if (([item[@"confirmations"] unsignedIntegerValue] > 500 && [item[@"is_stake"] unsignedIntegerValue] > 0) || [item[@"is_stake"] unsignedIntegerValue] == 0) {
+        if (([item[@"confirmations"] unsignedIntegerValue] > 500 && [item[@"isStake"] unsignedIntegerValue] > 0) || [item[@"isStake"] unsignedIntegerValue] == 0) {
             [outputs addObject:txout];
         }
     }

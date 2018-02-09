@@ -13,6 +13,7 @@
 
 @interface RecieveViewController () <UITextFieldDelegate, PopUpViewControllerDelegate>
 
+@property (nonatomic, strong) CAShapeLayer *border;
 @property (weak, nonatomic) IBOutlet UIImageView *qrCodeImageView;
 @property (weak, nonatomic) IBOutlet TextFieldWithLine *amountTextField;
 @property (weak, nonatomic) IBOutlet UILabel *publicAddressLabel;
@@ -48,6 +49,13 @@ shortBalanceText = _shortBalanceText;
 
     [self addDoneButtonToAmountTextField];
     self.shareButton.enabled = NO;
+    
+    _border = [CAShapeLayer layer];
+    _border.strokeColor = [UIColor colorWithRed:67/255.0f green:37/255.0f blue:83/255.0f alpha:1].CGColor;
+    _border.fillColor = nil;
+    _border.lineWidth = 1;
+    _border.lineDashPattern = @[@6, @4];
+    [self.dottedView.layer addSublayer:_border];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -84,6 +92,9 @@ shortBalanceText = _shortBalanceText;
             self.balanceLabel.text = self.shortBalanceText;
         }
     }
+    
+    _border.path = [UIBezierPath bezierPathWithRect:self.dottedView.bounds].CGPath;
+    _border.frame = self.dottedView.bounds;
 }
 
 #pragma mark - Methods
