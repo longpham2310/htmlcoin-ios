@@ -26,7 +26,7 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)registerForRemoutNotifications {
+- (void)registerForRemoteNotifications {
     
     if(SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(@"10.0")){
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
@@ -86,7 +86,8 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) deviceToken {
     
-    [[FIRInstanceID instanceID] setAPNSToken:deviceToken type:FIRInstanceIDAPNSTokenTypeSandbox];
+//    [[FIRInstanceID instanceID] setAPNSToken:deviceToken type:FIRInstanceIDAPNSTokenTypeSandbox];
+    [FIRMessaging messaging].APNSToken = deviceToken;
     [self storeDeviceToken];
 }
 
@@ -114,7 +115,8 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
 #pragma mark - Private Methods
 
 -(void)storeDeviceToken{
-    
+//    [FIRMessaging messaging].FCMToken
+    NSLog(@"fcm token: %@", [[FIRMessaging messaging] FCMToken]);
     NSString* token = [[FIRInstanceID instanceID] token];
     NSString* prevToken = [NSUserDefaults getDeviceToken];
     [NSUserDefaults saveDeviceToken:token];

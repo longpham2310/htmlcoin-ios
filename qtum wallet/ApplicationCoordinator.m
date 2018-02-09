@@ -30,6 +30,8 @@
 #import "SplashScreenOutput.h"
 #import "QStoreManager.h"
 #import "ServiceLocator.h"
+@import Firebase;
+@import FirebaseMessaging;
 
 @interface ApplicationCoordinator () <ApplicationCoordinatorDelegate, SecurityCoordinatorDelegate, LoginCoordinatorDelegate, ConfirmPinCoordinatorDelegate, AuthCoordinatorDelegate>
 
@@ -99,7 +101,7 @@
     __weak __typeof(self)weakSelf = self;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [weakSelf.notificationManager registerForRemoutNotifications];
+        [weakSelf.notificationManager registerForRemoteNotifications];
     });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

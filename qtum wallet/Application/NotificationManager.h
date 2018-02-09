@@ -10,7 +10,7 @@
 
 @interface NotificationManager : NSObject <Clearable>
 
-- (void)registerForRemoutNotifications;
+- (void)registerForRemoteNotifications;
 - (void)clear;
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
