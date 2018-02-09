@@ -57,7 +57,9 @@
                andAddresses:(NSArray*) addresses
              successHandler:(void(^)(id responseObject))success
           andFailureHandler:(void(^)(NSError * error, NSString* message))failure;
-
+- (void)updateDeviceTokenWithParam:(NSDictionary *)param
+                withSuccessHandler:(void(^)(id responseObject))success
+                 andFailureHandler:(void(^)(NSString* message)) failure;
 // Some RPC help methods
 
 - (void)sendToAddress:(NSString *)key

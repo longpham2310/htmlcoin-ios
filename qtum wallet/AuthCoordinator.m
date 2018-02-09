@@ -21,6 +21,7 @@
 #import "RepeateOutputDelegate.h"
 #import "ExportWalletBrandKeyOutputDelegate.h"
 #import "Wallet.h"
+@import FirebaseMessaging;
 
 @interface AuthCoordinator () <FirstAuthOutputDelegate, WalletNameOutputDelegate, CreatePinOutputDelegate, RepeateOutputDelegate, ExportWalletBrandKeyOutputDelegate, RestoreWalletOutputDelegate, EnableFingerprintOutputDelegate>
 
@@ -306,6 +307,21 @@
     } else {
         [self goToFinishWalletCreation];
     }
+    
+    
+    [self updateDeviceToken];
+}
+
+- (void)updateDeviceToken {
+    NSDictionary* addresses = [[ApplicationCoordinator sharedInstance].walletManager hashTableOfKeys];
+    NSString* token = [[FIRMessaging messaging] FCMToken];
+    
+    
+    [[ApplicationCoordinator sharedInstance].requestManager updateDeviceTokenWithParam:@{@"addresses":[addresses allKeys],@"deviceToken":token} withSuccessHandler:^(id responseObject) {
+        
+    } andFailureHandler:^(NSString *message) {
+        
+    }];
 }
 
 -(void)cancelCreateWallet {
