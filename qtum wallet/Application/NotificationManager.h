@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const PushNewTransaction;
 @interface NotificationManager : NSObject <Clearable>
 
 - (void)registerForRemoteNotifications;

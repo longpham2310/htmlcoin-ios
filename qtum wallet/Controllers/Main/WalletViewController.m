@@ -19,6 +19,7 @@
 #import "WalletCoordinator.h"
 #import "HistoryHeaderVIew.h"
 #import "NSNumber+Comparison.h"
+#import "NotificationManager.h"
 
 @interface WalletViewController ()
 
@@ -42,8 +43,6 @@
     
     [self configTableView];
     [self configRefreshControl];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshFromRefreshControl) name:@"NewPush" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +56,8 @@
     
     [self.tableView reloadData];
     [self reloadHeader:self.wallet];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshFromRefreshControl) name:PushNewTransaction object:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -67,6 +68,12 @@
         [self.delegate didReloadTableViewData];
         self.isFirstTimeUpdate = NO;
     }
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:PushNewTransaction object:nil];
 }
 
 #pragma mark - Configuration
