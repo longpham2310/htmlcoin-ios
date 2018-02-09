@@ -42,6 +42,8 @@
     
     [self configTableView];
     [self configRefreshControl];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshFromRefreshControl) name:@"NewPush" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {

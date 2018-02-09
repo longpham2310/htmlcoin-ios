@@ -74,6 +74,8 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
     DLog(@"User Info : %@",notification.request.content.userInfo);
     completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NewPush" object:nil];
 }
 
 //Called to let your app know which action was selected by the user for a given notification.
