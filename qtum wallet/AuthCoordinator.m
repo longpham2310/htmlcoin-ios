@@ -309,19 +309,7 @@
     }
     
     
-    [self updateDeviceToken];
-}
-
-- (void)updateDeviceToken {
-    NSDictionary* addresses = [[ApplicationCoordinator sharedInstance].walletManager hashTableOfKeys];
-    NSString* token = [[FIRMessaging messaging] FCMToken];
-    
-    
-    [[ApplicationCoordinator sharedInstance].requestManager updateDeviceTokenWithParam:@{@"addresses":[addresses allKeys],@"deviceToken":token} withSuccessHandler:^(id responseObject) {
-        
-    } andFailureHandler:^(NSString *message) {
-        
-    }];
+    [[ApplicationCoordinator sharedInstance] updateDeviceToken];
 }
 
 -(void)cancelCreateWallet {
