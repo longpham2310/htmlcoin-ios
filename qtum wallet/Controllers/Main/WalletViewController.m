@@ -62,7 +62,6 @@
     [self reloadHeader:self.wallet];
     if (_needReloadBalaneAndHistory) {
         [self refreshFromRefreshControl];
-        _needReloadBalaneAndHistory = NO;
     }
 }
 
@@ -141,6 +140,7 @@
 }
 
 - (void)refreshFromRefreshControl {
+    _needReloadBalaneAndHistory = NO;
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.refreshControl endRefreshing];
     });
@@ -149,6 +149,10 @@
 
 - (void)newTransaction {
     _needReloadBalaneAndHistory = YES;
+    if ([self isViewLoaded] && self.view.window != NULL) {
+        // View controller is availabel. Need reload balance now
+        [self refreshFromRefreshControl];
+    }
 }
 
 #pragma mark - Actions
