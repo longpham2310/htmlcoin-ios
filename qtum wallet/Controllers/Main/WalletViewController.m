@@ -25,6 +25,7 @@
 
 @property (nonatomic) NSDictionary *dictionaryForNewPayment;
 
+@property (assign, nonatomic) BOOL needReloadBalaneAndHistory;
 @property (assign, nonatomic) BOOL balanceLoaded;
 @property (assign, nonatomic) BOOL historyLoaded;
 @property (assign, nonatomic) BOOL isFirstTimeUpdate;
@@ -43,6 +44,9 @@
     
     [self configTableView];
     [self configRefreshControl];
+    
+    _needReloadBalaneAndHistory = NO;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newTransaction) name:PushNewTransaction object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,8 +60,10 @@
     
     [self.tableView reloadData];
     [self reloadHeader:self.wallet];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshFromRefreshControl) name:PushNewTransaction object:nil];
+    if (_needReloadBalaneAndHistory) {
+        [self refreshFromRefreshControl];
+        _needReloadBalaneAndHistory = NO;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -68,12 +74,6 @@
         [self.delegate didReloadTableViewData];
         self.isFirstTimeUpdate = NO;
     }
-}
-
--(void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:PushNewTransaction object:nil];
 }
 
 #pragma mark - Configuration
@@ -145,6 +145,10 @@
         [self.refreshControl endRefreshing];
     });
     [self.delegate didReloadTableViewData];
+}
+
+- (void)newTransaction {
+    _needReloadBalaneAndHistory = YES;
 }
 
 #pragma mark - Actions

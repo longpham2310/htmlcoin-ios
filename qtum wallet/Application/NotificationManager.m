@@ -78,10 +78,13 @@ NSString *const FireBaseInfoFileName = @"GoogleService-Info";
     completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
     
     [[NSNotificationCenter defaultCenter] postNotificationName:PushNewTransaction object:nil];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
 }
 
 //Called to let your app know which action was selected by the user for a given notification.
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler{
+    [[NSNotificationCenter defaultCenter] postNotificationName:PushNewTransaction object:nil];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     DLog(@"User Info : %@",response.notification.request.content.userInfo);
     completionHandler();
 }
